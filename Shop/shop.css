@@ -376,3 +376,17 @@ h5 {
   left: 0;
   position: absolute;
 }
+
+#modalColor {
+  padding: 0;
+}
+
+.my-content-modal .item-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.btn-toggle {
+  display: none !important;
+}

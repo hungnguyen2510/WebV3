@@ -12,7 +12,12 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="shop.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="range.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="reponsive.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="reponsive.css"
+    />
     <link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
 
     <link
@@ -95,25 +100,55 @@
             <div class="modal-content">
               <div class="modal-body">
                 <h2>lọc</h2>
-                <div class="d-flex justify-content-between">
+                <div class="my-content-modal d-flex justify-content-between">
                   <div class="col-one">
                     <hr />
-                    <h4>màu</h4>
-                    <div class="btn-colors">
-                      <button class="btn-size color-green"></button>
-                      <button class="btn-size color-blue"></button>
-                      <button class="btn-size color-purple"></button>
-                      <button class="color-pink"></button>
-                      <button class="color-red"></button>
-                      <button class="color-orange"></button>
-                      <button class="color-yellow"></button>
-                      <button class="color-black"></button>
-                      <button class="color-grey-photo"></button>
-                      <button class="color-grey-dark"></button>
+                    <div class="item-toggle">
+                      <h4>màu</h4>
+                      <button class="btn-toggle" onclick="handleColor()">
+                        <img
+                          src="assets/icons/plus.png"
+                          alt=""
+                          id="btn-plus-1"
+                        />
+                        <img
+                          src="assets/icons/minus.png"
+                          alt=""
+                          id="btn-minus-1"
+                        />
+                      </button>
+                    </div>
+                    <div id="colors">
+                      <div class="btn-colors">
+                        <button class="btn-size color-green"></button>
+                        <button class="btn-size color-blue"></button>
+                        <button class="btn-size color-purple"></button>
+                        <button class="color-pink"></button>
+                        <button class="color-red"></button>
+                        <button class="color-orange"></button>
+                        <button class="color-yellow"></button>
+                        <button class="color-black"></button>
+                        <button class="color-grey-photo"></button>
+                        <button class="color-grey-dark"></button>
+                      </div>
                     </div>
                     <hr />
-                    <h4>giá <span>(ngàn VNĐ)</span></h4>
-                    <div>
+                    <div class="item-toggle">
+                      <h4>giá <span>(ngàn VNĐ)</span></h4>
+                      <button class="btn-toggle" onclick="handlePrice()">
+                        <img
+                          src="assets/icons/plus.png"
+                          alt=""
+                          id="btn-plus-2"
+                        />
+                        <img
+                          src="assets/icons/minus.png"
+                          alt=""
+                          id="btn-minus-2"
+                        />
+                      </button>
+                    </div>
+                    <div id="price">
                       <div class="row">
                         <div class="col-sm-12">
                           <div id="slider-range"></div>
@@ -140,44 +175,60 @@
                   <div class="col-two">
                     <hr />
                     <div style="position: relative">
-                      <h4>size</h4>
+                      <div class="item-toggle">
+                        <h4>size</h4>
+                        <button class="btn-toggle" onclick="handleSize()">
+                          <img
+                            src="assets/icons/plus.png"
+                            alt=""
+                            id="btn-plus-3"
+                          />
+                          <img
+                            src="assets/icons/minus.png"
+                            alt=""
+                            id="btn-minus-3"
+                          />
+                        </button>
+                      </div>
                       <span
                         ><img src="assets/icons/Ruler.png" alt="" /> đo size làm
                         sao?</span
                       >
                     </div>
-                    <div class="item">
-                      <p>giày nữ</p>
-                      <div class="size d-flex justify-content-between">
-                        <button class="btn-size">35</button>
-                        <button class="btn-size">37</button>
-                        <button class="btn-size">36</button>
-                        <button class="btn-size">38</button>
-                        <button class="btn-size">39</button>
-                        <button class="btn-size">40</button>
-                        <button class="btn-size">41</button>
+                    <div id="size">
+                      <div class="item">
+                        <p>giày nữ</p>
+                        <div class="size d-flex justify-content-between">
+                          <button class="btn-size">35</button>
+                          <button class="btn-size">37</button>
+                          <button class="btn-size">36</button>
+                          <button class="btn-size">38</button>
+                          <button class="btn-size">39</button>
+                          <button class="btn-size">40</button>
+                          <button class="btn-size">41</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="item">
-                      <p>giày nam</p>
-                      <div class="size d-flex justify-content-between">
-                        <button class="btn-size">36</button>
-                        <button class="btn-size">35</button>
-                        <button class="btn-size">37</button>
-                        <button class="btn-size">38</button>
-                        <button class="btn-size">39</button>
-                        <button class="btn-size">40</button>
-                        <button class="btn-size">41</button>
+                      <div class="item">
+                        <p>giày nam</p>
+                        <div class="size d-flex justify-content-between">
+                          <button class="btn-size">36</button>
+                          <button class="btn-size">35</button>
+                          <button class="btn-size">37</button>
+                          <button class="btn-size">38</button>
+                          <button class="btn-size">39</button>
+                          <button class="btn-size">40</button>
+                          <button class="btn-size">41</button>
+                        </div>
                       </div>
-                    </div>
-                    <div class="item">
-                      <p>size unisex</p>
-                      <div class="size d-flex justify-content-between">
-                        <button class="btn-size">S</button>
-                        <button class="btn-size">M</button>
-                        <button class="btn-size">L</button>
-                        <button class="btn-size">XL</button>
-                        <button class="btn-size">Kids</button>
+                      <div class="item">
+                        <p>size unisex</p>
+                        <div class="size d-flex justify-content-between">
+                          <button class="btn-size">S</button>
+                          <button class="btn-size">M</button>
+                          <button class="btn-size">L</button>
+                          <button class="btn-size">XL</button>
+                          <button class="btn-size">Kids</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -312,7 +363,11 @@
             thiết-kế
           </h2>
           <div class="image">
-            <img src="assets/images/mot-shoes-dezeen-shortlist 1.png" alt="" class="img" />
+            <img
+              src="assets/images/mot-shoes-dezeen-shortlist 1.png"
+              alt=""
+              class="img"
+            />
           </div>
         </div>
 
@@ -331,9 +386,7 @@
       <div class="row justify-content-between">
         <div class="col-one col col-xl-6 col-mb-6 col-sm-12">
           <div class="text">
-            <h2>
-              dép Ngang
-            </h2>
+            <h2>dép Ngang</h2>
             <p>ngang mà sang</p>
           </div>
           <img src="assets/images/Rectangle 13.png" alt="" />
@@ -341,7 +394,10 @@
         <div class="col-two col col-xl-6 col-mb-6 col-sm-12">
           <div class="item">
             <div class="content">
-              <img src="assets/images/Capture d’écran 2021-03-17 à 22.45 1.png" alt="" />
+              <img
+                src="assets/images/Capture d’écran 2021-03-17 à 22.45 1.png"
+                alt=""
+              />
               <div class="text">
                 <p class="description">dép Ngang</p>
                 <p class="money">390 000 VND</p>
@@ -361,7 +417,10 @@
         <div class="col-two col col-xl-6 col-mb-6 col-sm-12">
           <div class="item">
             <div class="content">
-              <img src="assets/images/Capture d’écran 2021-03-18 à 00.08 1.png" alt="" />
+              <img
+                src="assets/images/Capture d’écran 2021-03-18 à 00.08 1.png"
+                alt=""
+              />
               <div class="text">
                 <p class="description">áo mưa</p>
                 <p class="money">290 000 VND</p>
@@ -375,9 +434,7 @@
         </div>
         <div class="col-one col col-xl-6 col-mb-6 col-sm-12">
           <div class="text">
-            <h2>
-              áo mưa Nhanh
-            </h2>
+            <h2>áo mưa Nhanh</h2>
             <p>bất chấp thời tiết</p>
           </div>
           <img src="assets/images/Rectangle 10-1.png" alt="" />
@@ -388,9 +445,7 @@
       <div class="row justify-content-between">
         <div class="col-one col col-xl-6 col-mb-6 col-sm-12">
           <div class="text">
-            <h2>
-              phụ kiện
-            </h2>
+            <h2>phụ kiện</h2>
             <p>thích thì mua</p>
           </div>
           <img src="assets/images/Rectangle 10.png" alt="" />
@@ -431,10 +486,8 @@
     <footer class="my-footer">
       <div class="hero-footer d-flex justify-content-between">
         <div class="col-one">
-          <h4>thiết kế tại Việt Nam</h2>
-          <div
-            class="menu-footer"
-          >
+          <h4>thiết kế tại Việt Nam</h4>
+          <div class="menu-footer">
             <ul class="menu-one">
               <li>giày / dép</li>
               <li>áo mưa</li>
@@ -463,7 +516,7 @@
             <img src="assets/icons/Facebook.png" alt="" />
             <img src="assets/icons/insta.png" alt="" />
             <img src="assets/icons/Bitmap.png" alt="" />
-            <span>&#169 2021 Mot</span>     
+            <!-- <span>&#169 2021 Mot</span>      -->
           </div>
         </div>
       </div>
@@ -475,6 +528,44 @@
           $(this).toggleClass("active");
         });
       });
+      function handleColor() {
+        var x = document.getElementById("colors");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          document.getElementById("btn-plus-1").style.display = "none";
+          document.getElementById("btn-minus-1").style.display = "block";
+        } else {
+          x.style.display = "none";
+          document.getElementById("btn-plus-1").style.display = "block";
+          document.getElementById("btn-minus-1").style.display = "none";
+        }
+      }
+      function handlePrice() {
+        var x = document.getElementById("price");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          document.getElementById("btn-plus-2").style.display = "none";
+          document.getElementById("btn-minus-2").style.display = "block";
+        } else {
+          x.style.display = "none";
+          document.getElementById("btn-plus-2").style.display = "block";
+          document.getElementById("btn-minus-2").style.display = "none";
+        }
+      }
+
+      function handleSize() {
+        var x = document.getElementById("size");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          document.getElementById("btn-plus-3").style.display = "none";
+          document.getElementById("btn-minus-3").style.display = "block";
+        } else {
+          x.style.display = "none";
+          document.getElementById("btn-plus-3").style.display = "block";
+          document.getElementById("btn-minus-3").style.display = "none";
+        }
+      }
+
       function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
