@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Help 01</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="http://fonts.cdnfonts.com/css/lab-grotesque-medium"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="help.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="reponsive.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="top_nav d-flex justify-content-between py-4">
+        <div class="menu">
+          <a href="">
+            <img src="assets/icons/menu.svg" alt="" class="icon" />
+          </a>
+        </div>
+        <div class="logo">
+          <a href="">
+            <img src="assets/icons/logo.svg" alt="" class="icon" />
+          </a>
+        </div>
+        <div class="user">
+          <a href="">
+            <img src="assets/icons/Smiley.svg" alt="" class="icon" />
+          </a>
+          <a href="">
+            <img src="assets/icons/sneaker.svg" alt="" class="icon" />
+          </a>
+          <span class="number-quantity" style="font-weight: bold">0</span>
+        </div>
+      </div>
+    </div>
+    <div class="my-container">
+      <div class="row">
+        <div class="col-one col-xl-12 col-md-12 col-sm-12">
+          <h1>
+            <span>bạn</span> <br />
+            hỏi
+          </h1>
+          <img src="assets/icons/Rectangle 17.png" alt="" />
+          <h1>
+            <span style="float: right">Một</span> <br />
+            trả lời
+          </h1>
+        </div>
+        <div class="col-two col-xl-12 col-md-12 col-sm-12">
+          <hr />
+          <div class="item">
+            <h3>về một sản phẩm</h3>
+            <button class="btn-toggle" onclick="veMotSanPham()">
+              <img src="assets/icons/plus.png" alt="" id="btn-plus-1" />
+              <img src="assets/icons/minus.png" alt="" id="btn-minus-1" />
+            </button>
+          </div>
+          <div id="vmsp" class="toggle-div">
+            <hr class="hr-2" />
+            <div class="row">
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold">giày</h4>
+              </div>
+              <div class="item-flex col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold">Đời mới / đời thường</h4>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h5>
+                  Đời-mới là dòng giày đầu tiên Một ra mắt thị trường. Đời-mới
+                  có dây vì vậy dễ điều chỉnh hơn cho bàn chân rộng bề ngang.
+                  dây giày Đời-mới có thể được cột lại và giấu vào bên trong -
+                  tuỳ sở thích người mang Đời-thường là dòng giày dành cho những
+                  ai mê sự nhanh gọn. Đời-thường không có dây mà thay vào đó là
+                  bản dây thun, giúp người mang xỏ chân, kéo gót và bước đi - tự
+                  do làm điều mình thích
+                </h5>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <!-- <h4 class="bold">giày</h4> -->
+              </div>
+              <div class="item-flex col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold">da / vải</h4>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h5>
+                  Đời-mới là dòng giày đầu tiên Một ra mắt thị trường. Đời-mới
+                  có dây vì vậy dễ điều chỉnh hơn cho bàn chân rộng bề ngang.
+                  dây giày Đời-mới có thể được cột lại và giấu vào bên trong -
+                  tuỳ sở thích người mang Đời-thường là dòng giày dành cho những
+                  ai mê sự nhanh gọn. Đời-thường không có dây mà thay vào đó là
+                  bản dây thun, giúp người mang xỏ chân, kéo gót và bước đi - tự
+                  do làm điều mình thích
+                </h5>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="item">
+            <h3>đo size thế nào ?</h3>
+            <button class="btn-toggle" onclick="doSizeTheNao()">
+              <img src="assets/icons/plus.png" alt="" id="btn-plus-2" />
+              <img src="assets/icons/minus.png" alt="" id="btn-minus-2" />
+            </button>
+          </div>
+          <div id="dstn" class="toggle-div">
+            <hr class="hr-2" />
+            <div class="row">
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h4 class="bold">làm sao đo chân?</h4>
+              </div>
+              <div class="item-step col-xl-6 col-md-12 col-sm-12">
+                <div class="item">
+                  <img src="assets/images/step-1-1K4 2.png" alt="" />
+                  <h5 class="ml-4">
+                    <span class="bold">bước 1</span><br />
+                    — chọn một mặt phẳng <br />— lót một miếng giấy <br />— đứng
+                    lên giấy, sao cho gót chân chạm sát tường
+                  </h5>
+                </div>
+                <div class="item">
+                  <img src="assets/images/step-2-1K4 1.png" alt="" />
+                  <h5 class="ml-4">
+                    <span class="bold">bước 2</span> <br />— đo bề dài chân:
+                    dùng bút đánh dấu điểm xa nhất của bàn chân tính từ gót
+                    chân, đo hai chân và chọn số đo lớn hơn
+                  </h5>
+                </div>
+                <div class="item">
+                  <img src="assets/images/step-3-1K4 1.png" alt="" />
+                  <h5 class="ml-4">
+                    <span class="bold">bước 3</span> <br />— đo bề ngang chân:
+                    dùng thước dây siết nhẹ thành vòng ngay phần bè nhất của bàn
+                    chân; đo hai chân và chọn số đo lớn hơn
+                  </h5>
+                </div>
+                <h5>
+                  <span class="bold">Một vài lưu ý khi đo chân</span><br />
+                  — luôn đo cả hai bàn chân và chọn số đo lớn hơn <br />— nếu bề
+                  ngang chân to hơn, nên chọn size nam; nếu bề ngang chân mỏng
+                  hơn, nên chọn size nữ <br />— nên siết nhẹ thước dây khi đo bề
+                  ngang chân, vì giày cũng sẽ ôm sát theo chân <br />— luôn chọn
+                  size theo số đo lớn hơn (ví dụ: bàn chân nữ dài 22cm, tương
+                  ứng size 35W, nhưng vòng chân là 21.5cm thì nên chọn size 36)
+                </h5>
+              </div>
+            </div>
+            <hr class="hr-2" />
+            <div class="row">
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold">giày</h4>
+              </div>
+              <div class="item-flex col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold">size giày nữ</h4>
+                <h4 class="bold opacity-3">size giày nam</h4>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <div class="item-size-giay">
+                  <div class="item">
+                    <div class="tilte-top">
+                      <img src="assets/icons/Group 28.png" alt="" />
+                      <h4><span class="bold">Đời mới</span> có dây</h4>
+                    </div>
+                    <div class="card-custom none-clip-path">
+                      <table class="table custom-table">
+                        <thead>
+                          <tr>
+                            <th><p>size</p></th>
+                            <th><p>bề dài chân (cm)</p></th>
+                            <th><p>bề dài chân (cm)</p></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th><h5 class="bold">35W</h5></th>
+                            <th><h5>21.6 - 22.3</h5></th>
+                            <th><h5>21 - 21.4</h5></th>
+                          </tr>
+                          <tr>
+                            <th><h5 class="bold">36W</h5></th>
+                            <th><h5>21.6 - 22.3</h5></th>
+                            <th><h5>21 - 21.4</h5></th>
+                          </tr>
+                          <tr>
+                            <th><h5 class="bold">37W</h5></th>
+                            <th><h5>21.6 - 22.3</h5></th>
+                            <th><h5>21 - 21.4</h5></th>
+                          </tr>
+                          <tr>
+                            <th><h5 class="bold">38W</h5></th>
+                            <th><h5>21.6 - 22.3</h5></th>
+                            <th><h5>21 - 21.4</h5></th>
+                          </tr>
+                          <tr>
+                            <th><h5 class="bold">39W</h5></th>
+                            <th><h5>21.6 - 22.3</h5></th>
+                            <th><h5>21 - 21.4</h5></th>
+                          </tr>
+                          <tr>
+                            <th><h5 class="bold">40W</h5></th>
+                            <th><h5>21.6 - 22.3</h5></th>
+                            <th><h5>21 - 21.4</h5></th>
+                          </tr>
+                          <tr>
+                            <th><h5 class="bold">41W</h5></th>
+                            <th><h5>21.6 - 22.3</h5></th>
+                            <th><h5>21 - 21.4</h5></th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="tilte-top">
+                      <img src="assets/icons/Group 28.png" alt="" />
+                      <h4><span class="bold">Đời thường</span> không dây</h4>
+                    </div>
+                    <div class="card-custom none-clip-path">
+                      <table class="table custom-table">
+                        <thead>
+                          <tr>
+                            <th><p>size</p></th>
+                            <th><p>bề dài chân (cm)</p></th>
+                            <th><p>bề dài chân (cm)</p></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th><h5 class="bold">35W</h5></th>
+                            <th><h5>21.6 - 22.3</h5></th>
+                            <th><h5>21 - 21.4</h5></th>
+                          </tr>
+                          <tr>
+                            <th><h5 class="bold">36W</h5></th>
+                            <th><h5>21.6 - 22.3</h5></th>
+                            <th><h5>21 - 21.4</h5></th>
+                          </tr>
+                          <tr>
+                            <th><h5 class="bold">37W</h5></th>
+                            <th><h5>21.6 - 22.3</h5></th>
+                            <th><h5>21 - 21.4</h5></th>
+                          </tr>
+                          <tr>
+                            <th><h5 class="bold">38W</h5></th>
+                            <th><h5>21.6 - 22.3</h5></th>
+                            <th><h5>21 - 21.4</h5></th>
+                          </tr>
+                          <tr>
+                            <th><h5 class="bold">39W</h5></th>
+                            <th><h5>21.6 - 22.3</h5></th>
+                            <th><h5>21 - 21.4</h5></th>
+                          </tr>
+                          <tr>
+                            <th><h5 class="bold">40W</h5></th>
+                            <th><h5>21.6 - 22.3</h5></th>
+                            <th><h5>21 - 21.4</h5></th>
+                          </tr>
+                          <tr>
+                            <th><h5 class="bold">41W</h5></th>
+                            <th><h5>21.6 - 22.3</h5></th>
+                            <th><h5>21 - 21.4</h5></th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="item">
+            <h3>chăm sóc giày</h3>
+            <button class="btn-toggle" onclick="khuyenMai()">
+              <img src="assets/icons/plus.png" alt="" id="btn-plus-3" />
+              <img src="assets/icons/minus.png" alt="" id="btn-minus-3" />
+            </button>
+          </div>
+          <div id="csg" class="toggle-div">
+            <hr class="hr-2" />
+            <div class="row">
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold">giày</h4>
+              </div>
+              <div class="item-flex col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold">da / vải</h4>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h5>
+                  với các sản phẩm da bạn nhớ tránh dính nước, dính mưa và nếu
+                  cần làm sạch xin hãy tìm đến cách dịch vụ uy tín !
+                  <br /><br />
+                  bạn có thể làm vệ sinh giày vải theo cách bên dưới : <br />—
+                  pha loãng dầu gội / dầu tắm <br />— dùng bàn chải đánh răng
+                  nhẹ nhàng chải lên bề mặt giày bị dính bẩn <br />— rửa sạch xà
+                  bông với nuớc <br />— bọc những nơi bị thấm ướt bằng giấy ăn
+                  để giày được khô hoàn toàn <br />— phơi ở nơi râm mát, tránh
+                  ánh nắng trực tiếp
+                </h5>
+                <div class="card-color">
+                  <button class="btn-conf">xem video</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="item">
+            <h3>phương thức thanh toán</h3>
+            <button class="btn-toggle" onclick="phuongThucThanhToan()">
+              <img src="assets/icons/plus.png" alt="" id="btn-plus-4" />
+              <img src="assets/icons/minus.png" alt="" id="btn-minus-4" />
+            </button>
+          </div>
+          <div id="pttt" class="toggle-div">
+            <hr class="hr-2" />
+            <div class="row">
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h4 class="bold">các phương thức</h4>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h5>
+                  Một chấp nhận phương thức COD (thanh toán khi nhận hàng) và
+                  thanh toán thẻ, thanh toán qua ví điện tử trực tuyến khi mua
+                  hàng tại www.motdoigiay.vn/shop
+                </h5>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="item">
+            <h3>chính sách bảo hành và đổi trả</h3>
+            <button class="btn-toggle" onclick="chinhSachDoiTra()">
+              <img src="assets/icons/plus.png" alt="" id="btn-plus-5" />
+              <img src="assets/icons/minus.png" alt="" id="btn-minus-5" />
+            </button>
+          </div>
+          <div id="csdt" class="toggle-div">
+            <hr class="hr-2" />
+            <div class="row">
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold">giày</h4>
+              </div>
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold">điều kiện chung</h4>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h5>
+                  Một thực hiện chính sách đổi – trả dễ dàng để bạn luôn vui khi
+                  mua hàng ! các sản phẩm giày của Một đều được hưởng chính sách
+                  đổi – trả trong vòng 30 ngày kể từ ngày giày được giao đi, khi
+                  thoả các điều kiện sau : — giày chưa mang (đế còn mới nguyên)
+                  — giày còn nguyên vẹn không hư hỏng — túi và hộp giày còn mới
+                  nguyên, không hư hỏng và chưa qua sử dụng — mời bạn lưu ý các
+                  điều sau khi đổi – trả Một sản phẩm :
+                </h5>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold"></h4>
+              </div>
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold">với trả hàng</h4>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h5>
+                  Một sẽ khấu trừ phí lưu kho 100.000đ/một đôi giày, khoản này
+                  chưa bao gồm tiền phí giao nhận hàng – tức là bạn sẽ phải chịu
+                  tiền phí vận chuyển khi trả lại sản phẩm và khoản tiền Một
+                  chuyển lại cho bạn sẽ bị trừ đi 100.000đ/một đôi giày
+                </h5>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold"></h4>
+              </div>
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold">với đổi hàng</h4>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h5>
+                  Một sẽ không khấu trừ phí lưu kho với trường hợp đổi giày tuy
+                  nhiên bạn sẽ phải chịu tiền phí vận chuyển trong quá trình đổi
+                  sản phẩm chính sách đổi giày chỉ áp dụng đổi đồng giá; tức
+                  giày chất liệu nào sẽ được đổi size, màu, kiểu, cùng chất
+                  liệu, cùng giá bán; không áp dụng đổi khác chất liệu với các
+                  sản phẩm được mua tại các điểm bán của Một đối tác, bạn vui
+                  lòng đổi trả tại đúng điểm bán nếu bạn nghi ngờ sản phẩm mình
+                  mua mắc phải lỗi sản xuất, liên hệ ngay với Một qua e-mail
+                  hello@motdoigiay.vn hoặc trang facebook của Một
+                  www.facebook.com/motdoigiay; chúng tôi sẽ giải quyết các
+                  trường hợp đổi – trả nhanh nhất có thể nếu bạn có nhầm lẫn
+                  trong khi mua hàng, đừng ngần ngại tìm đến team Một. chúng tôi
+                  sẽ làm mọi điều tốt nhất để hỗ trợ bạn trong khoảng thời gian
+                  ngắn nhất
+                </h5>
+              </div>
+            </div>
+            <hr class="hr-2" />
+            <div class="row">
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold">áo mưa</h4>
+              </div>
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <!-- <h4 class="bold">điều kiện chung</h4> -->
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h5>
+                  — Một áp dụng chính sách 1 đổi 1 cho các sản phẩm áo mưa mắc
+                  phải lỗi sản xuất — với các trường hợp đổi màu / size, Một chỉ
+                  áp dụng đổi khi áo mưa còn nguyên trong bao chưa xé — Một
+                  không áp dụng chính sách trả hàng với áo mưa
+                </h5>
+              </div>
+            </div>
+            <hr class="hr-2" />
+            <div class="row">
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold">phụ kiện</h4>
+              </div>
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <!-- <h4 class="bold">điều kiện chung</h4> -->
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h5>
+                  — chỉ áp dụng chính sách 1 đổi 1 khi sản phẩm mắc lỗi sản xuất
+                  — không áp dụng chính sách đổi - trả với hàng đúng quy cách
+                </h5>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="item">
+            <h3>liên hệ</h3>
+            <button class="btn-toggle" onclick="lienHe()">
+              <img src="assets/icons/plus.png" alt="" id="btn-plus-6" />
+              <img src="assets/icons/minus.png" alt="" id="btn-minus-6" />
+            </button>
+          </div>
+          <div id="lh" class="toggle-div">
+            <hr class="hr-2" />
+            <div class="row">
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h4 class="bold">bằng điện thoại</h4>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h5>
+                  số hotline : nhận điện từ 09:30 - 22:00, thứ Hai đến Chủ Nhật
+                </h5>
+                <h3 class="bold">0774164406</h3>
+              </div>
+            </div>
+            <hr class="hr-2" />
+            <div class="row">
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h4 class="bold">bằng facebook</h4>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h5>chat với Một từ 09:30 – 18:00; từ Thứ Hai đến Thứ Sáu</h5>
+                <div class="d-flex align-items-center">
+                  <img src="assets/icons/Facebook-black.png" alt="" />
+                  <h3 class="bold ml-3" style="margin-bottom: 0">
+                    facebook.com/motdoigiay
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <hr class="hr-2" />
+            <div class="row">
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h4 class="bold">bằng email</h4>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12">
+                <h5>
+                  bạn vui lòng gửi email đến hello@motdoigiay.vn hoặc điền vào
+                  form dưới đây, Một sẽ trả lời bạn trong thời gian sớm nhất
+                </h5>
+                <div class="card-custom none-clip-path">
+                  <input type="text" placeholder="tên đầy đủ">
+                  <input type="email" placeholder="email của bạn">
+                  <input type="text" placeholder="nội dung">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="my-footer">
+      <div class="hero-footer d-flex justify-content-between">
+        <div class="col-one">
+          <h4>thiết kế tại Việt Nam</h4>
+          <div class="menu-footer">
+            <ul class="menu-one">
+              <li>giày / dép</li>
+              <li>áo mưa</li>
+              <li>phụ kiện</li>
+            </ul>
+            <ul class="menu-two">
+              <li>câu-chuyện</li>
+              <li>nơi-bán</li>
+              <li>thắc-mắc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-two">
+          <p>giữ liên lạc nhé?</p>
+          <p>điền địa chỉ e-mail để nhận mọi tin tức và quà tặng từ Một</p>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email của bạn"
+          />
+          <span class="enter-input">
+            <img src="assets/icons/right-white.png" alt="" />
+          </span>
+          <div class="logo-social">
+            <img src="assets/icons/Facebook.png" alt="" />
+            <img src="assets/icons/insta.png" alt="" />
+            <img src="assets/icons/Bitmap.png" alt="" />
+            <!-- <span>&#169 2021 Mot</span>      -->
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function veMotSanPham() {
+        var x = document.getElementById("vmsp");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          document.getElementById("btn-plus-1").style.display = "none";
+          document.getElementById("btn-minus-1").style.display = "block";
+        } else {
+          x.style.display = "none";
+          document.getElementById("btn-plus-1").style.display = "block";
+          document.getElementById("btn-minus-1").style.display = "none";
+        }
+      }
+
+      function doSizeTheNao() {
+        var x = document.getElementById("dstn");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          document.getElementById("btn-plus-2").style.display = "none";
+          document.getElementById("btn-minus-2").style.display = "block";
+        } else {
+          x.style.display = "none";
+          document.getElementById("btn-plus-2").style.display = "block";
+          document.getElementById("btn-minus-2").style.display = "none";
+        }
+      }
+
+      function khuyenMai() {
+        var x = document.getElementById("csg");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          document.getElementById("btn-plus-3").style.display = "none";
+          document.getElementById("btn-minus-3").style.display = "block";
+        } else {
+          x.style.display = "none";
+          document.getElementById("btn-plus-3").style.display = "block";
+          document.getElementById("btn-minus-3").style.display = "none";
+        }
+      }
+
+      function phuongThucThanhToan() {
+        var x = document.getElementById("pttt");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          document.getElementById("btn-plus-4").style.display = "none";
+          document.getElementById("btn-minus-4").style.display = "block";
+        } else {
+          x.style.display = "none";
+          document.getElementById("btn-plus-4").style.display = "block";
+          document.getElementById("btn-minus-4").style.display = "none";
+        }
+      }
+
+      function chinhSachDoiTra() {
+        var x = document.getElementById("csdt");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          document.getElementById("btn-plus-5").style.display = "none";
+          document.getElementById("btn-minus-5").style.display = "block";
+        } else {
+          x.style.display = "none";
+          document.getElementById("btn-plus-5").style.display = "block";
+          document.getElementById("btn-minus-5").style.display = "none";
+        }
+      }
+
+      function lienHe() {
+        var x = document.getElementById("lh");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          document.getElementById("btn-plus-6").style.display = "none";
+          document.getElementById("btn-minus-6").style.display = "block";
+        } else {
+          x.style.display = "none";
+          document.getElementById("btn-plus-6").style.display = "block";
+          document.getElementById("btn-minus-6").style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
