@@ -1,0 +1,323 @@
+.main {
+  overflow: hidden;
+}
+
+.heading {
+  /* position: relative; */
+  padding-top: 50%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
+    url(../assets/Images/TrangChu/NAV/Hero\ IMG.png) left top / cover no-repeat;
+}
+
+/* navigation */
+.top_nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.top_nav .icon {
+  height: 46px;
+  width: 46px;
+  object-fit: contain;
+}
+
+.container {
+  margin-right: 0 !important;
+  margin-left: 8.33334% !important;
+  padding: 0 !important;
+  min-width: 100% !important;
+}
+
+/* header content */
+
+.header__content {
+  position: absolute;
+  top: 0;
+  margin-top: calc(var(--nav-height) + 5rem);
+}
+
+.header__content-heading {
+  font-size: var(--text-header-size);
+  line-height: var(--text-header-size);
+  color: var(--white-color);
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.header__content-description {
+  font-size: 2.7rem;
+  line-height: 3.5rem;
+  color: var(--white-color);
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.header__content-btn {
+  background-color: var(--white-color);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+}
+
+/* main product */
+
+.main__product-item {
+  margin-bottom: 120px;;
+}
+
+.main__product-title {
+  padding-top: 6.37%;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+}
+
+.main__product-img img{
+  margin: 2rem 0;
+  width: var(--product-img);
+  height: var(--product-img);
+}
+
+.main__product-description {
+    width: var(--product-img);
+}
+
+.main__product-description-sm {
+  display: block;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.main__product-description-large {
+  display: block;
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+/* main content */
+.main__content {
+  border-top: 1px solid var(--border-color);
+}
+
+.main__content-story {
+  padding: 0;
+  padding-top: 20px;
+}
+
+.main__content-preface {
+  display: block;
+  width: 72%;
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.main__content-btn {
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  margin-top: 40px;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+}
+
+.main__content-slogan {
+  margin-bottom: 80px;
+}
+
+.main__content-slogan-text {
+  font-size: 18.6rem;
+  line-height: 18.6rem;
+  font-weight: 700;
+}
+
+/* slide images */
+.main__insta {
+  border-top: 1px solid var(--border-color);
+}
+
+.main__insta-heading {
+  height: 46px;
+  margin-top: 20px;
+  margin-bottom: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.main__insta-icon {
+  display: block;
+  color: var(--text-color);
+}
+
+.main__insta-hastag {
+  display: block;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+  font-weight: 900;
+  line-height: 35px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.main__insta-list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.main__insta-list::-webkit-scrollbar {
+  display: none;
+}
+
+.main__insta-item {
+  height: 40rem;
+  flex-shrink: 0;
+  margin-right: 4rem;
+}
+
+.main__insta-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 2.4rem;
+}
+
+/* main about */
+.main__about-navigation {
+  border-top: 1px solid var(--border-color);
+  padding: 0;
+  position: relative;
+  display: flex;
+  /* width: 100%; */
+}
+
+.main__about-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__about-item {
+  line-height: 0;
+  padding-top: 20px;
+  height: 5.7px;
+  line-height: 5.7px;
+}
+
+.main__about-item--active {
+  border-top: 8px solid var(--border-color);
+}
+
+.main__about-title {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+  font-weight: 900;
+  padding-top: 2rem;
+}
+
+.main__about-title p {
+  margin: 0;
+}
+
+.main__about-content {
+  display: block;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 48px;
+  width: 722px;
+  margin-bottom: 20px;
+}
+
+.main__about-readmore {
+  display: block;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  font-weight: 400;
+}
+
+.main__about-link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* footer */
+
+.my-footer {
+  background-color: #111820;
+  color: #7d868c;
+  padding: 30px 120px;
+}
+
+.my-footer h4 {
+  color: #fff;
+}
+
+.menu-footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-footer .menu-one {
+  margin-bottom: 2.5rem;
+}
+
+.menu-footer ul li {
+  list-style: none;
+  margin-bottom: 3px;
+}
+
+.menu-footer ul li:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.logo-social {
+  margin-top: 5rem;
+}
+
+.logo-social img {
+  height: 34px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.logo-social span {
+  float: right;
+}
+
+.my-footer .col-two input::placeholder {
+  color: #fff;
+}
+
+.enter-input {
+  position: absolute;
+  margin-left: -2em;
+}
+
+.enter-input:hover {
+  cursor: pointer;
+}
+
+.enter-input img {
+  width: 50%;
+}
+
+.my-footer .col-two input {
+  width: 100%;
+  border: none;
+  background: none;
+  border-bottom: 1px solid white;
+  color: #fff;
+}
+

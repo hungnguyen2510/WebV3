@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="http://fonts.cdnfonts.com/css/lab-grotesque-medium"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="shop.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="range.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="reponsive.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="footer.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="rangeSlider.js"></script>
+  </head>
+  <body>
+    <div class="top_nav d-flex justify-content-between py-4">
+      <div class="menu">
+        <a href="">
+          <img src="assets/icons/menu.svg" alt="" class="icon" />
+        </a>
+      </div>
+      <div class="logo">
+        <a href="">
+          <img src="assets/icons/logo.svg" alt="" class="icon" />
+        </a>
+      </div>
+      <div class="user">
+        <a href="">
+          <img src="assets/icons/user.svg" alt="" class="icon" />
+        </a>
+        <a href="">
+          <img src="assets/icons/sneaker.svg" alt="" class="icon" />
+        </a>
+        <span class="number-quantity" style="font-weight: bold">0</span>
+      </div>
+    </div>
+    <div class="header container-left my-5">
+      <h1>Một cho mọi người</h1>
+      <hr />
+      <div class="menu_top" id="myTopnav">
+        <div class="">
+          <a href="#" class="">tất cả <span class="number-nav">33</span></a>
+          <a href="#">giày <span class="number-nav">12</span></a>
+          <a href="#">dép <span class="number-nav">3</span></a>
+          <a href="#">phụ kiện <span class="number-nav">4</span></a>
+          <a href="#">áo mưa <span class="number-nav">5</span></a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+            >&#8595;</a
+          >
+        </div>
+        <div class="mr-3">
+          <button
+            type="button"
+            class="btn"
+            data-toggle="modal"
+            data-target="#modalColor"
+          >
+            lọc
+            <img
+              src="assets/icons/plus.png"
+              alt=""
+              style="width: 32px; height: 32px"
+            />
+          </button>
+        </div>
+        <div class="modal fade" id="modalColor" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-body">
+                <h2>lọc</h2>
+                <div class="d-flex justify-content-between">
+                  <div class="col-one">
+                    <hr />
+                    <h4>màu</h4>
+                    <div class="btn-colors">
+                      <button class="btn-size color-green"></button>
+                      <button class="btn-size color-blue"></button>
+                      <button class="btn-size color-purple"></button>
+                      <button class="color-pink"></button>
+                      <button class="color-red"></button>
+                      <button class="color-orange"></button>
+                      <button class="color-yellow"></button>
+                      <button class="color-black"></button>
+                      <button class="color-grey-photo"></button>
+                      <button class="color-grey-dark"></button>
+                    </div>
+                    <hr />
+                    <h4>giá <span>(ngàn VNĐ)</span></h4>
+                    <div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div id="slider-range"></div>
+                        </div>
+                      </div>
+                      <div class="row slider-labels justify-content-between">
+                        <div class="col-xs-6 caption">
+                          <span id="slider-range-value1"></span>
+                        </div>
+                        <div class="col-xs-6 text-right caption">
+                          <span id="slider-range-value2"></span>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <form>
+                            <input type="hidden" name="min-value" value="" />
+                            <input type="hidden" name="max-value" value="" />
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-two">
+                    <hr />
+                    <div style="position: relative">
+                      <h4>size</h4>
+                      <span
+                        ><img src="assets/icons/Ruler.png" alt="" /> đo size làm
+                        sao?</span
+                      >
+                    </div>
+                    <div class="item">
+                      <p>giày nữ</p>
+                      <div class="size d-flex justify-content-between">
+                        <button class="btn-size">35</button>
+                        <button class="btn-size">37</button>
+                        <button class="btn-size">36</button>
+                        <button class="btn-size">38</button>
+                        <button class="btn-size">39</button>
+                        <button class="btn-size">40</button>
+                        <button class="btn-size">41</button>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <p>giày nam</p>
+                      <div class="size d-flex justify-content-between">
+                        <button class="btn-size">36</button>
+                        <button class="btn-size">35</button>
+                        <button class="btn-size">37</button>
+                        <button class="btn-size">38</button>
+                        <button class="btn-size">39</button>
+                        <button class="btn-size">40</button>
+                        <button class="btn-size">41</button>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <p>size unisex</p>
+                      <div class="size d-flex justify-content-between">
+                        <button class="btn-size">S</button>
+                        <button class="btn-size">M</button>
+                        <button class="btn-size">L</button>
+                        <button class="btn-size">XL</button>
+                        <button class="btn-size">Kids</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-one container">
+      <div class="row justify-content-between">
+        <div class="col-one col col-xl-6 col-mb-6 col-sm-12">
+          <div class="text">
+            <h2>
+              Một đôi <br />
+              Đời mới
+            </h2>
+            <p>đời mới êm đẹp</p>
+          </div>
+          <img src="assets/images/273A6299 1.png" alt="" />
+        </div>
+        <div class="col-two col col-xl-6 col-mb-6 col-sm-12">
+          <div class="item">
+            <div class="content">
+              <img src="assets/images/profile.png" alt="" />
+              <div class="text">
+                <p class="description">da Đời-mới</p>
+                <p class="money">1 470 000 VND</p>
+              </div>
+              <div class="btn-colors">
+                <button class="color-black"></button>
+                <button class="color-grey"></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <img src="assets/images/front.png" alt="" />
+              <div class="text">
+                <p class="description">da Đời-mới</p>
+                <p class="money">1 470 000 VND</p>
+              </div>
+              <div class="btn-colors">
+                <button class="color-red"></button>
+                <button class="color-yellow"></button>
+                <button class="color-grey-dark"></button>
+                <button class="color-grey-photo"></button>
+                <button class="color-purple"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-two">
+      <div class="row container">
+        <div class="col-one col col-xl-8 col-mb-6 col-sm-12">
+          <h2 class="title">
+            bản đặc biệt <br />
+            tôi & ta
+          </h2>
+          <div class="image">
+            <img src="assets/images/T&T_Poster-21.png" alt="" class="img" />
+          </div>
+        </div>
+
+        <div class="col-two col col-xl-4 col-mb-6 col-sm-12">
+          <div class="content">
+            <p>
+              vải Đời-mới — phiên bản đặc-biệt cho mùa lễ hội 2021. Dáng hình
+              quen thuộc dưới Một làn da mới: Một kết-hợp với hoạ sĩ Trần Ngọc
+              Sinh
+            </p>
+            <button class="btn-shop">mua liền !</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-three container">
+      <div class="row justify-content-between">
+        <div class="col-two col col-xl-6 col-mb-6 col-sm-12">
+          <div class="item">
+            <div class="content">
+              <img src="assets/images/profile 1.png" alt="" />
+              <div class="text">
+                <p class="description">da Đời-thường</p>
+                <p class="money">1 470 000 VND</p>
+              </div>
+              <div class="btn-colors">
+                <button class="color-black"></button>
+                <button class="color-grey"></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <img src="assets/images/DT_profile 1.png" alt="" />
+              <div class="text">
+                <p class="description">da Đời-thường</p>
+                <p class="money">1 470 000 VND</p>
+              </div>
+              <div class="btn-colors">
+                <button class="color-red"></button>
+                <button class="color-yellow"></button>
+                <button class="color-grey-dark"></button>
+                <button class="color-grey-photo"></button>
+                <button class="color-purple"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-one col col-xl-6 col-mb-6 col-sm-12">
+          <div class="text">
+            <h2>
+              Một đôi <br />
+              Đời thường
+            </h2>
+            <p>không dây không lo nghĩ</p>
+          </div>
+          <img src="assets/images/saturated31.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="section-four">
+      <div class="row container">
+        <div class="col-one col col-xl-8 col-mb-6 col-sm-12">
+          <h2 class="title">
+            triết-lý <br />
+            thiết-kế
+          </h2>
+          <div class="image">
+            <img src="assets/images/mot-shoes-dezeen-shortlist 1.png" alt="" class="img" />
+          </div>
+        </div>
+
+        <div class="col-two col col-xl-4 col-mb-6 col-sm-12">
+          <div class="content">
+            <p>
+              Một là thương hiệu Việt Nam đầu tiên được vào top 5 hạng mục Thiết
+              kế Phục sức của Giải thưởng Thiết kế Dezeen Awards 2019 (Anh Quốc)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-five container">
+      <div class="row justify-content-between">
+        <div class="col-one col col-xl-6 col-mb-6 col-sm-12">
+          <div class="text">
+            <h2>
+              dép Ngang
+            </h2>
+            <p>ngang mà sang</p>
+          </div>
+          <img src="assets/images/Rectangle 13.png" alt="" />
+        </div>
+        <div class="col-two col col-xl-6 col-mb-6 col-sm-12">
+          <div class="item">
+            <div class="content">
+              <img src="assets/images/Capture d’écran 2021-03-17 à 22.45 1.png" alt="" />
+              <div class="text">
+                <p class="description">dép Ngang</p>
+                <p class="money">390 000 VND</p>
+              </div>
+              <div class="btn-colors">
+                <button class="color-black"></button>
+                <button class="color-grey"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-six container">
+      <div class="row justify-content-between">
+        <div class="col-two col col-xl-6 col-mb-6 col-sm-12">
+          <div class="item">
+            <div class="content">
+              <img src="assets/images/Capture d’écran 2021-03-18 à 00.08 1.png" alt="" />
+              <div class="text">
+                <p class="description">áo mưa</p>
+                <p class="money">290 000 VND</p>
+              </div>
+              <div class="btn-colors">
+                <button class="color-black"></button>
+                <button class="color-grey"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-one col col-xl-6 col-mb-6 col-sm-12">
+          <div class="text">
+            <h2>
+              áo mưa Nhanh
+            </h2>
+            <p>bất chấp thời tiết</p>
+          </div>
+          <img src="assets/images/Rectangle 10-1.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="section-seven container">
+      <div class="row justify-content-between">
+        <div class="col-one col col-xl-6 col-mb-6 col-sm-12">
+          <div class="text">
+            <h2>
+              phụ kiện
+            </h2>
+            <p>thích thì mua</p>
+          </div>
+          <img src="assets/images/Rectangle 10.png" alt="" />
+        </div>
+        <div class="col-two col col-xl-6 col-mb-6 col-sm-12">
+          <div class="item">
+            <div class="content">
+              <img src="assets/images/L_front 1.png" alt="" />
+              <div class="text">
+                <p class="description">một cặp lót giày</p>
+                <p class="money">120 000 VND</p>
+              </div>
+              <div class="btn-colors">
+                <button class="color-black"></button>
+                <button class="color-grey"></button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <img src="assets/images/Wadensocken-plus_schwarz 1.png" alt="" />
+              <div class="text">
+                <p class="description">vớ Tất-cả</p>
+                <p class="money">120 000 VND</p>
+              </div>
+              <div class="btn-colors">
+                <button class="color-red"></button>
+                <button class="color-yellow"></button>
+                <button class="color-grey-dark"></button>
+                <button class="color-grey-photo"></button>
+                <button class="color-purple"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="my-footer">
+      <div class="hero-footer d-flex justify-content-between">
+        <div class="col-one">
+          <h4>thiết kế tại Việt Nam</h2>
+          <div
+            class="menu-footer"
+          >
+            <ul class="menu-one">
+              <li>giày / dép</li>
+              <li>áo mưa</li>
+              <li>phụ kiện</li>
+            </ul>
+            <ul class="menu-two">
+              <li>câu-chuyện</li>
+              <li>nơi-bán</li>
+              <li>thắc-mắc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-two">
+          <p>giữ liên lạc nhé?</p>
+          <p>điền địa chỉ e-mail để nhận mọi tin tức và quà tặng từ Một</p>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email của bạn"
+          />
+          <span class="enter-input">
+            <img src="assets/icons/right-white.png" alt="" />
+          </span>
+          <div class="logo-social">
+            <img src="assets/icons/Facebook.png" alt="" />
+            <img src="assets/icons/insta.png" alt="" />
+            <img src="assets/icons/Bitmap.png" alt="" />
+            <span>&#169 2021 Mot</span>     
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        $(".btn-size").click(function () {
+          $(this).toggleClass("active");
+        });
+      });
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

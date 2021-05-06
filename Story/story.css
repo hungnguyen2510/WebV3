@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  font-family: Lab Grotesque VN;
+  font-style: normal;
+}
+h1 {
+  font-size: 112px !important;
+  line-height: 112px !important;
+}
+
+h2 {
+  font-size: 64px !important;
+  line-height: 68px !important;
+}
+
+h3 {
+  font-size: 40px !important;
+  line-height: 48px !important;
+}
+
+h4 {
+  font-size: 27px !important;
+  line-height: 35px !important;
+}
+
+h5 {
+  font-size: 17px !important;
+  line-height: 27px !important;
+}
+
+.header {
+  position: relative;
+  color: #fff;
+}
+
+.top_nav {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  right: 0;
+}
+
+.number-quantity {
+  color: #fff;
+}
+
+.container-conf {
+  padding: 75px;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.my-container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.banner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("assets/images/273A4837 1.png");
+  width: 100%;
+  height: 100vh;
+  padding: 100px 140px;
+  background-position: center 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description {
+  width: 40vw;
+}
+
+.description span {
+  font-weight: bold;
+}
+
+.section-one {
+  background-color: #b83d24;
+}
+
+.section-two {
+  background-color: #00416a;
+}
+
+.section-three {
+  background-color: #12312b;
+}
+
+.section {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #fff;
+}
+
+.section .col-two .content .btn-shop {
+  padding: 10px 40px 11px;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: none;
+  border: none;
+  color: #111820;
+}
+
+.section .container {
+  padding: 120px 140px;
+  position: relative;
+  min-width: 100%;
+}
+
+.section .col-one {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section .col-one .title {
+  flex: 0.3;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.section .col-one .image {
+  flex: 0.7;
+  max-width: 480px;
+  display: flex;
+  justify-content: center;
+}
+
+.section .col-two {
+  position: relative;
+  max-width: 25%;
+}
+.section .content {
+  position: absolute;
+  bottom: 0;
+}
+
+.section .hero h3 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-left: 18%;
+  left: 0;
+  position: absolute;
+}
+
+.grid {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.section-four {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.section-four .col-two {
+  padding-top: 10em;
+}
+
+.section-four .item {
+  max-width: 480px;
+  margin-bottom: 5em;
+}
+
+.section-four .item span{
+  margin-top: 15px;
+}
