@@ -42,11 +42,9 @@ hr {
   border-bottom: 1px solid #111820 !important;
 }
 
-.custom-flex{
+.custom-flex {
   flex-direction: row-reverse;
 }
-
-
 
 .reset-spacing {
   margin: 0 !important;
@@ -281,4 +279,70 @@ hr {
 .owl-next span,
 .owl-prev span {
   font-size: 25px;
+}
+
+/* SEND PHOTO */
+
+.section-send-photo {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.section-send-photo p {
+  color: #7d868c;
+}
+
+.section-send-photo input[type="text"] {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  line-height: 27px;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.textarea textarea {
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.btn-disable {
+  opacity: 0.2;
+}
+
+#type-image {
+  color: #7d868c;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+[type="file"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}
+
+[type="file"] + label {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 40px;
+  width: 480px;
+  height: 120px;
+}
+
+[type="file"]:focus + label,
+[type="file"] + label:hover {
+  background-color: #f15d22;
+}
+
+[type="file"]:focus + label {
+  outline: 1px dotted #000;
 }

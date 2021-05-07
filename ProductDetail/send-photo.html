@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Send Photo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="http://fonts.cdnfonts.com/css/lab-grotesque-medium"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="productDetail.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="reponsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../assets/css/footer.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/owlcarousel/owl.carousel.min.js"></script>
+  </head>
+  <body>
+    <div class="section section-send-photo">
+      <h2 class="bold">gửi hình ảnh của bạn</h2>
+      <p>cảm ơn bạn</p>
+      <div class="row">
+        <div class="col-xl-6 col-md-12 col-sm-12">
+          <input type="text" placeholder="tên" name="txtName" />
+          <input type="text" placeholder="địa chỉ e-mail" name="txtName" />
+          <div class="icons-social">
+            <img src="../assets/icons/Facebook-black.png" alt="" />
+            <img src="../assets/icons/ins-black.png" alt="" />
+          </div>
+          <hr />
+          <div class="textarea">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="w-100"
+              placeholder="thông điệp"
+            ></textarea>
+          </div>
+
+          <button class="btn-conf btn-black-white btn-disable">đăng tải</button>
+        </div>
+        <div class="col-xl-6 col-md-12 col-sm-12">
+          <input type="file" id="file-image" onchange="showname()" />
+          <label for="file">
+            <div class="d-flex align-items-center">
+              <img src="../assets/icons/cloud.png" alt="" />
+              <h5 class="bold mb-0 ml-4">
+                kéo & thả ảnh để đăng tải <br />
+                <span id="type-image">TEST</span>
+              </h5>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <script>
+      function showname() {
+        const fileImage = document.getElementById("file-image");
+        const typeImage = document.getElementById("type-image");
+        typeImage.innerHTML = fileImage.item(0).name;
+        console.log(fileImage.item(0).name);
+        // alert("Selected file: " + name.files.item(0).name);
+        // alert("Selected file: " + name.files.item(0).size);
+        // alert("Selected file: " + name.files.item(0).type);
+      }
+    </script>
+  </body>
+</html>
