@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  font-family: Lab Grotesque VN;
+  font-style: normal;
+}
+h1 {
+  font-size: 112px !important;
+  line-height: 112px !important;
+}
+
+h2 {
+  font-size: 64px !important;
+  line-height: 68px !important;
+}
+
+h3 {
+  font-size: 40px !important;
+  line-height: 48px !important;
+}
+
+h4 {
+  font-size: 27px !important;
+  line-height: 35px !important;
+}
+
+h5 {
+  font-size: 17px !important;
+  line-height: 27px !important;
+}
+
+.reset-spacing {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.border-custom {
+  border: 1px solid black !important;
+}
+
+.section-one .col-one {
+  background-color: #ebeded;
+}
+
+.content-top {
+  padding: 120px 60px;
+}
+
+.content-bottom p {
+  margin-bottom: 0 !important;
+}
+
+.item-choose {
+  padding: 10px 40px !important;
+  position: relative;
+}
+
+.item-choose img {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  margin-right: 15%;
+}
+
+.color {
+  background-color: #ad2c35;
+  height: 87px;
+}
+
+.btn-conf {
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+.btn-add-card {
+  background-color: #111820;
+  color: white;
+  width: 100%;
+  height: 80px;
+}
+
+.carousel  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.carousel-indicators {
+  position: initial !important;
+  flex-direction: column !important;
+  margin-left: 0 !important;
+  margin-right: 30% !important;
+}
+
+.carousel-indicators li {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #111820 !important;
+  border-radius: 50% !important;
+}
+
+.carousel-indicators .active {
+  background-color: #111820 !important;
+  height: 40px !important;
+  border-radius: 25% !important;
+}
