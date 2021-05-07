@@ -18,12 +18,25 @@
     box-sizing: inherit;
 }
 
+.container {
+    padding:0 0 0 8.33334% !important;
+    min-width: 100% !important;
+    margin: 0 !important;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 68px;
+  
+  }
+
 h1, h4, h5 {
     /* padding: 0 !important; */
     margin: 0;
 }
 
-body {
+body, html {
     margin: 0;
     padding: 0;
 }

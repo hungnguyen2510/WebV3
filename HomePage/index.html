@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-
+    <link rel="stylesheet" href="../assets/css/footer.css" />
     <link
       href="http://fonts.cdnfonts.com/css/lab-grotesque-medium"
       rel="stylesheet"
@@ -49,18 +49,54 @@
       <div class="app">
         <div class="top_nav d-flex justify-content-between px-5 py-4">
           <div class="menu">
-            <a href="">
-              <img
-                src="assets/Icon/TrangChu/NAV/menu.svg"
-                alt=""
-                class="icon"
-              />
-            </a>
+            <nav class="nav-content">
+              <div class="nav-btn" id="" onclick="ToggleNav()">
+                <img
+                  src="../assets/icons/menu.svg"
+                  alt=""
+                  class="icon"
+                />
+              </div>
+
+              <div id="overlay-element" class="nav-overlay"></div>
+
+              <div class="nav-slider" id="nav-slider-element">
+                <div class="nav-btn-close" onclick="CloseNav()">
+                  <img src="../assets/icons/Close.png" alt="" />
+                </div>
+                <ul class="nav-list">
+                  <li class="nav-list-item">
+                    <h2>
+                      <a href="" class="nav-link">câu-chuyện</a>
+                    </h2>
+                  </li>
+                  <li class="nav-list-item">
+                    <h2>
+                      <a href="" class="nav-link">cửa-hàng</a>
+                    </h2>
+                  </li>
+                  <li class="nav-list-item">
+                    <h2>
+                      <a href="" class="nav-link">nơi-bán</a>
+                    </h2>
+                  </li>
+                  <li class="nav-list-item">
+                    <h2>
+                      <a href="" class="nav-link">thắc-mắc</a>
+                    </h2>
+                  </li>
+                  <li class="nav-list-item">
+                    <div class="nav-ship-to"></div>
+                    <div class="nav-language"></div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
           <div class="logo">
             <a href="">
               <img
-                src="assets/Icon/TrangChu/NAV/Logo/Logo.png"
+                src="../assets/icons/Logo.png"
                 alt=""
                 class="icon"
               />
@@ -69,14 +105,14 @@
           <div class="user">
             <a href="">
               <img
-                src="assets/Icon/TrangChu/NAV/user.svg"
+                src="../assets/icons/user.svg"
                 alt=""
                 class="icon"
               />
             </a>
             <a href="">
               <img
-                src="assets/Icon/TrangChu/NAV/sneaker.svg"
+                src="../assets/icons/sneaker.svg"
                 alt=""
                 class="icon"
               />
@@ -99,17 +135,17 @@
         </div>
 
         <div class="container">
-          <div class="main__product mx-auto mb-3">
+          <div class="main__product mb-3">
             <div class="row m-0">
               <h4 class="main__product-title bold">xem hết mọi thứ</h4>
             </div>
 
             <div class="row m-0">
-              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-0">
+              <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 p-0">
                 <div class="main__product-item">
                   <div class="main__product-img">
                     <img
-                      src="assets/Images/TrangChu/Body/img-left-1 (1).png"
+                      src="../assets/images/img-left-1 (1).png"
                       alt=""
                     />
                   </div>
@@ -124,7 +160,7 @@
                 <div class="main__product-item">
                   <div class="main__product-img">
                     <img
-                      src="assets/Images/TrangChu/Body/img-left-2.png"
+                      src="../assets/images/img-left-2.png"
                       alt=""
                     />
                   </div>
@@ -136,11 +172,13 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-0 main__product-mt">
+              <div
+                class="col-xl-5 col-lg-6 col-md-12 col-sm-12 p-0 main__product-mt"
+              >
                 <div class="main__product-item mr-0">
                   <div class="main__product-img">
                     <img
-                      src="assets/Images/TrangChu/Body/img-right-1.png"
+                      src="../assets/images/img-right-1.png"
                       alt=""
                     />
                   </div>
@@ -155,7 +193,7 @@
                 <div class="main__product-item mr-0">
                   <div class="main__product-img">
                     <img
-                      src="assets/Images/TrangChu/Body/img-right-2.png"
+                      src="../assets/images/img-right-2.png"
                       alt=""
                     />
                   </div>
@@ -173,12 +211,12 @@
           <div class="main__content">
             <div class="row p-0 m-0">
               <div class="main__content-story">
-                <span class="main__content-preface">
+                <h3 class="main__content-preface m-0">
                   Một biểu trưng cho tinh thần Việt Nam hiện đại. Một làm các
                   sản phẩm bạn cần trong đời sống thường ngày. Một tự chủ trong
                   thiết kế, đảm bảo chất lượng gia công tỉ mỉ - bền đẹp với thời
                   gian mà giá cả lại phải chăng.
-                </span>
+                </h3>
                 <button class="main__content-btn btn button-conf mb-132">
                   câu-chuyện
                 </button>
@@ -204,25 +242,40 @@
                 <ul class="main__insta-list">
                   <li class="main__insta-item">
                     <img
-                      src="assets/Images/TrangChu/Body/img1slide.png"
+                      src="../assets/images/img1slide.png"
                       alt=""
                     />
                   </li>
                   <li class="main__insta-item">
                     <img
-                      src="assets/Images/TrangChu/Body/img2slide.png"
+                      src="../assets/images/img2slide.png"
                       alt=""
                     />
                   </li>
                   <li class="main__insta-item">
                     <img
-                      src="assets/Images/TrangChu/Body/img3slide.png"
+                      src="../assets/images/img3slide.png"
                       alt=""
                     />
                   </li>
+
                   <li class="main__insta-item">
                     <img
-                      src="assets/Images/TrangChu/Body/img3slide.png"
+                      src="../assets/images/img3slide.png"
+                      alt=""
+                    />
+                  </li>
+
+                  <li class="main__insta-item">
+                    <img
+                      src="../assets/images/img3slide.png"
+                      alt=""
+                    />
+                  </li>
+
+                  <li class="main__insta-item">
+                    <img
+                      src="../assets/images/img3slide.png"
                       alt=""
                     />
                   </li>
@@ -235,31 +288,31 @@
             <div class="main__about-navigation">
               <div class="main__about-sidebar">
                 <div class="row m-0 mb-5">
-                  <div class="col-xl-5 col-md-4 col-sm-5 p-0">
+                  <div class="col-xl-4 col-md-5 col-sm-6 col-6 p-0">
                     <div class="main__about-title">
-                      <p>nói gì về Một ?</p>
+                      <h4>nói gì về Một ?</h4>
                     </div>
                   </div>
 
-                  <div class="col-xl-7 col-md-8 col-sm-7 p-0 position-relative">
-                    <ul class="main__about-list m-0">
+                  <div class="col-xl-8 col-md-7 col-sm-6 col-6 p-0">
+                    <ul class="main__about-list mb-0">
                       <li class="main__about-item">
                         <img
-                          src="assets/Icon/TrangChu/pow-up/NoiGiVeMot/tinhte.vn-2855788884367194 copie.png"
+                          src="../assets/icons/tinhte.vn-2855788884367194 copie.png"
                           alt=""
                           class="main__about-icon"
                         />
                       </li>
                       <li class="main__about-item main__about-item--active">
                         <img
-                          src="assets/Icon/TrangChu/pow-up/NoiGiVeMot/logo-text 1.png"
+                          src="../assets/icons/logo-text 1.png"
                           alt=""
                           class="main__about-icon"
                         />
                       </li>
                       <li class="main__about-item">
                         <img
-                          src="assets/Icon/TrangChu/pow-up/NoiGiVeMot/Capture d’écran 2021-03-17 à 12.38 1.png"
+                          src="../assets/icons/Capture d’écran 2021-03-17 à 12.38 1.png"
                           alt=""
                           class="main__about-icon"
                         />
@@ -268,21 +321,21 @@
                   </div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-5 col-md-4 col-sm-0"></div>
-                    <div class="col-xl-7 col-md-8 col-sm-12 m-0 p-0">       
-                        <span class="main__about-content">
-                            Một - Niềm tự hào mới của giày Việt... Thương hiệu giày
-                            sinh sau đẻ muộn này nhanh chóng nhận được sự yêu thích từ
-                            giới trẻ nhờ vào thiết kế đơn giản, tinh tế, ôm trọn cổ
-                            chân và chất lượng không thua kém bất kỳ ông lớn nào.
-                          </span>
-                          <span class="main__about-readmore">
-                            - Read more on
-                            <a href="" class="main__about-link"
-                              ><b>Vietcetara.com</b></a
-                            >
-                        </span>
-                    </div>
+                  <div class="col-xl-4 col-md-5 col-sm-0"></div>
+                  <div class="col-xl-8 col-md-7 col-sm-12">
+                    <h3 class="main__about-content px-auto">
+                      Một - Niềm tự hào mới của giày Việt... Thương hiệu giày
+                      sinh sau đẻ muộn này nhanh chóng nhận được sự yêu thích từ
+                      giới trẻ nhờ vào thiết kế đơn giản, tinh tế, ôm trọn cổ
+                      chân và chất lượng không thua kém bất kỳ ông lớn nào.
+                    </h3>
+                    <span class="main__about-readmore">
+                      - Read more on
+                      <a href="" class="main__about-link"
+                        ><b>Vietcetara.com</b></a
+                      >
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -294,11 +347,11 @@
 
     <!-- footer -->
     <footer class="my-footer">
-      <div class="hero-footer d-flex justify-content-between">
+      <div class="d-flex flex-lg-row justify-content-between flex-sm-column">
         <div class="col-one">
-          <h4>thiết kế tại Việt Nam</h2>
+          <h2>thiết kế tại Việt Nam</h2>
           <div
-            class="menu-footer"
+            class="menu-footer d-lg-inline d-sm-flex justify-content-sm-between"
           >
             <ul class="menu-one">
               <li>giày / dép</li>
@@ -322,16 +375,79 @@
             placeholder="email của bạn"
           />
           <span class="enter-input">
-            <img src="assets/icons/right-white.png" alt="" />
+            <img src="../assets/icons/arrow-right.png" alt="" />
           </span>
           <div class="logo-social">
-            <img src="assets/footer/icons/Facebook.png" alt="" />
-            <img src="assets/footer/icons/insta.png" alt="" />
-            <img src="assets/footer/Bitmap.png" alt="" />
-            <span>&#169 2021 Mot</span>     
+            <img src="../assets/icons/Facebook.png" alt="" />
+            <img src="../assets/icons/insta.png" alt="" />
+            <img src="../assets/icons/Bitmap.png" alt="" />
+            <!-- <span>&#169 2021 Mot</span>      -->
           </div>
         </div>
       </div>
     </footer>
+    
+    <!-- cookie -->
+
+    <div id="overlay-cookie" class="cookie-overlay"></div>
+
+    <div class="cookie" id="cookie-element">
+      <div class="cookie-img">
+        <img src="../assets/icons/cookies.png" alt="">
+      </div>
+      <div class="cookie-text">
+        <h5>vô website này là bạn đã đồng ý để chúng tôi xài bánh quy.</h5>
+        <h5>chúng tôi xài bánh quy để đảm bảo mang đến cho bạn một trải nghiệm tuyệt vời cũng như để website chạy mượt mà nhất-có-thể.</h5>
+      </div>
+      <div class="cookie-close-btn" onclick="CloseCookie()">
+        <img src="../assets/icons/closeEmail.png" alt="">
+      </div>
+    </div>
+
+    <div id="email-element" class="your-email" >
+      <div class="your-email-main">
+        <h4>giữ liên lạc nhé?</h4>
+      <h5>điền địa chỉ e-mail để nhận mọi tin tức và quà tặng từ Một</h5>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="email của bạn"
+      />
+      <span class="enter-input">
+        <img src="../assets/icons/right-white.png" alt="" />
+      </span>
+      </div>
+
+      <div class="email-close-btn" onclick="CloseEmail()">
+        <img src="../assets/icons/closeEmail.png" alt="">
+      </div>
+    </div>
+
+    <script>
+      var overlayElement = document.getElementById("overlay-element");
+      var navSliderElement = document.getElementById("nav-slider-element");
+      function ToggleNav() {
+        overlayElement.classList.add("nav-active");
+        navSliderElement.classList.add("nav-active");
+      }
+      function CloseNav() {
+        overlayElement.classList.remove("nav-active");
+        navSliderElement.classList.remove("nav-active");
+      }
+
+      function CloseCookie() {
+        var cookieElement = document.getElementById("cookie-element");
+        var cookieOverlay = document.getElementById("overlay-cookie");
+        cookieElement.classList.add("pop-up-close");
+        cookieOverlay.classList.add("pop-up-close");
+      }
+
+      function CloseEmail() {
+        var emailElement = document.getElementById("email-element");
+        emailElement.classList.add("pop-up-close"); 
+      }
+
+    </script>
   </body>
 </html>
