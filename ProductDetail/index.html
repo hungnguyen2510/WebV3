@@ -36,6 +36,17 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <!-- Default Theme -->
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -51,30 +62,71 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="../assets/owlcarousel/owl.carousel.min.js"></script>
   </head>
   <body>
+    <div class="top_nav d-flex justify-content-between py-4">
+      <div class="menu">
+        <a href="">
+          <img src="../assets/icons/menu-black.png" alt="" class="icon" />
+        </a>
+      </div>
+      <div class="logo">
+        <a href="">
+          <img src="../assets/icons/logo.svg" alt="" class="icon" />
+        </a>
+      </div>
+      <div class="user">
+        <a href="">
+          <img src="../assets/icons/Smiley.svg" alt="" class="icon" />
+        </a>
+        <a href="">
+          <img src="../assets/icons/sneaker-black.png" alt="" class="icon" />
+        </a>
+        <span class="number-quantity" style="font-weight: bold">0</span>
+      </div>
+    </div>
     <div class="section-one">
       <div class="item container-fluid">
-        <div class="row ">
+        <div class="row">
           <div class="col-one col-xl-6 col-md-12 col-sm-12">
-            <div id="carouselOneIndicators" class="carousel slide" data-ride="carousel">
+            <div
+              id="carouselOneIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
               <ol class="carousel-indicators">
-                <li data-target="#carouselOneIndicators" data-slide-to="0" class="active"></li>
+                <li
+                  data-target="#carouselOneIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
                 <li data-target="#carouselOneIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselOneIndicators" data-slide-to="2"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="d-block" src="../assets/images/front.png" alt="First slide">
+                  <img
+                    class="d-block"
+                    src="../assets/images/front.png"
+                    alt="First slide"
+                  />
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block" src="../assets/images/DT_profile 1.png" alt="Second slide">
+                  <img
+                    class="d-block"
+                    src="../assets/images/DT_profile 1.png"
+                    alt="Second slide"
+                  />
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block" src="../assets/images/Capture d’écran 2021-03-17 à 22.45 1.png" alt="Third slide">
+                  <img
+                    class="d-block"
+                    src="../assets/images/Capture d’écran 2021-03-17 à 22.45 1.png"
+                    alt="Third slide"
+                  />
                 </div>
               </div>
-              
             </div>
           </div>
           <div class="col-two col-xl-6 col-md-12 col-sm-12 reset-spacing">
@@ -96,7 +148,7 @@
                 <div class="col-2 reset-spacing">
                   <div class="color"></div>
                 </div>
-                <div class="item-choose col-5" style="border-right: 1px solid;">
+                <div class="item-choose col-5" style="border-right: 1px solid">
                   <p>màu</p>
                   <h4 class="bold">quá đỏ</h4>
                   <img
@@ -122,26 +174,45 @@
         </div>
       </div>
       <div class="item container-fluid">
-        <div class="row ">
+        <div class="row">
           <div class="col-one col-xl-6 col-md-12 col-sm-12">
-            <div id="carouselTwoIndicators" class="carousel slide" data-ride="carousel">
+            <div
+              id="carouselTwoIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
               <ol class="carousel-indicators">
-                <li data-target="#carouselTwoIndicators" data-slide-to="0" class="active"></li>
+                <li
+                  data-target="#carouselTwoIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
                 <li data-target="#carouselTwoIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselTwoIndicators" data-slide-to="2"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="d-block" src="../assets/images/front.png" alt="First slide">
+                  <img
+                    class="d-block"
+                    src="../assets/images/front.png"
+                    alt="First slide"
+                  />
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block" src="../assets/images/DT_profile 1.png" alt="Second slide">
+                  <img
+                    class="d-block"
+                    src="../assets/images/DT_profile 1.png"
+                    alt="Second slide"
+                  />
                 </div>
                 <div class="carousel-item">
-                  <img class="d-block" src="../assets/images/Capture d’écran 2021-03-17 à 22.45 1.png" alt="Third slide">
+                  <img
+                    class="d-block"
+                    src="../assets/images/Capture d’écran 2021-03-17 à 22.45 1.png"
+                    alt="Third slide"
+                  />
                 </div>
               </div>
-              
             </div>
           </div>
           <div class="col-two col-xl-6 col-md-12 col-sm-12 reset-spacing">
@@ -163,7 +234,7 @@
                 <div class="col-2 reset-spacing">
                   <div class="color"></div>
                 </div>
-                <div class="item-choose col-5" style="border-right: 1px solid;">
+                <div class="item-choose col-5" style="border-right: 1px solid">
                   <p>màu</p>
                   <h4 class="bold">quá đỏ</h4>
                   <img
@@ -189,5 +260,330 @@
         </div>
       </div>
     </div>
+    <div class="my-container">
+      <div class="section section-two">
+        <div class="row container-conf">
+          <div class="col-one col col-xl-8 col-mb-6 col-sm-12">
+            <h2 class="title">Một cho tất cả</h2>
+            <div class="image">
+              <img src="../assets/images/Rectangle 16.png" alt="" class="img" />
+            </div>
+          </div>
+
+          <div class="col-two col col-xl-4 col-mb-6 col-sm-12">
+            <div class="content">
+              <p>
+                đơn giản - ít lỗi thời, lại bền đẹp <br /><br />
+                Một thiết kế sản phẩm để bạn dùng hoài - hàng ngày - dài lâu
+              </p>
+              <button class="btn-conf btn-shop">câu chuyện</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section container-fluid">
+        <div class="row">
+          <div class="col-xl-4 col-md-12 col-sm-12">
+            <div class="item">
+              <img src="../assets/icons/foot icon.png" alt="" />
+              <hr />
+              <h4 class="bold">phom dáng dễ mang</h4>
+              <h5>
+                rộng bề ngang; đơn giản - dễ phối đồ - ai mang <br />
+                cũng được - đi đâu cũng đẹp !
+              </h5>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-12 col-sm-12">
+            <div class="item">
+              <img src="../assets/icons/leather icon.png" alt="" />
+              <hr />
+              <h4 class="bold">chất liệu tốt</h4>
+              <h5>
+                — bố cotton 100% thoáng mềm <br />— đế đúc cao su nguyên khối
+                nâng đỡ tuyệt đối <br />— lót giày làm bằng mút-xốp polyurethane
+                tế-bào mở - êm lâu, thoáng khí
+              </h5>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-12 col-sm-12">
+            <div class="item">
+              <img src="../assets/icons/CloudSun icon.png" alt="" />
+              <hr />
+              <h4 class="bold">bảo quản đơn giản</h4>
+              <h5>
+                cất giày ở nơi râm mát khô thoáng - tránh ánh nắng mặt trời hoặc
+                ánh sáng mạnh
+              </h5>
+              <a href="">
+                <div class="d-flex align-items-center">
+                  <h5 class="bold mb-0 mr-2">cách làm sạch giày vải</h5>
+                  <img src="../assets/icons/arrow-right-black.png" alt="" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-container none-margin-right">
+      <div class="section container-fluid pr-0">
+        <div class="custom-flex d-flex">
+          <div class="column-x">
+            <img
+              src="../assets/images/_DSC6015_copie.png"
+              alt=""
+              class="w-100"
+            />
+          </div>
+          <div class="column-x">
+            <div class="item">
+              <hr />
+              <h4 class="bold">nhận nhiều hơn chỉ Một !</h4>
+              <div class="sub-content">
+                <h5>
+                  — hộp giày từ các-tông tái chế <br />— Một may giỏ từ vải thừa
+                  trong nhà máy, tặng miễn phí để bạn thích gì đựng đó (nên màu
+                  túi và chất vải là hoàn toàn ngẫu nhiên) <br />— rất nhiều
+                  hình-dán
+                </h5>
+              </div>
+            </div>
+            <div class="item">
+              <hr />
+              <h4 class="bold">mua cho đủ bộ</h4>
+              <div class="repon-display">
+                <div class="sub-content">
+                  <img src="../assets/images/L_front 1.png" alt="" />
+                  <div class="d-flex repon-content justify-content-between">
+                    <h5 class="bold mb-0">Một cặp lót giày</h5>
+                    <h5 class="mb-0">120 000 VND</h5>
+                  </div>
+                  <h5 class="">size M</h5>
+                  <div
+                    class="repon-btn d-flex mt-4 "
+                    style="justify-content: space-evenly"
+                  >
+                    <button class="btn-conf btn-white-black">xem thêm</button>
+                    <button class="btn-conf btn-black-white">mua luôn !</button>
+                  </div>
+                </div>
+                <div class="sub-content">
+                  <img
+                    src="../assets/images/Wadensocken-plus_schwarz 1.png"
+                    alt=""
+                  />
+                  <div class="d-flex repon-content justify-content-between">
+                    <h5 class="bold mb-0">vớ Tất-cả</h5>
+                    <h5 class="mb-0">120 000 VND</h5>
+                  </div>
+                  <h5 class="">One size (39M-45M)</h5>
+                  <div
+                    class="repon-btn d-flex mt-4 "
+                    style="justify-content: space-evenly"
+                  >
+                    <button class="btn-conf btn-white-black">xem thêm</button>
+                    <button class="btn-conf btn-black-white">mua luôn !</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <hr />
+        <h4 class="bold">Một ngoài đường</h4>
+        <button class="btn-conf btn-white-black mt-3">gửi hình của bạn</button>
+        <div class="slider slider-01 owl-carousel owl-theme">
+          <div class="item">
+            <img
+              src="../assets/images/BD2FF856-B728-43EB-AAA5-0B3DEB55C1BF.png"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img src="../assets/images/273A6099 (1) 1.png" alt="" />
+          </div>
+          <div class="item">
+            <img
+              src="../assets/images/BD2FF856-B728-43EB-AAA5-0B3DEB55C1BF.png"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img src="../assets/images/273A6099 (1) 1.png" alt="" />
+          </div>
+          <div class="item">
+            <img
+              src="../assets/images/BD2FF856-B728-43EB-AAA5-0B3DEB55C1BF.png"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img src="../assets/images/273A6099 (1) 1.png" alt="" />
+          </div>
+          <div class="item">
+            <img
+              src="../assets/images/BD2FF856-B728-43EB-AAA5-0B3DEB55C1BF.png"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img src="../assets/images/273A6099 (1) 1.png" alt="" />
+          </div>
+        </div>
+        <hr />
+        <h4 class="bold">biết đâu bạn thích ?</h4>
+        <div class="slider slider-02 owl-carousel owl-theme">
+          <div class="item">
+            <img src="../assets/images/profile.png" alt="" />
+            <div class="content-item">
+              <h5 class="bold mt-4">da Đời - mới</h5>
+              <h5>1 470 000 VND</h5>
+            </div>
+          </div>
+          <div class="item">
+            <img src="../assets/images/profile 1.png" alt="" />
+            <div class="content-item">
+              <h5 class="bold mt-4">da Đời - mới</h5>
+              <h5>1 470 000 VND</h5>
+            </div>
+          </div>
+          <div class="item">
+            <img src="../assets/images/DT_profile 1.png" alt="" />
+            <div class="content-item">
+              <h5 class="bold mt-4">da Đời - mới</h5>
+              <h5>1 470 000 VND</h5>
+            </div>
+          </div>
+          <div class="item">
+            <img src="../assets/images/profile.png" alt="" />
+            <div class="content-item">
+              <h5 class="bold mt-4">da Đời - mới</h5>
+              <h5>1 470 000 VND</h5>
+            </div>
+          </div>
+          <div class="item">
+            <img src="../assets/images/profile 1.png" alt="" />
+            <h5 class="bold mt-4">da Đời - mới</h5>
+            <h5>1 470 000 VND</h5>
+          </div>
+          <div class="item">
+            <img src="../assets/images/DT_profile 1.png" alt="" />
+            <div class="content-item">
+              <h5 class="bold mt-4">da Đời - mới</h5>
+              <h5>1 470 000 VND</h5>
+            </div>
+          </div>
+          <div class="item">
+            <img src="../assets/images/profile.png" alt="" />
+            <div class="content-item">
+              <h5 class="bold mt-4">da Đời - mới</h5>
+              <h5>1 470 000 VND</h5>
+            </div>
+          </div>
+          <div class="item">
+            <img src="../assets/images/profile 1.png" alt="" />
+            <div class="content-item">
+              <h5 class="bold mt-4">da Đời - mới</h5>
+              <h5>1 470 000 VND</h5>
+            </div>
+          </div>
+          <div class="item">
+            <img src="../assets/images/DT_profile 1.png" alt="" />
+            <div class="content-item">
+              <h5 class="bold mt-4">da Đời - mới</h5>
+              <h5>1 470 000 VND</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="my-footer">
+      <div class="hero-footer d-flex justify-content-between">
+        <div class="col-one">
+          <h4>thiết kế tại Việt Nam</h4>
+          <div class="menu-footer">
+            <ul class="menu-one">
+              <li>giày / dép</li>
+              <li>áo mưa</li>
+              <li>phụ kiện</li>
+            </ul>
+            <ul class="menu-two">
+              <li>câu-chuyện</li>
+              <li>nơi-bán</li>
+              <li>thắc-mắc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-two">
+          <p>giữ liên lạc nhé?</p>
+          <p>điền địa chỉ e-mail để nhận mọi tin tức và quà tặng từ Một</p>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email của bạn"
+          />
+          <span class="enter-input">
+            <img src="../assets/icons/right-white.png" alt="" />
+          </span>
+          <div class="logo-social">
+            <img src="../assets/icons/Facebook.png" alt="" />
+            <img src="../assets/icons/insta.png" alt="" />
+            <img src="../assets/icons/Bitmap.png" alt="" />
+            <span>&#169 2021 Mot</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(".slider-01").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        dots: false,
+
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          600: {
+            items: 3,
+            nav: false,
+          },
+          1000: {
+            items: 5,
+            nav: false,
+            loop: false,
+          },
+        },
+      });
+
+      $(".slider-02").owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 2,
+            nav: true,
+          },
+          600: {
+            items: 3,
+            nav: true,
+          },
+          1000: {
+            items: 5,
+            nav: true,
+            loop: false,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

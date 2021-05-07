@@ -25,6 +25,98 @@
     font-size: 15px !important;
     line-height: 22px !important;
   }
+  .top_nav {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .section-one .col-one {
+    min-height: 460px;
+  }
+
+  .carousel-indicators {
+    position: absolute !important;
+    flex-direction: initial !important;
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+  }
+
+  .carousel-indicators .active {
+    height: 10px !important;
+    width: 30px !important;
+  }
+
+  .content-top {
+    padding: 40px 15px;
+  }
+
+  .container-conf {
+    padding: 50px 0;
+  }
+
+  .section .col-one .image img {
+    max-width: 240px;
+  }
+
+  .section .col-one {
+    display: inline;
+  }
+
+  .section .col-two {
+    position: unset;
+    max-width: 100%;
+  }
+
+  .section .content {
+    position: unset;
+    margin-top: 2em;
+    margin-left: 2em;
+  }
+
+  .section .col-one .title {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0.5em;
+  }
+
+  .my-container {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .section .item {
+    padding: 20px 0;
+  }
+
+  .custom-flex {
+    flex-direction: column;
+  }
+
+  .column-x .repon-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column-x .repon-display img {
+    max-width: 120px;
+  }
+
+  .column-x .repon-display .repon-btn {
+    display: none !important;
+  }
+  .column-x .repon-display .repon-content {
+    flex-direction: column;
+    margin-top: 2em;
+  }
+
+  .slider-02 .item, .slider-02 .owl-item {
+    min-height: 0 !important;
+  }
+
+  .slider-02 .owl-nav{
+    width: 25%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
