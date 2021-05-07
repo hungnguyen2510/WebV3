@@ -80,26 +80,47 @@
 
           <button class="btn-conf btn-black-white btn-disable">đăng tải</button>
         </div>
-        <div class="col-xl-6 col-md-12 col-sm-12">
-          <input type="file" id="file-image" onchange="showname()" />
-          <label for="file">
-            <div class="d-flex align-items-center">
-              <img src="../assets/icons/cloud.png" alt="" />
-              <h5 class="bold mb-0 ml-4">
-                kéo & thả ảnh để đăng tải <br />
-                <span id="type-image">TEST</span>
-              </h5>
-            </div>
-          </label>
+        <div class="col-image col-xl-6 col-md-12 col-sm-12">
+          <div class="">
+            <input type="file" id="file" onchange="showname()" />
+            <label for="file">
+              <div class="d-flex align-items-center">
+                <img src="../assets/icons/cloud.png" alt="" />
+                <div class="d-flex flex-column">
+                  <h5 class="mb-0 ml-4" id="name-image">
+                    kéo & thả ảnh để đăng tải
+                  </h5>
+                  <span id="type-image" class="ml-4">png.jpg</span>
+                </div>
+              </div>
+            </label>
+          </div>
+          <h5 class="bold">
+            khi chia sẻ hình ảnh và thông tin với Một bạn đồng ý cho phép Một sử
+            dụng hình ảnh của bạn trên các kênh truyền thông đa phương tiện, các
+            kênh truyền thông mạng xã hội với mục đích quảng bá
+          </h5>
+          <div class="d-flex align-items-center">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            <label for="vehicle1" class="bold ml-2"> Tôi đồng ý !</label>
+          </div>
         </div>
       </div>
     </div>
     <script>
       function showname() {
-        const fileImage = document.getElementById("file-image");
+        const fileImage = document.getElementById("file");
+        const nameImage = document.getElementById("name-image");
         const typeImage = document.getElementById("type-image");
-        typeImage.innerHTML = fileImage.item(0).name;
-        console.log(fileImage.item(0).name);
+
+        console.log(fileImage.files);
+        if (fileImage.files) {
+          nameImage.innerHTML = fileImage.files[0].name;
+          typeImage.innerHTML = fileImage.files[0].type;
+        } else {
+          alert("Error Choose Image");
+        }
+
         // alert("Selected file: " + name.files.item(0).name);
         // alert("Selected file: " + name.files.item(0).size);
         // alert("Selected file: " + name.files.item(0).type);

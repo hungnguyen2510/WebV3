@@ -333,7 +333,7 @@ hr {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  padding: 10px 40px;
+  padding: 20px 40px;
   width: 480px;
   height: 120px;
 }
@@ -345,4 +345,19 @@ hr {
 
 [type="file"]:focus + label {
   outline: 1px dotted #000;
+}
+
+.section-send-photo .col-image {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+}
+
+.section-send-photo .col-image h5.bold {
+  margin-top: 2em;
+  width: 65%;
+}
+
+label{
+  margin-bottom: 0 !important;
 }
