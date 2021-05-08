@@ -36,10 +36,12 @@ h5 {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  margin-right: 0.5rem;
+  margin-right: 1.5rem;
   border: 0;
   box-shadow: none;
+  outline: none !important;
   transition: all 3s;
+  position: relative;
 }
 
 .btn-colors .color-black {
@@ -168,14 +170,14 @@ h5 {
   color: #111820;
 }
 
-.modal-body .btn-colors {
+.btn-colors {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 0fr);
 }
 
-.modal-body .btn-colors button {
+.btn-colors button {
   margin-bottom: 1.5rem;
-  margin-right: 1.5rem;
+  /* margin-right: 1.5rem; */
 }
 
 .modal-body .col-one,
@@ -291,11 +293,12 @@ h5 {
 .section-seven .col-one .text {
   color: white;
   position: absolute;
-  bottom: 2.2rem;
+  bottom: -4.5em;
   margin-left: -5em;
   /* display: flex; */
   justify-content: space-between;
   font-weight: 600;
+  left: 7em;
   /* margin-top: 2rem; */
 }
 
@@ -342,15 +345,24 @@ h5 {
 .section-two .col-one,
 .section-four .col-one {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.h2-special{
+  position: absolute !important;
+  left: 4em;
 }
 
 .section-two .col-one .title,
 .section-four .col-one .title {
   /* flex: 0.4; */
-  display: flex;
+  /* display: flex;
   align-items: baseline;
   justify-content: center;
+  position: absolute;
+  left: 4em; */
+  width: 33%;
 }
 
 .section-two .col-one .image,
@@ -395,7 +407,7 @@ h5 {
   display: none !important;
 }
 
-.active-circle::after {
+.btn-colors .active-circle::after {
   border-radius: 50%;
   border: 5px solid #000;
   position: absolute;
@@ -404,4 +416,8 @@ h5 {
   left: -8px;
   bottom: -8px;
   right: -8px;
+}
+
+.bottom-75{
+  bottom: -7.5em !important;
 }
