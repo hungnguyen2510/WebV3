@@ -160,7 +160,7 @@ h5 {
   font-size: 27px;
   font-style: normal;
   margin-bottom: 1em;
-  margin-top: 0.4em;
+  /* margin-top: 0.4em; */
 }
 
 .modal-body h4 span {
@@ -309,6 +309,10 @@ h5 {
   font-weight: bold;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .section-two {
   background-color: #f6e7dc;
   margin: 5em;
@@ -389,4 +393,15 @@ h5 {
 
 .btn-toggle {
   display: none !important;
+}
+
+.active-circle::after {
+  border-radius: 50%;
+  border: 5px solid #000;
+  position: absolute;
+  content: "";
+  top: -8px;
+  left: -8px;
+  bottom: -8px;
+  right: -8px;
 }

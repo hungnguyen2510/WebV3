@@ -41,9 +41,6 @@
   float: right;
 }
 
-.my-footer .col-two input::placeholder {
-  color: #fff;
-}
 
 .enter-input {
   position: absolute;
@@ -58,13 +55,18 @@
   width: 50%;
 }
 
-.my-footer .col-two input {
+input[type="email"] {
   width: 100%;
   border: none;
   background: none;
   border-bottom: 1px solid white;
   color: #fff;
 }
+
+input[type="email"]::placeholder {
+  color: #fff;
+}
+
 
 
 /* Extra small devices (phones, 600px and down) */

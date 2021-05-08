@@ -305,6 +305,9 @@ hr {
 .textarea textarea {
   font-size: 17px;
   line-height: 27px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid black;
 }
 
 .btn-disable {
@@ -358,6 +361,121 @@ hr {
   width: 65%;
 }
 
-label{
+label {
   margin-bottom: 0 !important;
+}
+
+/* pretty radio */
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.3rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  background: #ebeded;
+  border-color: #ebeded;
+}
+
+input[type="checkbox"]:checked + *::before {
+  content: "✓";
+  color: white;
+  text-align: center;
+  background: #000;
+}
+
+/* Choose color */
+.choose-color .col-one,
+.choose-color .col-two {
+  max-height: 720px;
+}
+
+.rectangles {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.rectangles img {
+  max-width: 240px;
+  min-height: 120px;
+}
+
+.active-rectangle {
+  border: 10px solid black;
+}
+
+.btn-size {
+  font-weight: normal;
+  border: none;
+  background: none;
+  /* padding: 2px; */
+  margin-right: 0.4em;
+  width: 80px;
+  height: 80px;
+  color: gray;
+}
+
+.btn-size-large {
+  width: 315px;
+  height: 80px;
+}
+
+.btn-size.active {
+  background-color: #000000 !important;
+  color: white !important;
+  border-radius: 40px;
+  padding: 5px 10px 5px 10px;
+}
+
+.btn-size:focus {
+  outline: none;
+}
+#size {
+  margin-top: 5em;
+}
+
+.send-email {
+  background-color: #111820;
+  color: #fff;
+  padding: 50px 120px;
+}
+
+.display-on {
+  display: block !important;
+}
+.send-email {
+  position: absolute;
+  display: none;
+  width: 100%;
+  bottom: 0;
+}
+
+.send-email input[type="email"] {
+  padding-bottom: 10px;
+}
+
+.x-button:hover {
+  cursor: pointer;
+}
+
+.x-button h5 {
+  color: #7d868c;
+}
+.x-button img {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+.send-email .enter-input {
+  margin-left: -1.5em;
+}
+
+.send-email .enter-input img {
+  width: 100%;
 }

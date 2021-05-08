@@ -117,6 +117,51 @@
   .slider-02 .owl-nav{
     width: 25%;
   }
+
+  .section-send-photo .col-image{
+    padding-left: 15px;
+    margin-top: 3em;
+  }
+  [type="file"] + label{
+    width: 100%;
+  }
+
+  .section-send-photo .col-image h5.bold{
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .section-send-photo input[type="text"]{
+    font-size: 15px;
+  }
+
+  .choose-color .col-one{
+    display: none;
+  }
+
+  .choose-color .col-two{
+    max-height: 0;
+  }
+
+  .rectangles{
+    max-height: 0;
+    overflow-y: unset;
+  }
+
+  .btn-size{
+    width: 56px;
+    height: 56px;
+  }
+  .btn-size-large{
+    width: 315px;
+    height: 80px;
+  }
+  .color{
+    height: 79px;
+  }
+  .send-email{
+    padding: 50px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

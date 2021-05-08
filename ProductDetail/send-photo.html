@@ -58,13 +58,13 @@
     <div class="section section-send-photo">
       <h2 class="bold">gửi hình ảnh của bạn</h2>
       <p>cảm ơn bạn</p>
-      <div class="row">
+      <div class="row mb-5">
         <div class="col-xl-6 col-md-12 col-sm-12">
           <input type="text" placeholder="tên" name="txtName" />
           <input type="text" placeholder="địa chỉ e-mail" name="txtName" />
           <div class="icons-social">
-            <img src="../assets/icons/Facebook-black.png" alt="" />
-            <img src="../assets/icons/ins-black.png" alt="" />
+            <img src="../assets/icons/Facebook-share.png" alt="" />
+            <img src="../assets/icons/insta-share.png" alt="" />
           </div>
           <hr />
           <div class="textarea">
@@ -72,20 +72,18 @@
               name=""
               id=""
               cols="30"
-              rows="10"
+              rows="1"
               class="w-100"
               placeholder="thông điệp"
             ></textarea>
           </div>
-
-          <button class="btn-conf btn-black-white btn-disable">đăng tải</button>
         </div>
         <div class="col-image col-xl-6 col-md-12 col-sm-12">
           <div class="">
             <input type="file" id="file" onchange="showname()" />
             <label for="file">
               <div class="d-flex align-items-center">
-                <img src="../assets/icons/cloud.png" alt="" />
+                <img src="../assets/icons/cloud.png" alt="" id="icon-check" />
                 <div class="d-flex flex-column">
                   <h5 class="mb-0 ml-4" id="name-image">
                     kéo & thả ảnh để đăng tải
@@ -101,22 +99,26 @@
             kênh truyền thông mạng xã hội với mục đích quảng bá
           </h5>
           <div class="d-flex align-items-center">
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-            <label for="vehicle1" class="bold ml-2"> Tôi đồng ý !</label>
+            <input type="checkbox" id="agree" name="agree" value="Bike" />
+            <label for="agree" class="bold"> Tôi đồng ý !</label>
           </div>
         </div>
       </div>
+      <button class="btn-conf btn-black-white btn-disable">đăng tải</button>
     </div>
     <script>
       function showname() {
         const fileImage = document.getElementById("file");
         const nameImage = document.getElementById("name-image");
         const typeImage = document.getElementById("type-image");
+        const iconCheck = document.getElementById("icon-check");
+        // console.log(iconCheck.src);
 
         console.log(fileImage.files);
         if (fileImage.files) {
           nameImage.innerHTML = fileImage.files[0].name;
           typeImage.innerHTML = fileImage.files[0].type;
+          iconCheck.src = "../assets/icons/check.png";
         } else {
           alert("Error Choose Image");
         }
