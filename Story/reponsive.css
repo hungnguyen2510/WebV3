@@ -1,7 +1,7 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   h1 {
-    color: red !important;
+    /* color: red !important; */
     font-size: 56px !important;
     line-height: 56px !important;
   }
@@ -33,7 +33,7 @@
 
   .banner {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
-      url("assets/images/Hero IMG.png");
+      url("../assets/images/Hero IMG-mobile.png");
     padding: 100px 30px;
     background-position: center;
     background-repeat: no-repeat;
