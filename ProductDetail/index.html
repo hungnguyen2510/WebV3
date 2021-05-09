@@ -76,14 +76,16 @@
           <img src="../assets/icons/logo.svg" alt="" class="icon" />
         </a>
       </div>
-      <div class="user">
+      <div class="user d-flex">
         <a href="">
           <img src="../assets/icons/Smiley.svg" alt="" class="icon" />
         </a>
-        <a href="">
-          <img src="../assets/icons/sneaker-black.png" alt="" class="icon" />
-        </a>
-        <span class="number-quantity" style="font-weight: bold">0</span>
+        <div id="balloon" class="">
+          <a href="">
+            <img src="../assets/icons/sneaker-black.png" alt="" class="icon" />
+          </a>
+          <span class="number-quantity" style="font-weight: bold">0</span>
+        </div>
       </div>
     </div>
     <div class="section-one">
@@ -540,6 +542,18 @@
       </div>
     </footer>
     <script>
+       $(document).ready(function () {
+          window.addEventListener('scroll', function() {
+          // console.log(window.pageYOffset + 'px');
+          if(window.pageYOffset >= 100){
+            $("#balloon").addClass("balloon");
+          }
+          else{
+            $("#balloon").removeClass("balloon");
+          }
+          
+        });
+      });
       $(".slider-01").owlCarousel({
         loop: true,
         margin: 10,

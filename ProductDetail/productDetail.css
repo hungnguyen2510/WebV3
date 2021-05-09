@@ -561,15 +561,29 @@ input[type="checkbox"]:checked + *::before {
   /* background: none; */
 }
 
-.btn-white-black-border-top{
+.btn-white-black-border-top {
   border-top: 1px solid black;
 }
 
-.img-card-item{
+.img-card-item {
   margin-bottom: 4em;
 }
 
-.img-card-item img{
+.img-card-item img {
   width: 120px;
   height: 80px;
+}
+
+.scroll-items {
+  overflow-y: scroll;
+  max-height: 55vh;
+}
+
+.balloon {
+  position: fixed;
+  background-color: #ebeded;
+  padding: 10px 15px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
 }
