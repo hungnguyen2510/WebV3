@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Choose-Color</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="http://fonts.cdnfonts.com/css/lab-grotesque-medium"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="productDetail.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="reponsive.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../assets/css/footer.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <!-- Default Theme -->
+    <link
+      rel="stylesheet"
+      href="../assets/owlcarousel/assets/owl.theme.default.min.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/owlcarousel/owl.carousel.min.js"></script>
+  </head>
+  <body>
+    <div class="top_nav d-flex justify-content-between py-4">
+      <div class="menu">
+        <a href="">
+          <img src="../assets/icons/menu-black.png" alt="" class="icon" />
+        </a>
+      </div>
+      <div class="logo">
+        <a href="">
+          <img src="../assets/icons/logo.svg" alt="" class="icon" />
+        </a>
+      </div>
+      <div class="user">
+        <a href="">
+          <img src="../assets/icons/Smiley.svg" alt="" class="icon" />
+        </a>
+        <a href="">
+          <img src="../assets/icons/sneaker-black.png" alt="" class="icon" />
+        </a>
+        <span class="number-quantity" style="font-weight: bold">0</span>
+      </div>
+    </div>
+    <div class="section-one">
+      <div class="add-cart container-fluid">
+        <div class="row">
+          <div class="col-one col-xl-6 col-md-12 col-sm-12">
+            <div
+              id="carouselOneIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselOneIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselOneIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselOneIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block"
+                    src="../assets/images/front.png"
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block"
+                    src="../assets/images/DT_profile 1.png"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block"
+                    src="../assets/images/Capture d’écran 2021-03-17 à 22.45 1.png"
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-two col-xl-6 col-md-12 col-sm-12" id="add-cart">
+            <div class="section my-container choose-cart">
+              <div class="x-button">
+                <img
+                  src="../assets/icons/Icon-x.png"
+                  alt=""
+                  onclick="xAddCart()"
+                />
+              </div>
+              <div class="item-cart">
+                <div class="img-card-item">
+                  <img src="../assets/images/Group 87.png" alt="" />
+                </div>
+                <div class="info-cart-item">
+                  <h5>
+                    <span style="font-weight: bold">vải Đời mới</span> quá-đỏ
+                  </h5>
+                  <h5>nam - 40</h5>
+                  <div class="input-number">
+                    <img
+                      src="../assets/icons/moins-cart.png"
+                      alt=""
+                      onclick="minusQuantity()"
+                    />
+                    <label id="item-quantity">1</label>
+                    <img
+                      src="../assets/icons/plus-cart.png"
+                      alt=""
+                      onclick="plusQuantity()"
+                    />
+                  </div>
+                </div>
+                <div class="price-cart-item">
+                  <h5 class="bold">720 000 VND</h5>
+                </div>
+              </div>
+              <div class="item-cart">
+                <div class="img-card-item">
+                  <img src="../assets/images/L_front 1.png" alt="" />
+                </div>
+                <div class="info-cart-item">
+                  <h5>
+                    <span style="font-weight: bold">Một cặp lót giày</span>
+                  </h5>
+                  <h5>size M</h5>
+                  <div class="input-number">
+                    <img
+                      src="../assets/icons/moins-cart.png"
+                      alt=""
+                      onclick="minusQuantity()"
+                    />
+                    <label id="item-quantity">1</label>
+                    <img
+                      src="../assets/icons/plus-cart.png"
+                      alt=""
+                      onclick="plusQuantity()"
+                    />
+                  </div>
+                </div>
+                <div class="price-cart-item">
+                  <h5 class="bold">120 000 VND</h5>
+                </div>
+              </div>
+              <div class="item-cart">
+                <div class="img-card-item">
+                  <img src="../assets/images/L_front 1.png" alt="" />
+                </div>
+                <div class="info-cart-item">
+                  <h5>
+                    <span style="font-weight: bold">Một cặp lót giày</span>
+                  </h5>
+                  <h5>size S</h5>
+                  <div class="input-number">
+                    <img
+                      src="../assets/icons/moins-cart.png"
+                      alt=""
+                      onclick="minusQuantity()"
+                    />
+                    <label id="item-quantity">1</label>
+                    <img
+                      src="../assets/icons/plus-cart.png"
+                      alt=""
+                      onclick="plusQuantity()"
+                    />
+                  </div>
+                </div>
+                <div class="price-cart-item">
+                  <h5 class="bold">120 000 VND</h5>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="section my-container choose-cart">
+                <div class="voucher">
+                  <input
+                    type="text"
+                    placeholder="nhập mã trong thẻ quà tặng / mã khuyến mãi"
+                  />
+                </div>
+                <div class="temp-total item-cart">
+                  <div class="temp-total-title">
+                    <h5 class="bold">tạm tính</h5>
+                    <h5 style="color: #7d868c">
+                      giao hàng miễn phí nội thành TP.HCM
+                    </h5>
+                  </div>
+                  <div class="temp-total-price">
+                    <h5 class="bold">720 000 VND</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-cart">
+                <button
+                  class="btn-cart-item btn-white-black btn-white-black-border-top"
+                >
+                  tiếp tục mua hàng
+                </button>
+                <button class="btn-cart-item btn-black-white">
+                  thanh toán
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="box stack-top"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function minusQuantity() {
+        var quantity_temp = document.getElementById("item-quantity").innerText;
+        if (parseInt(quantity_temp) <= 0) return;
+        var quantity_int = parseInt(quantity_temp) - 1;
+        document.getElementById(
+          "item-quantity"
+        ).innerHTML = quantity_int.toString();
+      }
+      function plusQuantity() {
+        var quantity_temp = document.getElementById("item-quantity").innerText;
+        var quantity_int = parseInt(quantity_temp) + 1;
+        document.getElementById(
+          "item-quantity"
+        ).innerHTML = quantity_int.toString();
+      }
+
+      function xAddCart() {
+        const addCartEle = document.getElementById("add-cart");
+        addCartEle.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

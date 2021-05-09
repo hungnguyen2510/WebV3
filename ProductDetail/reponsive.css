@@ -110,57 +110,70 @@
     margin-top: 2em;
   }
 
-  .slider-02 .item, .slider-02 .owl-item {
+  .slider-02 .item,
+  .slider-02 .owl-item {
     min-height: 0 !important;
   }
 
-  .slider-02 .owl-nav{
+  .slider-02 .owl-nav {
     width: 25%;
   }
 
-  .section-send-photo .col-image{
+  .section-send-photo .col-image {
     padding-left: 15px;
     margin-top: 3em;
   }
-  [type="file"] + label{
+  [type="file"] + label {
     width: 100%;
   }
 
-  .section-send-photo .col-image h5.bold{
+  .section-send-photo .col-image h5.bold {
     width: 100%;
     margin-bottom: 1em;
   }
 
-  .section-send-photo input[type="text"]{
+  .section-send-photo input[type="text"] {
     font-size: 15px;
   }
 
-  .choose-color .col-one{
+  .choose-color .col-one {
     display: none;
   }
 
-  .choose-color .col-two{
+  .choose-color .col-two {
     max-height: 0;
   }
 
-  .rectangles{
+  .rectangles {
     max-height: 0;
     overflow-y: unset;
   }
 
-  .btn-size{
+  .btn-size {
     width: 56px;
     height: 56px;
   }
-  .btn-size-large{
+  .btn-size-large {
     width: 315px;
     height: 80px;
   }
-  .color{
+  .color {
     height: 79px;
   }
-  .send-email{
+  .send-email {
     padding: 50px;
+  }
+
+  .section-one .add-cart .col-one {
+    display: none;
+  }
+
+  .section-one .add-cart .my-container{
+    margin-left: 2em;
+    margin-right: 0;
+  }
+  .item-cart{
+    margin-right: 2em;
   }
 }
 
