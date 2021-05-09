@@ -175,6 +175,11 @@
   .item-cart{
     margin-right: 2em;
   }
+
+  .large-text{
+    font-size: 112px;
+    line-height: 104px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

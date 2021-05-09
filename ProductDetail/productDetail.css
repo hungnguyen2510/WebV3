@@ -587,3 +587,47 @@ input[type="checkbox"]:checked + *::before {
   display: flex;
   align-items: center;
 }
+
+.cover {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.large-text {
+  font-size: 320px;
+  line-height: 320px;
+}
+
+.cover-img {
+  position: fixed;
+  top: 27em;
+  z-index: 999;
+}
+
+.card-right {
+  /* display: none; */
+  width: 50vw;
+  float: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.appear {
+  display: block;
+}
+
+/* .transition-section{
+  display: block;
+} */
+
+.w3-animate-left {
+  animation: animateleft 1s !important;
+}
+.w3-animate-right {
+  animation: animateright 1s !important;
+}
