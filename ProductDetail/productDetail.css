@@ -248,6 +248,24 @@ hr {
   margin: 4em 0;
 }
 
+.slider-01 .owl-item .item{
+  width: fit-content;
+}
+
+.slider-01.owl-carousel .owl-stage-outer{
+  max-height: 400px !important;
+}
+
+.slider-01.owl-carousel .owl-item img{
+  height: 400px !important;
+  /* object-fit: contain; */
+}
+
+.slider-01.owl-carousel .owl-item{
+  width: auto !important;
+  max-width: 592.47px !important;
+}
+
 .slider-02 .item {
   margin-right: 5em;
   min-height: 300px !important;
@@ -255,6 +273,7 @@ hr {
   flex-direction: column;
   justify-content: space-between;
 }
+
 
 .slider-02 .owl-item {
   min-height: 300px !important;

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link
+      href="http://fonts.cdnfonts.com/css/lab-grotesque-medium"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="app">
+        <div class="top_nav d-flex justify-content-between px-5 py-4">
+          <div class="menu">
+            <nav class="nav-content">
+              <div class="nav-btn" id="" onclick="ToggleNav()">
+                <img src="../assets/icons/menu.svg" alt="" class="icon" />
+              </div>
+
+              <div id="overlay-element" class="nav-overlay"></div>
+
+              <div class="nav-slider" id="nav-slider-element">
+                <div class="nav-btn-close" onclick="CloseNav()">
+                  <img src="../assets/icons/Close.png" alt="" />
+                </div>
+                <ul class="nav-list">
+                  <li class="nav-list-item">
+                    <h2>
+                      <a href="" class="nav-link">câu-chuyện</a>
+                    </h2>
+                  </li>
+                  <li class="nav-list-item">
+                    <h2>
+                      <a href="" class="nav-link">cửa-hàng</a>
+                    </h2>
+                  </li>
+                  <li class="nav-list-item">
+                    <h2>
+                      <a href="" class="nav-link">nơi-bán</a>
+                    </h2>
+                  </li>
+                  <li class="nav-list-item">
+                    <h2>
+                      <a href="" class="nav-link">thắc-mắc</a>
+                    </h2>
+                  </li>
+                  <li class="nav-list-item">
+                    <div class="nav-ship-to"></div>
+                    <div class="nav-language"></div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="logo">
+            <a href="">
+              <img src="../assets/icons/Logo.png" alt="" class="icon" />
+            </a>
+          </div>
+          <div class="user">
+            <a href="">
+              <img src="../assets/icons/user.svg" alt="" class="icon" />
+            </a>
+            <a href="">
+              <img src="../assets/icons/sneaker.svg" alt="" class="icon" />
+            </a>
+            <span class="number-quantity" style="font-weight: bold">0</span>
+          </div>
+        </div>
+        <div class="heading">
+          <div class="container">
+            <header class="header__content">
+              <h1 class="header__content-slogan">Một nơi-bán</h1>
+              <h5 class="header__content-description">
+                chào bạn, trong thời gian dịch covid-19, Một sẽ liên tục cập
+                nhật tình trạng mở cửa của các điểm bán. để chắc rằng điểm bán
+                bạn muốn đến có mở cửa và sẵn sàng tiếp đón, <b>hãy gọi hotline
+                  trước khi ghé bạn nhé!</b></h5>
+              <h5 class="header__content-greeting">mời bạn ghé thăm Một!</h5>
+            </header>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="location-region">
+            <ul class="location__list" id="location-click">
+              <li id="1" class="location__item active-location-item"><h4>Việt Nam</h4></li>
+              <li id="2" class="location__item"><h4>Nhật Bản</h4></li>
+              <li id="3" class="location__item"><h4>Thái Lan</h4></li>
+            </ul>=
+          </div>
+
+          <div class="row location-detail">
+            <div class="col-xl-2 col-sm-12 p-0 ml-4">
+              <h4 href="#" class="row-location">Sài Gòn<span class="number-nav">10</span></h4>
+            </div>
+            <div class="col-xl-9 col-sm-12 p-0">
+              <div class="row-location-details">
+                <h2>Biker Shield</h2>
+                <h2>Tim Tay</h2>
+                <h2>Vesta Lifestyle & Gifts</h2>
+                <h2>The Craft House Thương Xá Tax</h2>
+                <h2>Okkio Caffe</h2>
+                <h2>Ki-ốt Bà Na</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row location-detail">
+            <div class="col-xl-2 col-sm-12 p-0 ml-4">
+              <h4 href="#" class="row-location">Lâm Đồng<span class="number-nav">2</span></h4>
+            </div>
+            <div class="col-xl-9 col-sm-12 p-0">
+              <div class="row-location-details">
+                <h2>Là Việt Coffee </h2>
+                <h2>Tiệm cà phê Hoa hồng</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row location-detail">
+            <div class="col-xl-2 col-sm-12 p-0 ml-4">
+              <h4 href="#" class="row-location">Nha Trang<span class="number-nav">1</span></h4>
+            </div>
+            <div class="col-xl-9 col-sm-12 p-0">
+              <div class="row-location-details">
+                <h2>Lam.Lam</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row location-detail">
+            <div class="col-xl-2 col-sm-12 p-0 ml-4">
+              <h4 href="#" class="row-location">Phú Quốc<span class="number-nav">1</span></h4>
+            </div>
+            <div class="col-xl-9 col-sm-12 p-0">
+              <div class="row-location-details">
+                <h2>Loca</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row location-detail">
+            <div class="col-xl-2 col-sm-12 p-0 ml-4">
+              <h4 href="#" class="row-location">Hà Nội<span class="number-nav">2</span></h4>
+            </div>
+            <div class="col-xl-9 col-sm-12 p-0">
+              <div class="row-location-details">
+                <h2>Đây đó</h2>
+                <h2>Xin-chào</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row location-detail">
+            <div class="col-xl-2 col-sm-12 p-0 ml-4">
+              <h4 href="#" class="row-location">Tokyo<span class="number-nav">2</span></h4>
+            </div>
+            <div class="col-xl-9 col-sm-12 p-0">
+              <div class="row-location-details">
+                <h2>Isetan Tachikawa</h2>
+                <h2>Isetan Urawa</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row location-detail">
+            <div class="col-xl-2 col-sm-12 p-0 ml-4">
+              <h4 href="#" class="row-location">Thailand<span class="number-nav">1</span></h4>
+            </div>
+            <div class="col-xl-9 col-sm-12 p-0">
+              <div class="row-location-details">
+                <h2>Siam Discovery </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="my-footer">
+      <div class="hero-footer d-flex justify-content-between">
+        <div class="col-one">
+          <h4>thiết kế tại Việt Nam</h4>
+          <div class="menu-footer">
+            <ul class="menu-one">
+              <li>giày / dép</li>
+              <li>áo mưa</li>
+              <li>phụ kiện</li>
+            </ul>
+            <ul class="menu-two">
+              <li>câu-chuyện</li>
+              <li>nơi-bán</li>
+              <li>thắc-mắc</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-two">
+          <p>giữ liên lạc nhé?</p>
+          <p>điền địa chỉ e-mail để nhận mọi tin tức và quà tặng từ Một</p>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email của bạn"
+          />
+          <span class="enter-input">
+            <img src="../assets/icons/right-white.png" alt="" />
+          </span>
+          <div class="logo-social">
+            <img src="../assets/icons/Facebook.png" alt="" />
+            <img src="../assets/icons/insta.png" alt="" />
+            <img src="../assets/icons/Bitmap.png" alt="" />
+            <!-- <span>&#169 2021 Mot</span>      -->
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      var overlayElement = document.getElementById("overlay-element");
+      var navSliderElement = document.getElementById("nav-slider-element");
+      function ToggleNav() {
+        overlayElement.classList.add("nav-active");
+        navSliderElement.classList.add("nav-active");
+      }
+      function CloseNav() {
+        overlayElement.classList.remove("nav-active");
+        navSliderElement.classList.remove("nav-active");
+      }
+
+    </script>
+  </body>
+</html>

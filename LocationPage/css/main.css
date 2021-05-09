@@ -1,0 +1,290 @@
+.main {
+  overflow: hidden;
+  background-color: var(--text-color);
+}
+
+.app {
+  width: 100%;
+}
+
+h1 {
+  font-size: 112px !important;
+  line-height: 112px !important;
+}
+
+h2 {
+  font-size: 64px !important;
+  line-height: 68px !important;
+}
+
+h3 {
+  font-size: 40px !important;
+  line-height: 48px !important;
+}
+
+h4 {
+  font-size: 27px !important;
+  line-height: 35px !important;
+}
+
+h5 {
+  font-size: 17px !important;
+  line-height: 27px !important;
+}
+
+.heading {
+  /* position: relative; */
+  padding-top: 50%;
+  background: url(../../assets/images/www.rimowa\ 1.png) right top / 52%
+    no-repeat;
+}
+
+.nav-content {
+  position: relative;
+}
+
+/* navigation */
+.top_nav {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.number-quantity {
+  color: #fff;
+}
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  display: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.nav-active {
+  display: initial !important;
+}
+
+.nav-slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 48.7%;
+  background-color: var(--white-color);
+  z-index: 1;
+  display: none;
+  transition: all 0.2s;
+}
+
+.active-location-item {
+  color: #fff !important;
+  border-bottom: 4px solid;
+}
+
+.nav-btn {
+  cursor: pointer;
+}
+
+.nav-btn-close {
+  position: absolute;
+  top: 3.2rem;
+  left: 4.8px;
+}
+
+.nav-list {
+  padding-left: 0;
+  margin: 120px 0;
+  list-style: none;
+}
+
+.nav-list-item {
+  display: block;
+}
+
+.nav-link {
+}
+
+.nav-ship-to {
+}
+
+.nav-language {
+}
+/* header content */
+
+.header__content {
+  position: absolute;
+  top: 0;
+  padding-top: calc(var(--nav-height) + 5rem);
+  color: var(--white-color);
+}
+
+.header__content-slogan {
+  font-weight: 700;
+  letter-spacing: 0px;
+  padding-bottom: 1rem;
+}
+
+.header__content-description {
+  width: 38%;
+  padding: 4rem 0;
+  font-weight: 400;
+}
+
+.header__content-description b {
+  font-weight: 700;
+}
+
+.header__content-greeting {
+  font-weight: 400;
+}
+
+.location-region {
+  /* width: 36%; */
+  position: relative;
+  margin-top: 6.8rem;
+}
+
+.location-region::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 1px;
+  top: 5.4rem;
+  right: 0;
+  left: 0;
+}
+
+.location__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.location__item {
+  color: rgba(255, 255, 255, 0.3);
+  padding-bottom: 2rem;
+  cursor: pointer;
+}
+
+.location-item-active {
+  color: var(--white-color);
+  border-bottom: 8px solid var(--white-color);
+}
+
+.location-detail {
+  padding: 8rem 0;
+  border-bottom: 1px solid #fff;
+}
+
+.location-detail:last-child {
+  border-bottom: 0;
+}
+
+.number-nav {
+  font-size: 15px;
+  position: absolute;
+  margin-left: 5px;
+  font-weight: 400;
+  top: 0.9rem;
+}
+
+.row-location {
+  float: left;
+  display: block;
+  color: var(--white-color);
+  text-align: center;
+  padding: 14px 30px 14px 0px;
+  text-decoration: none;
+  font-size: 2.7rem;
+  line-height: 3.5rem;
+  font-weight: 900;
+  position: relative;
+}
+
+.row-location-details h2 {
+  font-weight: 700;
+  color: var(--white-color);
+}
+/* footer */
+.my-footer {
+  color: #7d868c;
+  padding: 30px 120px;
+}
+
+.my-footer h2 {
+  color: #fff;
+}
+
+.menu-footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-footer .menu-one {
+  margin-bottom: 2.5rem;
+}
+
+.menu-footer ul li {
+  list-style: none;
+  margin-bottom: 3px;
+}
+
+.menu-footer ul li:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.logo-social {
+  margin-top: 5rem;
+}
+
+.logo-social img {
+  height: 34px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.logo-social span {
+  float: right;
+}
+
+.my-footer .col-two input::placeholder {
+  color: #fff;
+}
+
+.enter-input {
+  position: absolute;
+  margin-left: -2em;
+}
+
+.enter-input:hover {
+  cursor: pointer;
+}
+
+.enter-input img {
+  width: 50%;
+}
+
+.my-footer .col-two input {
+  width: 100%;
+  border: none;
+  background: none;
+  border-bottom: 1px solid white;
+  color: #fff;
+}

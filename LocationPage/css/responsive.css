@@ -1,0 +1,156 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: block;
+  }
+
+  h1 {
+    /* color: red !important; */
+    font-size: 56px !important;
+    line-height: 56px !important;
+  }
+
+  h2 {
+    font-size: 36px !important;
+    line-height: 40px !important;
+  }
+
+  h3 {
+    font-size: 27px !important;
+    line-height: 35px !important;
+  }
+
+  h4 {
+    font-size: 20px !important;
+    line-height: 27px !important;
+  }
+
+  h5 {
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+
+  .top_nav {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .heading {
+    height: 88vh;
+  }
+
+  .container {
+    padding: 0 3% !important;
+    min-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .nav-slider {
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 3.6rem;
+    line-height: 4rem;
+  }
+
+  .heading {
+    /* position: relative; */
+    padding-top: 50%;
+    background: url(../../assets/images/www.rimowa\ 1.png) right top / contain
+      no-repeat;
+  }
+
+  .header__content {
+    position: unset;
+    color: var(--white-color);
+    margin-top: 26%;
+  }
+
+  .header__content-description {
+    width: 100%;
+    padding: 4rem 0;
+    font-weight: 400;
+  }
+
+  .header__content-greeting {
+    font-weight: 400;
+  }
+
+  .location-region {
+    /* width: 36%; */
+    position: relative;
+    margin-top: 14rem;
+  }
+
+  .location__list {
+    width: 95%;
+  }
+
+  .row-location-details {
+    padding-left: 1.6rem;
+  }
+
+  .header__content-description {
+    padding: 2rem 0;
+  }
+
+  .location-region::before {
+    top: 4.6rem;
+  }
+
+  .location-detail {
+    padding: 6.4rem 0;
+    margin: 0;
+  }
+
+  .location-item-active { 
+    border-bottom: 4px solid var(--white-color);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .hide-on-tablet {
+    display: none;
+  }
+  .show-on-tablet {
+    display: block;
+  }
+  .heading {
+    height: 100vh;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .main__product-mt {
+    margin-top: 0;
+  }
+
+  .container {
+    margin: 0 1rem !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .hide-on-pc {
+    display: none;
+  }
+  .show-on-pc {
+    display: block;
+  }
+
+  .heading {
+    height: 100vh;
+  }
+}
