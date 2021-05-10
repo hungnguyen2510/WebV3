@@ -1,73 +1,77 @@
 :root {
-    --nav-height: 100px;
-    --product-img: 48rem;
-    --white-color: #fff;
-    --nav-item-height: 46px;
-    --text-header-size: 11.2rem;
-    --text-color: #111820;
-    --border-color: #111820;
-    --font-size-lg: 4.0rem;
-    --line-height-lg: 4.8rem;
-    --font-size-md: 2.7rem;
-    --line-height-md: 3.5rem;
-    --font-size-sm: 1.7rem;
-    --line-height-sm: 2.7rem;
+  --nav-height: 100px;
+  --product-img: 48rem;
+  --white-color: #fff;
+  --nav-item-height: 46px;
+  --text-header-size: 11.2rem;
+  --text-color: #111820;
+  --border-color: #111820;
+  --font-size-lg: 4rem;
+  --line-height-lg: 4.8rem;
+  --font-size-md: 2.7rem;
+  --line-height-md: 3.5rem;
+  --font-size-sm: 1.7rem;
+  --line-height-sm: 2.7rem;
 }
 
 * {
-    box-sizing: inherit;
+  margin: 0;
+  font-family: Lab Grotesque VN;
+  font-style: normal;
 }
 
 .container {
-    padding:0 0 0 8.33334% !important;
-    min-width: 100% !important;
-    margin: 0 !important;
+  padding: 0 0 0 8.33334% !important;
+  min-width: 100% !important;
+  margin: 0 !important;
 }
 
 h2 {
-    font-size: 64px;
-    font-weight: 300;
-    line-height: 68px;
-  
-  }
-
-h1, h4, h5 {
-    /* padding: 0 !important; */
-    margin: 0;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 68px;
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
+h1,
+h4,
+h5 {
+  /* padding: 0 !important; */
+  margin: 0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    /*Trick de fontsize 62,5% thì 1rem  sẽ là 10px muốn để
+  /*Trick de fontsize 62,5% thì 1rem  sẽ là 10px muốn để
     font-size = 12 thì --> 1.2rem*/
-    font-size: 62.5%;
-    line-height: 2.7rem;
-    /*font sans-serif là chủng font chữ k chân, sẽ hiển thị
+  font-size: 62.5%;
+  line-height: 2.7rem;
+  /*font sans-serif là chủng font chữ k chân, sẽ hiển thị
     trong khi đợi font Roboto được tải về*/
-    font-family: 'Lab Grotesque VN', sans-serif;
-    box-sizing: border-box;
+  font-family: "Lab Grotesque VN", sans-serif;
+  box-sizing: border-box;
 }
 
 .bold {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .button-conf {
-    min-width: 110px;
-    height: 48px;
-    text-decoration: none;
-    border: none;
-    padding: 0 40px 2px;
-    border-radius: 24px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;   
+  min-width: 110px;
+  height: 48px;
+  text-decoration: none;
+  border: none;
+  padding: 0 40px 2px;
+  border-radius: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
 }
 .mb-132 {
-    margin-bottom: 13.2rem;
+  margin-bottom: 13.2rem;
 }

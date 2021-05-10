@@ -7,8 +7,7 @@
 
   .heading {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
-      url(../../assets/images/T&T_Poster-2\ 1.png) right center / cover
-        no-repeat;
+      url(../../assets/images/T&T_Poster-21.png) right center / cover no-repeat;
   }
 
   .hide-on-mobile {
@@ -69,9 +68,9 @@
     left: auto;
     right: 5px;
     position: absolute;
-    width: calc( 100vw - 5px);
-    margin : auto ;
-}
+    width: calc(100vw - 5px);
+    margin: auto;
+  }
 
   .sidebar-bottom-text {
     font-size: 1.5rem;
@@ -89,8 +88,8 @@
   }
 
   .top_nav {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
   }
 
   .sidebar-bottom-region label {
@@ -104,17 +103,15 @@
     line-height: 2.3rem;
   }
 
-
   select#language {
     width: 16vh;
   }
 
   .slidebar-bottom-separate {
-    border: 1px solid #B7BFC5;
+    border: 1px solid #b7bfc5;
     height: 2.8vh;
     margin: 0 1vh 0 2vh;
   }
-
 
   .heading {
     height: 93vh;

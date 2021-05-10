@@ -103,8 +103,8 @@ h5 {
 select {
   border: none;
   outline: none;
-  background: transparent;
-  width: 10vh;
+  /* background: transparent; */
+  /* width: 10vh; */
   color: var(--text-color);
   font-size: 1.7rem;
   line-height: 2.7rem;
@@ -122,10 +122,10 @@ select > option {
   background: transparent;
   color: #b7bfc5;
 }
-
+/* 
 select#language {
   width: 12vh;
-}
+} */
 
 .slidebar-bottom-separate {
   border: 1px solid #b7bfc5;
