@@ -101,6 +101,7 @@
     width: 14vh;
     font-size: 1.5rem;
     line-height: 2.3rem;
+    background-color: transparent !important;
   }
 
   select#language {
@@ -114,7 +115,7 @@
   }
 
   .heading {
-    height: 93vh;
+    height: 100vh;
   }
 
   .header__content-description {
@@ -258,7 +259,7 @@
   }
 
   .your-email {
-    width: 100%;
+    width: 100% !important;
     padding: 1.2rem 2rem 2.8rem 2rem;
   }
 
@@ -346,7 +347,7 @@
     display: none !important;
   }
   .show-on-tablet {
-    display: block !important;
+    display: flex !important;
   }
   .heading {
     height: 100vh;
@@ -432,7 +433,7 @@
     display: none !important;
   }
   .show-on-pc {
-    display: block !important;
+    display: flex !important;
   }
 
   .main__about-list {

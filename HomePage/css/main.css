@@ -478,7 +478,7 @@ select#language {
   bottom: 0;
   right: 0;
   background-color: var(--text-color);
-  max-width: 480px;
+  width: 480px;
   color: #7d868c;
   display: flex;
   padding: 2rem 4rem 5.6rem 4rem;

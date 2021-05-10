@@ -28,6 +28,12 @@ h5 {
   line-height: 27px !important;
 }
 
+.h2-special {
+  position: absolute !important;
+  left: 4.9em;
+  width: 45%;
+}
+
 .header {
   position: relative;
   color: #fff;
@@ -119,11 +125,7 @@ h5 {
 }
 
 .section .col-one .title {
-  flex: 0.3;
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1em;
 }
 
 .section .col-one .image {
@@ -166,11 +168,15 @@ h5 {
   padding-top: 10em;
 }
 
+.section-four .col-two .item{
+  float: right;
+}
+
 .section-four .item {
   max-width: 480px;
   margin-bottom: 5em;
 }
 
-.section-four .item span{
+.section-four .item span {
   margin-top: 15px;
 }
