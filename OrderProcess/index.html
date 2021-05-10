@@ -270,25 +270,41 @@
           </div> -->
           <div class="col-two col-xl-8 col-md-12 col-sm-12">
             <div class="step-number">
-              <div class="item-step">
-                <h1 class="bold active">1</h1>
+              <div class="item-step active">
+                <h1 class="bold">1</h1>
+                <div class="content-step">A</div>
               </div>
               <div class="item-step">
                 <h1 class="bold">2</h1>
+                <div class="content-step">B</div>
               </div>
               <div class="item-step">
                 <h1 class="bold">3</h1>
+                <div class="content-step">C</div>
               </div>
               <div class="item-step">
                 <h1 class="bold">4</h1>
+                <div class="content-step">D</div>
               </div>
-              
             </div>
           </div>
         </div>
       </div>
     </div>
     <script>
+      $(document).ready(function () {
+        $(".item-step").click(function () {
+          $(".step-number")
+            .children()
+            .toArray()
+            .forEach((element) => {
+              if (element.className.includes("active")) {
+                element.classList.remove("active")
+                $(this).addClass("active")
+              }
+            });
+        });
+      });
       function minusQuantity() {
         var quantity_temp = document.getElementById("item-quantity").innerText;
         if (parseInt(quantity_temp) <= 0) return;

@@ -634,10 +634,22 @@ input[type="checkbox"]:checked + *::before {
 .step-number h1{
   color: #B7BFC5;
 }
-.step-number h1.active{
+.item-step{
+  display: flex;
+  align-items: center;
+}
+.step-number .item-step.active h1{
   color: #000;
 }
-.step-number h1.active::after{
+.step-number .item-step.active::after{
   color: #000;
   content: url("../assets/icons/rect-step.png");
+}
+
+.content-step{
+  display: none;
+}
+
+.item-step.active .content-step{
+  display: block;
 }
