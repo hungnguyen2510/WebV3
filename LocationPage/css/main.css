@@ -35,7 +35,7 @@ h5 {
 .heading {
   /* position: relative; */
   padding-top: 50%;
-  background: url(../../assets/images/www.rimowa\ 1.png) right top / 52%
+  background: url("../../assets/images/www.rimowa\ 1.png") right top / 52%
     no-repeat;
 }
 

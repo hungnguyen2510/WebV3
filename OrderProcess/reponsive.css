@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  font-family: Lab Grotesque VN;
+  font-family: "Lab Grotesque VN";
   font-style: normal;
 }
 h1 {
@@ -537,30 +537,6 @@ input[type="checkbox"]:checked + *::before {
   opacity: 0.8; /* for demo purpose  */
 }
 
-.stack-top {
-  z-index: 9;
-  margin: 0px; /* for demo purpose  */
-  background: #000000d4;
-}
-
-.section-one .add-cart .col-two {
-  position: absolute;
-  min-height: 100vh;
-  right: 0;
-  background-color: #fff;
-  z-index: 10;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.section-one .add-cart .col-one {
-  background-color: unset;
-  min-height: 100vh;
-}
-
 .temp-total {
   display: flex;
   align-items: center;
@@ -651,6 +627,20 @@ input[type="checkbox"]:checked + *::before {
   animation: animateright 1s !important;
 }
 
+.step-number{
+  display: flex;
+}
+
+.step-number h1{
+  color: #B7BFC5;
+}
+.step-number h1.active{
+  color: #000;
+}
+.step-number h1.active::after{
+  color: #000;
+  content: url("../assets/icons/rect-step.png");
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   h1 {

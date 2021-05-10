@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Lab Grotesque VN';
+    src: url('LabGrotesque-Regular.eot');
+    src: local('Lab Grotesque Regular'), local('LabGrotesque-Regular'),
+        url('LabGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LabGrotesqueVN-Regular.woff') format('woff'),
+        url('LabGrotesque-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
