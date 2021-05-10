@@ -349,19 +349,14 @@ h5 {
   position: relative;
 }
 
-.h2-special{
+.h2-special {
   position: absolute !important;
-  left: 4em;
+  left: 3.6em;
+  width: unset !important;
 }
 
 .section-two .col-one .title,
 .section-four .col-one .title {
-  /* flex: 0.4; */
-  /* display: flex;
-  align-items: baseline;
-  justify-content: center;
-  position: absolute;
-  left: 4em; */
   width: 33%;
 }
 
@@ -380,6 +375,8 @@ h5 {
 .section-four .content {
   position: absolute;
   bottom: 0;
+  width: 90%;
+  right: 0;
 }
 
 .section-two .hero h3,
@@ -397,6 +394,12 @@ h5 {
   padding: 0 !important;
 }
 
+.close-modal img {
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
 .my-content-modal .item-toggle {
   display: flex;
   justify-content: space-between;
@@ -405,6 +408,10 @@ h5 {
 
 .btn-toggle {
   display: none !important;
+}
+
+.btn-toggle img {
+  max-width: 32px;
 }
 
 .btn-colors .active-circle::after {
@@ -418,6 +425,6 @@ h5 {
   right: -8px;
 }
 
-.bottom-75{
-  bottom: -7.5em !important;
+.bottom-45 {
+  bottom: -4.5em !important;
 }
