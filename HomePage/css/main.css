@@ -373,8 +373,6 @@ select#language {
 }
 
 .main__about-title h4 {
-  font-size: var(--font-size-lg);
-  line-height: var(--line-height-lg);
   font-weight: 900;
   margin: 0;
 }
@@ -468,6 +466,7 @@ select#language {
 .cookie-close-btn {
   margin-bottom: 4rem;
   cursor: pointer;
+  padding-left: 1.68rem;
 }
 
 .pop-up-close {
@@ -479,11 +478,15 @@ select#language {
   bottom: 0;
   right: 0;
   background-color: var(--text-color);
-  width: 480px;
+  max-width: 480px;
   color: #7d868c;
   display: flex;
   padding: 2rem 4rem 5.6rem 4rem;
   z-index: 1;
+}
+
+.your-email-main {
+  flex: 1;
 }
 
 .your-email h4 {
@@ -492,11 +495,13 @@ select#language {
 
 .your-email h5 {
   margin-bottom: 3.2rem;
+  max-width: 82%;
 }
 
 .email-enter-input {
   position: absolute;
-  right: 7rem;
+  right: 8%;
+  bottom: 18%;
   width: 4.6rem;
   height: 4.6rem;
 }
@@ -513,7 +518,7 @@ select#language {
 }
 
 .your-email input {
-  width: 100%;
+  width: 82%;
   height: 4.4rem;
   border: none;
   background: none;
@@ -522,6 +527,8 @@ select#language {
 }
 
 .email-close-btn {
+  position: absolute;
+  right: 8%;
   width: 3.2rem;
   height: 3.2rem;
   cursor: pointer;

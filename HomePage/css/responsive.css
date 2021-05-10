@@ -156,8 +156,9 @@
   }
 
   .main__content-slogan-text {
-    font-size: 7rem;
-    line-height: 7rem;
+    font-size: 8rem;
+    line-height: 8rem;
+    font-weight: 900;
   }
 
   .main__insta-item {
@@ -171,6 +172,12 @@
 
   .main__insta-item {
     margin-right: 2.4rem;
+  }
+
+  .main__insta-hastag {
+    font-size: 2rem;
+    font-weight: 2.7rem;
+    font-weight: 700;
   }
 
   .main__content-preface {
@@ -267,24 +274,42 @@
     margin-bottom: 2.3rem;
   }
 
-  .email-enter-input {
-    position: absolute;
-    right: 5rem;
-    bottom: 3.2rem;
-    width: 3.6rem;
-    height: 3.6rem;
+  .slider-01.owl-carousel .owl-item .item {
+    max-width: 30rem;
+    height: 20rem !important;
   }
 
-  .email-enter-input img {
-    padding-bottom: 0.5rem;
-    object-fit: cover;
+  .slider-01.owl-carousel .owl-item img {
+    /* width: 100% !important; */
+    height: 100% !important;
+    object-fit: inherit;
+  }
+
+  .mb-132 {
+    margin-bottom: 9.6rem;
+  }
+
+  .your-email input {
+    width: 98% !important;
+  }
+
+  .email-close-btn {
+    right: 6%;
+  }
+
+  .email-enter-input {
+    right: 8%;
+    bottom: 3.5rem;
+    width: 3.2rem;
+    height: 3.2rem;
   }
 
   #your-email::placeholder {
     font-size: 2rem;
-    font-weight: 700;
     line-height: 2.7rem;
   }
+
+ 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -304,12 +329,16 @@
     font-size: 2rem;
     line-height: 2.7rem;
   }
+
+  .main__content-slogan-text {
+    font-size: 12rem;
+    line-height: 12rem;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   :root {
-    --text-header-size: 5.6rem;
     --product-img: 60rem !important;
   }
 
@@ -354,10 +383,18 @@
     font-weight: 300;
     max-width: 100%;
   }
+
+  .main__content-slogan-text {
+    font-size: 12rem;
+    line-height: 12rem;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  :root {
+    --product-img: 100% !important;
+  }
   :root {
     --text-header-size: 5.6rem;
     --product-img: 34.1rem !important;
@@ -374,10 +411,23 @@
   .main__product-mt {
     margin-top: 240px;
   }
+
+  .main__content-slogan-text {
+    font-size: 15rem;
+    line-height: 15rem;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  :root {
+    --product-img: 48rem !important;
+  }
+
+  .container {
+    margin: 0 !important;
+  }
+
   .hide-on-pc {
     display: none !important;
   }
@@ -394,5 +444,41 @@
     width: 60%;
     font-size: var(--font-size-lg);
     line-height: var(--line-height-lg);
+  }
+
+  .col-left {
+    margin-right: 3rem;
+  }
+
+  .col-right {
+    margin-left: 2.084vw;
+    padding-right: 2.5vw;
+  }
+
+  .main__content-slogan-text {
+    font-size: 18.6rem;
+    line-height: 18.6rem;
+    font-weight: 700;
+  }
+
+  .main__about-list {
+    width: 38vw;
+  }
+
+  .main__about-title {
+    font-size: 27px !important;
+    line-height: 35px !important;
+    font-weight: 900 !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1484px) {
+  .col-right {
+    padding-left: 9vw;
+    padding-right: 2.5vw;
+  }
+  .main__about-list {
+    width: 28vw;
   }
 }
