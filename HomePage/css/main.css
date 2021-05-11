@@ -466,7 +466,7 @@ select#language {
 .cookie-close-btn {
   margin-bottom: 4rem;
   cursor: pointer;
-  padding-left: 1.68rem;
+  padding: 0 1.68rem;
 }
 
 .pop-up-close {
