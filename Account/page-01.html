@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
 
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="account.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="account.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/footer.css" />
     <link
       rel="stylesheet"
@@ -71,26 +71,26 @@
         </div>
       </div>
     </div>
-    <div class="my-container">
+    <div class="my-container account">
       <div class="row">
         <div class="col-one col-xl-6 col-md-12 col-sm-12">
           <img src="../assets/icons/Smiley.svg" alt="" class="logo-smile" />
-          <h1>chào Hoàng</h1>
-          <div class="login-space">
+          <h1 class="w-50">chào Hoàng!</h1>
+          <div class="login-space on-desktop">
             <div class="item">
               <img src="../assets/icons/logout.png" alt="" />
-              <span>đăng xuất</span>
+              <h5 class="bold mb-0 ml-3">đăng xuất</h5>
             </div>
             <div class="item">
               <img src="../assets/icons/user-sad.png" alt="" />
-              <span>xóa tài khoản vĩnh viễn</span>
+              <h5 class="bold mb-0 ml-3">xóa tài khoản vĩnh viễn</h5>
             </div>
           </div>
         </div>
         <div class="col-two col-xl-6 col-md-12 col-sm-12">
           <hr />
           <div class="item">
-            <h3>thông tin tài khoản</h3>
+            <h3 class="bold">thông tin tài khoản</h3>
             <button class="btn-toggle" onclick="thongTinTaiKhoan()">
               <img src="../assets/icons/plus.png" alt="" id="btn-plus-1" />
               <img src="../assets/icons/minus.png" alt="" id="btn-minus-1" />
@@ -110,7 +110,7 @@
               name="txtDiaChi"
             />
             <button class="btn-conf">thêm địa chỉ khác</button>
-            <p>mật mã tài khoản</p>
+            <p class="mt-5">mật mã tài khoản</p>
             <input
               type="password"
               placeholder="mật khẩu cũ"
@@ -130,7 +130,7 @@
           </div>
           <hr />
           <div class="item">
-            <h3>lịch sử mua hàng</h3>
+            <h3 class="bold">lịch sử mua hàng</h3>
             <button class="btn-toggle" onclick="lichSuMuaHang()">
               <img src="../assets/icons/plus.png" alt="" id="btn-plus-2" />
               <img src="../assets/icons/minus.png" alt="" id="btn-minus-2" />
@@ -139,85 +139,192 @@
           <div id="lsmh" class="toggle-div">
             <p>đơn hàng của bạn từ xưa đến nay</p>
             <div class="card-custom">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>đơn hàng</th>
-                    <th>ngày</th>
-                    <th>tổng cộng</th>
-                    <th>tình trạng</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><h5>7272</h5></td>
-                    <td><h5>23.03.2021</h5></td>
-                    <td><h5>960 000 VND</h5></td>
-                    <td><h5>đang vận chuyển</h5></td>
-                  </tr>
-                </tbody>
-              </table>
-              <button class="btn-conf mr-2">thêm địa chỉ khác</button>
+              <div class="on-desktop">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>đơn hàng</th>
+                      <th>ngày</th>
+                      <th>tổng cộng</th>
+                      <th>tình trạng</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><h5 class="bold">7272</h5></td>
+                      <td><h5 class="bold">23.03.2021</h5></td>
+                      <td><h5 class="bold">960 000 VNĐ</h5></td>
+                      <td><h5 class="bold">đang vận chuyển</h5></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="on-mobile">
+                <div class="item-card-mobile">
+                  <p>đơn hàng</p>
+                  <h5 class="bold">7272</h5>
+                </div>
+                <div class="item-card-mobile">
+                  <p>ngày</p>
+                  <h5 class="bold">23.03.2021</h5>
+                </div>
+                <div class="item-card-mobile">
+                  <p>tổng cộng</p>
+                  <h5 class="bold">960 000 VNĐ</h5>
+                </div>
+                <div class="item-card-mobile">
+                  <p>tình trạng</p>
+                  <h5 class="bold">đang vận chuyển</h5>
+                </div>
+              </div>
+              <button class="btn-conf mr-2">chi tiết đơn hàng</button>
               <button class="btn-conf">track order</button>
             </div>
             <div class="card-custom">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>đơn hàng</th>
-                    <th>ngày</th>
-                    <th>tổng cộng</th>
-                    <th>tình trạng</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><h5>7272</h5></td>
-                    <td><h5>23.03.2021</h5></td>
-                    <td><h5>960 000 VND</h5></td>
-                    <td><h5>đang vận chuyển</h5></td>
-                    <td>
-                      <button class="btn-none">
-                        <h5>
-                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                        </h5>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><h5>2804</h5></td>
-                    <td><h5>31.01.2021</h5></td>
-                    <td><h5>1 740 000 VND</h5></td>
-                    <td><h5>đã hủy</h5></td>
-                    <td>
-                      <button class="btn-none">
-                        <h5>
-                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                        </h5>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><h5>0029</h5></td>
-                    <td><h5>23.03.2021</h5></td>
-                    <td><h5>960 000 VND</h5></td>
-                    <td><h5>đã nhận hàng</h5></td>
-                    <td>
-                      <button class="btn-none">
-                        <h5>
-                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                        </h5>
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="on-desktop">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>đơn hàng</th>
+                      <th>ngày</th>
+                      <th>tổng cộng</th>
+                      <th>tình trạng</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><h5 class="bold">7272</h5></td>
+                      <td><h5 class="bold">23.03.2021</h5></td>
+                      <td><h5 class="bold">420 000 VNĐ</h5></td>
+                      <td><h5 class="bold">đã nhận hàng</h5></td>
+                      <td>
+                        <button class="btn-none">
+                          <h5>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                          </h5>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><h5 class="bold">2804</h5></td>
+                      <td><h5 class="bold">31.01.2021</h5></td>
+                      <td><h5 class="bold">1 470 000 VNĐ</h5></td>
+                      <td><h5 class="bold">đã hủy</h5></td>
+                      <td>
+                        <button class="btn-none">
+                          <h5>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                          </h5>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><h5 class="bold">0029</h5></td>
+                      <td><h5 class="bold">23.03.2021</h5></td>
+                      <td><h5 class="bold">1 470 000 VNĐ</h5></td>
+                      <td><h5 class="bold">đã nhận hàng</h5></td>
+                      <td>
+                        <button class="btn-none">
+                          <h5>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                          </h5>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="on-mobile">
+                <div class="items-card">
+                  <div class="content">
+                    <div class="item-card-mobile">
+                      <p>đơn hàng</p>
+                      <h5 class="bold">7272</h5>
+                    </div>
+                    <div class="item-card-mobile">
+                      <p>ngày</p>
+                      <h5 class="bold">23.03.2021</h5>
+                    </div>
+                    <div class="item-card-mobile">
+                      <p>tổng cộng</p>
+                      <h5 class="bold">960 000 VNĐ</h5>
+                    </div>
+                    <div class="item-card-mobile">
+                      <p>tình trạng</p>
+                      <h5 class="bold">đang vận chuyển</h5>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <button class="btn-none">
+                      <h5>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                      </h5>
+                    </button>
+                  </div>
+                </div>
+                <hr class="my-4">
+                <div class="items-card">
+                  <div class="content">
+                    <div class="item-card-mobile">
+                      <p>đơn hàng</p>
+                      <h5 class="bold">2804</h5>
+                    </div>
+                    <div class="item-card-mobile">
+                      <p>ngày</p>
+                      <h5 class="bold">03.01.2021</h5>
+                    </div>
+                    <div class="item-card-mobile">
+                      <p>tổng cộng</p>
+                      <h5 class="bold">1 470 000 VNĐ</h5>
+                    </div>
+                    <div class="item-card-mobile">
+                      <p>tình trạng</p>
+                      <h5 class="bold">đã hủy</h5>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <button class="btn-none">
+                      <h5>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                      </h5>
+                    </button>
+                  </div>
+                </div>
+                <hr class="my-4">
+                <div class="items-card">
+                  <div class="content">
+                    <div class="item-card-mobile">
+                      <p>đơn hàng</p>
+                      <h5 class="bold">0029</h5>
+                    </div>
+                    <div class="item-card-mobile">
+                      <p>ngày</p>
+                      <h5 class="bold">28.04.2019</h5>
+                    </div>
+                    <div class="item-card-mobile">
+                      <p>tổng cộng</p>
+                      <h5 class="bold">1 470 000 VNĐ</h5>
+                    </div>
+                    <div class="item-card-mobile">
+                      <p>tình trạng</p>
+                      <h5 class="bold">đã nhận hàng</h5>
+                    </div>
+                  </div>
+                  <div class="icon">
+                    <button class="btn-none">
+                      <h5>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                      </h5>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <hr />
           <div class="item">
-            <h3>khuyến mãi xịn (của riêng bạn)</h3>
+            <h3 class="bold">khuyến mãi xịn (của riêng bạn)</h3>
             <button class="btn-toggle" onclick="khuyenMai()">
               <img src="../assets/icons/plus.png" alt="" id="btn-plus-3" />
               <img src="../assets/icons/minus.png" alt="" id="btn-minus-3" />
@@ -233,7 +340,7 @@
           </div>
           <hr />
           <div class="item">
-            <h3>tùy chỉnh email</h3>
+            <h3 class="bold">tùy chỉnh email</h3>
             <button class="btn-toggle" onclick="email()">
               <img src="../assets/icons/plus.png" alt="" id="btn-plus-4" />
               <img src="../assets/icons/minus.png" alt="" id="btn-minus-4" />
@@ -251,7 +358,7 @@
               <div class="col col-xl-8 col-md-12 col-sm-12 d-flex flex-column">
                 <div class="radio-button">
                   <input type="radio" id="male" name="gender" value="male" />
-                  <span for="male">Đăng ký</span>
+                  <h5 for="male">Đăng ký</h5>
                 </div>
                 <div class="radio-button">
                   <input
@@ -260,7 +367,7 @@
                     name="gender"
                     value="female"
                   />
-                  <span for="female">Hủy đăng ký</span>
+                  <h5 for="female">Hủy đăng ký</h5>
                 </div>
               </div>
             </div>
@@ -271,6 +378,17 @@
               tức cũng như email kèm khuyến mãi cũng như các email cập nhật tình
               trạng đơn hàng.
             </p>
+          </div>
+          
+        </div>
+        <div class="on-mobile login-space">
+          <div class="item">
+            <img src="../assets/icons/logout.png" alt="" />
+            <h5 class="bold mb-0 ml-3">đăng xuất</h5>
+          </div>
+          <div class="item">
+            <img src="../assets/icons/user-sad.png" alt="" />
+            <h5 class="bold mb-0 ml-3">xóa tài khoản vĩnh viễn</h5>
           </div>
         </div>
       </div>
