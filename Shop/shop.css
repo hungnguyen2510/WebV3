@@ -121,9 +121,10 @@ h5 {
 .number-nav {
   font-size: 15px;
   position: absolute;
-  margin-left: 5px;
+  /* margin-left: 5px; */
   font-weight: 400;
   top: 0;
+  right: 0;
 }
 
 .menu_top a,

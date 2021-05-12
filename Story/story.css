@@ -82,6 +82,10 @@ h5 {
   width: 40vw;
 }
 
+.bold{
+  font-weight: bold;
+}
+
 .description span {
   font-weight: bold;
 }

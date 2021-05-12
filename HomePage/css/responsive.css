@@ -350,9 +350,7 @@ select#language {
 }
 
 .main__content-slogan-text {
-  font-size: 18.6rem;
-  line-height: 18.6rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 /* slide images */
@@ -487,6 +485,10 @@ select#language {
 
 .email-enter-input img {
   width: 50%;
+}
+
+.my-footer {
+  margin: 0 !important;
 }
 
 .my-footer .col-two input {
@@ -649,6 +651,27 @@ select#language {
     --product-img: 100% !important;
   }
 
+  
+  .top_nav {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
+
+  .top_nav .logo {
+    margin-left: 2.5em;
+  }
+
+  .account .col-two .item{
+    margin-bottom: 1em;
+  }
+
+  .bold{
+    font-weight: bold !important;
+  }
+
+  .number-quantity{
+    display: none;
+  }
   .heading {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
       url(../../assets/images/T&T_Poster-21.png) right center / cover no-repeat;
@@ -663,9 +686,18 @@ select#language {
   }
 
   .container {
-    padding: 0 3% !important;
-    min-width: 100% !important;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 4% !important;
+    width: 100% !important;
     margin: 0 !important;
+  }
+
+   
+  .my-footer {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 4% !important;
   }
 
   h1 {
@@ -769,6 +801,7 @@ select#language {
   .header__content-description {
     font-size: var(--font-size-md);
     line-height: var(--line-height-md);
+    max-width: 75%;
   }
 
   .header__content-btn {
@@ -805,8 +838,8 @@ select#language {
   }
 
   .main__content-slogan-text {
-    font-size: 8rem;
-    line-height: 8rem;
+    font-size: 8.8rem !important;
+    line-height: 8.8rem !important;
     font-weight: 900;
   }
 
@@ -894,6 +927,10 @@ select#language {
     margin: 0;
   }
 
+  .cookie-text {
+    text-align: justify;
+  }
+
   .cookie-text h5 {
     font-size: 15px;
     font-weight: 400;
@@ -967,6 +1004,10 @@ select#language {
   :root {
     --text-header-size: 5.6rem;
     --product-img: 60rem !important;
+  }
+
+  .my-footer {
+    margin: 0 !important;
   }
 
   .main__about-list {
@@ -1062,6 +1103,7 @@ select#language {
   .main__content-slogan-text {
     font-size: 15rem;
     line-height: 15rem;
+    
   }
 
 }
@@ -1070,10 +1112,6 @@ select#language {
 @media only screen and (min-width: 1200px) {
   :root {
     --product-img: 48rem !important;
-  }
-
-  .container {
-    /* margin: 0 !important; */
   }
 
   .hide-on-pc {
@@ -1110,7 +1148,7 @@ select#language {
     font-weight: 900 !important;
   }
 
-  .container {
+  .container{
     padding: 0 0 0 8.33333% !important;
   }
   
@@ -1122,6 +1160,10 @@ select#language {
   
   .container {
     padding: 0 0 0 14.33333333% !important;
+  }
+
+  .my-footer {
+    padding: 2% 4.33333% 0 14.33333333% !important;
   }
 
   .main__about-list {
