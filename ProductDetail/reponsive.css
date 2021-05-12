@@ -26,8 +26,12 @@
     line-height: 22px !important;
   }
   .top_nav {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .top_nav .logo {
+    margin-left: 2.5em;
   }
 
   .section-one .col-one {

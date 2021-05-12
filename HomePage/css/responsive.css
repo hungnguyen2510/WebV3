@@ -736,6 +736,10 @@ select#language {
     padding-right: 1em !important;
   }
 
+  .top_nav .logo {
+    margin-left: 2.5em;
+  }
+
   .sidebar-bottom-region label {
     font-size: 1.5rem;
     line-height: 2.3rem;

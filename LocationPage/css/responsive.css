@@ -330,6 +330,10 @@ h5 {
     padding-right: 1em;
   }
 
+  .top_nav .logo {
+    margin-left: 2.5em;
+  }
+
   .heading {
     height: 88vh;
   }

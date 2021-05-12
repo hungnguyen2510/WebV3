@@ -319,6 +319,10 @@ input[type="radio"] {
     padding-right: 1em;
   }
 
+  .top_nav .logo {
+    margin-left: 2.5em;
+  }
+
   .my-container {
     margin: 5%;
   }

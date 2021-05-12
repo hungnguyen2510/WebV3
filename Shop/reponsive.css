@@ -477,9 +477,14 @@ h5 {
   }
 
   .top_nav {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 1em;
+    padding-right: 1em;
   }
+
+  .top_nav .logo {
+    margin-left: 2.5em;
+  }
+
   .menu_top a:not(:first-child) {
     display: none;
   }
@@ -553,7 +558,7 @@ h5 {
 
   .section-two .container,
   .section-four .container {
-    padding: 120px 50px;
+    padding: 150px 50px;
   }
 
   .section-two .col-one,
@@ -563,8 +568,8 @@ h5 {
 
   .section-two .col-one .image img,
   .section-four .col-one .image img {
-    width: 240px;
-    margin-left: 2em;
+    width: 250px;
+    margin-left: 22px;
   }
 
   .section-two .col-one .content,
@@ -596,7 +601,7 @@ h5 {
     font-size: 36px !important;
     line-height: 40px !important;
     justify-content: unset;
-    margin-left: -22px;
+    margin-left: -30px;
     width: 100%;
     margin-bottom: 0.8em;
   }
@@ -610,7 +615,7 @@ h5 {
 
   .section-two .content, .section-four .content{
     width: 100%;
-    margin-left: 2em;
+    margin-left: 22px;
   }
 
   .section-two .content button, .section-four .content button{
