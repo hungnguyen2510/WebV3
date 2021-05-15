@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
 
     <link
@@ -57,9 +57,8 @@
       ></script>
       <script src="../assets/owlcarousel/owl.carousel.min.js"></script>
   
-
     <!-- <link rel="stylesheet" href="css/base.css" /> -->
-    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="css/main.css" /> -->
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="../assets/css/footer.css" />
     <link
@@ -74,7 +73,7 @@
         <div class="top_nav d-flex justify-content-between px-5 py-4">
           <div class="menu">
             <nav class="nav-content">
-              <div class="nav-btn" id="" onclick="ToggleNav()">
+              <div class="nav-btn navtop-icon" id="" onclick="ToggleNav()">
                 <img src="../assets/icons/menu.svg" alt="" class="icon" />
               </div>
 
@@ -137,21 +136,23 @@
             </nav>
           </div>
           <div class="logo">
-            <a href="">
-              <img src="../assets/icons/Logo.png" alt="" class="icon" />
+            <a class="navtop-icon" href="">
+              <img src="../assets/icons/Logo.png" alt="" class="icon hide-on-mobile" />
+              <img src="../assets/icons/Fill 1.svg" alt="" class="icon hide-on-pc hide-on-tablet" />
             </a>
           </div>
           <div class="user">
-            <a href="">
+            <a class="navtop-icon" href="">
               <img src="../assets/icons/user.svg" alt="" class="icon" />
             </a>
-            <a href="">
+            <a class="navtop-icon" href="">
               <img src="../assets/icons/sneaker.svg" alt="" class="icon" />
             </a>
             <span class="number-quantity" style="font-weight: bold">0</span>
           </div>
         </div>
-        <div class="heading">
+       
+        <!-- <div class="heading">
           <div class="container">
             <header class="header__content">
               <h1 class="header__content-heading">tôi & ta</h1>
@@ -159,16 +160,81 @@
                 phiên bản đặc-biệt cho mùa lễ hội 2021
               </h4>
               <button class="header__content-btn btn button-conf">
-                mua liền !
+                <h5>mua liền !</h5>
               </button>
             </header>
+          </div>
+        </div> -->
+
+
+
+        
+
+        <div id="myCarouse2" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+         <div class="container">
+            <ul class="carousel-indicators">
+              <li data-target="#myCarouse2" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarouse2" data-slide-to="1"></li>
+              <li data-target="#myCarouse2" data-slide-to="2"></li>
+            </ul>
+         </div>
+          
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="heading heading-bg-main" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(../assets/images/Hero\ IMG.png)">
+                <div class="container">
+                  <header class="header__content">
+                    <h1 class="header__content-heading">tôi & ta</h1>
+                    <h4 class="header__content-description">
+                      phiên bản đặc-biệt cho mùa lễ hội 2021
+                    </h4>
+                    <button class="header__content-btn btn button-conf">
+                      <h5>mua liền !</h5>
+                    </button>
+                  </header>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="heading heading-bg-child" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(../assets/images/Next\ IMG.png);">
+                <div class="container">
+                  <header class="header__content">
+                    <h1 class="header__content-heading">tôi & ta</h1>
+                    <h4 class="header__content-description">
+                      phiên bản đặc-biệt cho mùa lễ hội 2021
+                    </h4>
+                    <button class="header__content-btn btn button-conf">
+                      <h5>mua liền !</h5>
+                    </button>
+                  </header>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="heading heading-bg-child1" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(../assets/images/Hero\ IMG.png)">
+                <div class="container">
+                  <header class="header__content">
+                    <h1 class="header__content-heading">tôi & ta</h1>
+                    <h4 class="header__content-description">
+                      phiên bản đặc-biệt cho mùa lễ hội 2021
+                    </h4>
+                    <button class="header__content-btn btn button-conf">
+                      <h5>mua liền !</h5>
+                    </button>
+                  </header>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="container">
           <div class="main__product mb-3">
             <div class="row m-0">
-              <h4 class="main__product-title bold">xem hết mọi thứ</h4>
+              <h4 class="main__product-title">xem hết mọi thứ</h4>
             </div>
 
             <div class="row m-0 w-100 hide-on-tablet hide-on-mobile show-on-pc">
@@ -375,7 +441,7 @@
 
                   <div class="col-xl-8 col-md-7 col-sm-6 col-7 p-0">
                     <ul class="main__about-list mb-0">
-                      <li class="main__about-item">
+                      <li id class="main__about-item">
                         <img
                           src="../assets/icons/tinhte.vn-2855788884367194 copie.png"
                           alt=""
@@ -481,7 +547,7 @@
       <div class="cookie-img">
         <img src="../assets/icons/cookies.png" alt="" />
       </div>
-      <div class="cookie-text">
+      <div class="cookie-text align-self-center">
         <h5>vô website này là bạn đã đồng ý để chúng tôi xài bánh quy.</h5>
         <h5>
           chúng tôi xài bánh quy để đảm bảo mang đến cho bạn một trải nghiệm
@@ -514,6 +580,20 @@
     </div>
 
     <script>
+      $(document).ready(function () {
+        $(".main__about-item").click(function () {
+          $(".main__about-list")
+            .children()
+            .toArray()
+            .forEach((element) => {
+              if (element.className.includes("main__about-item--active")) {
+                element.classList.remove("main__about-item--active")
+                $(this).addClass("main__about-item--active")
+              }
+            });
+        });
+      });
+      
       $(".slider-01").owlCarousel({
         loop: true,
         margin: 20,
