@@ -181,9 +181,11 @@
                       <div class="row slider-labels justify-content-between">
                         <div class="col-xs-6 caption">
                           <span id="slider-range-value1"></span>
+                          <span id="slider-range-temp1"></span>
                         </div>
                         <div class="col-xs-6 text-right caption">
                           <span id="slider-range-value2"></span>
+                          <span id="slider-range-temp2"></span>
                         </div>
                       </div>
                       <div class="row">
@@ -614,14 +616,24 @@
     <script>
       $(document).ready(function () {
         $(".btn-size").click(function () {
-          $(this).toggleClass("active");
+          // $(this).toggleClass("active");
+          $("button").removeClass("active");
+          $(this).addClass("active");
         });
 
         $(".actived-color").click(function () {
-          console.log(this);
+          // console.log(this);
           $("button").removeClass("active-circle");
           $(this).addClass("active-circle");
         });
+
+        
+        if($(".noUi-origin.noUi-connect")[0].attributes.style !== undefined){
+          console.log($(".noUi-origin.noUi-connect")[0].attributes)
+        }
+        else{
+          console.log($(".noUi-origin.noUi-connect"))
+        }
       });
 
       function handleColor() {
