@@ -40,7 +40,6 @@ h5 {
   border: 0;
   box-shadow: none;
   outline: none !important;
-  transition: all 3s;
   position: relative;
 }
 
@@ -89,11 +88,13 @@ h5 {
 }
 
 .container-left {
-  margin-left: 10%;
+  margin-left: 120px;
 }
 
 .header h1 {
   padding-bottom: 2rem;
+  margin-top: 80px;
+  font-weight: 700;
 }
 
 .header hr {
@@ -124,21 +125,34 @@ h5 {
   /* margin-left: 5px; */
   font-weight: 400;
   top: 0;
-  right: 0;
+  /* right: 0; */
 }
 
-.menu_top a,
-.menu_top button {
+.menu_top a h3,
+.menu_top .btn-menu {
   float: left;
   display: block;
   color: #000;
   text-align: center;
-  padding: 14px 30px 14px 0px;
+  padding: 14px 0;
   text-decoration: none;
   font-size: 40px;
   line-height: 48px;
-  font-weight: bold;
+  font-weight: 700;
   position: relative;
+  margin: 0 53px;
+}
+
+.menu_top a h3:nth-child(1){
+  margin-left: 0;
+}
+
+.menu_top .btn-menu{
+  margin: 0 47px;
+}
+
+.menu_top button img{
+  margin-left: 23px;
 }
 
 .menu_top button:focus {
@@ -218,6 +232,10 @@ h5 {
   border-radius: 50%;
 }
 
+.container-text-color{
+  margin-top: 2em;
+}
+
 .section-one,
 .section-three,
 .section-five,
@@ -229,7 +247,7 @@ h5 {
 
 .section-one .col-one {
   background-color: #00416a;
-  padding: 150px 30px;
+  padding: 139px 119px 139px 115px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -298,11 +316,27 @@ h5 {
   margin-left: -5em;
   /* display: flex; */
   justify-content: space-between;
-  font-weight: 600;
   left: 7em;
   z-index: 10;
   /* margin-top: 2rem; */
 }
+
+.section-one .col-one .text h2,
+.section-three .col-one .text h2,
+.section-five .col-one .text h2,
+.section-six .col-one .text h2,
+.section-seven .col-one .text h2 {
+  font-weight: 300;
+}
+
+.section-one .col-one .text h5,
+.section-three .col-one .text h5,
+.section-five .col-one .text h5,
+.section-six .col-one .text h5,
+.section-seven .col-one .text h5 {
+  font-weight: 400;
+}
+
 
 .section-one .col-two .item .text,
 .section-three .col-two .item .text,
@@ -311,8 +345,12 @@ h5 {
 .section-seven .col-two .item .text {
   display: flex;
   justify-content: space-between;
-  font-weight: bold;
 }
+
+.text > .description , .money{
+  font-weight: 700 !important;
+}
+
 
 .bold {
   font-weight: bold;

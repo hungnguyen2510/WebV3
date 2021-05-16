@@ -75,11 +75,21 @@
       <hr />
       <div class="menu_top" id="myTopnav">
         <div class="">
-          <a href="#" class="">tất cả <span class="number-nav">33</span></a>
-          <a href="#">giày <span class="number-nav">12</span></a>
-          <a href="#">dép <span class="number-nav">3</span></a>
-          <a href="#">phụ kiện <span class="number-nav">4</span></a>
-          <a href="#">áo mưa <span class="number-nav">5</span></a>
+          <a href="#" class="">
+            <h3>tất cả <span class="number-nav">33</span></h3></a
+          >
+          <a href="#"
+            ><h3>giày <span class="number-nav">12</span></h3></a
+          >
+          <a href="#"
+            ><h3>dép <span class="number-nav">3</span></h3></a
+          >
+          <a href="#"
+            ><h3>phụ kiện <span class="number-nav">4</span></h3></a
+          >
+          <a href="#"
+            ><h3>áo mưa <span class="number-nav">5</span></h3></a
+          >
           <a href="javascript:void(0);" class="icon" onclick="myFunction()"
             ><img src="../assets/icons/Chevron_down.png" alt=""
           /></a>
@@ -87,7 +97,7 @@
         <div class="mr-3">
           <button
             type="button"
-            class="btn"
+            class="btn btn-menu"
             data-toggle="modal"
             data-target="#modalColor"
           >
@@ -104,7 +114,14 @@
             <!-- Modal content-->
             <div class="modal-content">
               <div class="close-modal">
-                <img src="../assets/icons/Close.png" alt="" class="">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img src="../assets/icons/Close.png" alt="" class="" />
+                </button>
               </div>
               <div class="modal-body">
                 <h2>lọc</h2>
@@ -292,7 +309,7 @@
             <div class="text bottom-45">
               <h2>
                 Một đôi <br />
-                Đời mới
+                Đời-mới
               </h2>
               <h5>đời mới êm đẹp</h5>
             </div>
@@ -303,29 +320,33 @@
           <div class="item">
             <div class="content">
               <img src="../assets/images/profile.png" alt="" />
-              <div class="text">
-                <p class="description">da Đời-mới</p>
-                <p class="money">1 470 000 VND</p>
-              </div>
-              <div class="btn-colors">
-                <button class="color-black actived-color"></button>
-                <button class="color-grey actived-color"></button>
+              <div class="container-text-color">
+                <div class="text">
+                  <h5 class="description">da Đời-mới</h5>
+                  <h5 class="money">1 470 000 VND</h5>
+                </div>
+                <div class="btn-colors">
+                  <button class="color-black actived-color"></button>
+                  <button class="color-grey actived-color"></button>
+                </div>
               </div>
             </div>
           </div>
           <div class="item">
             <div class="content">
               <img src="../assets/images/front.png" alt="" />
-              <div class="text">
-                <p class="description">quá đỏ</p>
-                <p class="money">720 000 VND</p>
-              </div>
-              <div class="btn-colors">
-                <button class="color-red actived-color"></button>
-                <button class="color-yellow actived-color"></button>
-                <button class="color-grey-dark actived-color"></button>
-                <button class="color-grey-photo actived-color"></button>
-                <button class="color-purple actived-color"></button>
+              <div class="container-text-color">
+                <div class="text">
+                  <h5 class="description">quá đỏ</h5>
+                  <h5 class="money">720 000 VND</h5>
+                </div>
+                <div class="btn-colors">
+                  <button class="color-red actived-color"></button>
+                  <button class="color-yellow actived-color"></button>
+                  <button class="color-grey-dark actived-color"></button>
+                  <button class="color-grey-photo actived-color"></button>
+                  <button class="color-purple actived-color"></button>
+                </div>
               </div>
             </div>
           </div>
@@ -348,8 +369,8 @@
           <div class="content">
             <h5>
               vải Đời-mới — phiên bản đặc-biệt cho mùa lễ hội 2021. Dáng hình
-              quen thuộc dưới <span class="bold">Một làn da mới</span>: Một kết-hợp với hoạ sĩ Trần Ngọc
-              Sinh
+              quen thuộc dưới <span class="bold">Một làn da mới</span>: Một
+              kết-hợp với hoạ sĩ Trần Ngọc Sinh
             </h5>
             <button class="btn-shop">mua liền !</button>
           </div>
@@ -363,28 +384,34 @@
           <div class="item">
             <div class="content">
               <img src="../assets/images/profile 1.png" alt="" />
-              <div class="text">
-                <p class="description">da Đời-thường</p>
-                <p class="money">1 470 000 VND</p>
-              </div>
-              <div class="btn-colors">
-                <button class="color-grey actived-color"></button>
+              <div class="container-text-color">
+                <div class="text">
+                  <h5 class="description">da Đời-thường</h5>
+                  <h5 class="money">1 470 000 VND</h5>
+                </div>
+                <div class="btn-colors">
+                  <button
+                    class="color-grey actived-color actived-color"
+                  ></button>
+                </div>
               </div>
             </div>
           </div>
           <div class="item">
             <div class="content">
               <img src="../assets/images/DT_profile 1.png" alt="" />
-              <div class="text">
-                <p class="description">vải Đời-thường</p>
-                <p class="money">720 000 VND</p>
-              </div>
-              <div class="btn-colors">
-                <button class="color-red actived-color"></button>
-                <button class="color-yellow actived-color"></button>
-                <button class="color-grey-dark actived-color"></button>
-                <button class="color-grey-photo actived-color"></button>
-                <button class="color-purple actived-color"></button>
+              <div class="container-text-color">
+                <div class="text">
+                  <h5 class="description">vải Đời-thường</h5>
+                  <h5 class="money">720 000 VND</h5>
+                </div>
+                <div class="btn-colors">
+                  <button class="color-red actived-color"></button>
+                  <button class="color-yellow actived-color"></button>
+                  <button class="color-grey-dark actived-color"></button>
+                  <button class="color-grey-photo actived-color"></button>
+                  <button class="color-purple actived-color"></button>
+                </div>
               </div>
             </div>
           </div>
@@ -420,8 +447,11 @@
         <div class="col-two col col-xl-4 col-mb-6 col-sm-12">
           <div class="content">
             <h5>
-              Một là <span class="bold">thương hiệu Việt Nam đầu tiên</span> được vào top 5 hạng mục Thiết
-              kế Phục sức của <span class="bold">Giải thưởng Thiết kế Dezeen Awards 2019</span> (Anh Quốc)
+              Một là
+              <span class="bold">thương hiệu Việt Nam đầu tiên</span> được vào
+              top 5 hạng mục Thiết kế Phục sức của
+              <span class="bold">Giải thưởng Thiết kế Dezeen Awards 2019</span>
+              (Anh Quốc)
             </h5>
           </div>
         </div>
@@ -436,7 +466,7 @@
               <h2>dép Ngang</h2>
               <h5>ngang mà sang</h5>
             </div>
-            
+
             <img src="../assets/images/Rectangle 13.png" alt="" />
             <div class="box stack-top"></div>
           </div>
@@ -448,14 +478,16 @@
                 src="../assets/images/Capture d’écran 2021-03-17 à 22.45 1.png"
                 alt=""
               />
-              <div class="text">
-                <p class="description">dép Ngang</p>
-                <p class="money">390 000 VND</p>
-              </div>
-              <div class="btn-colors">
-                <button class="color-red actived-color"></button>
-                <button class="color-yellow actived-color"></button>
-                <button class="color-black actived-color"></button>
+              <div class="container-text-color">
+                <div class="text">
+                  <h5 class="description">dép Ngang</h5>
+                  <h5 class="money">390 000 VND</h5>
+                </div>
+                <div class="btn-colors">
+                  <button class="color-red actived-color"></button>
+                  <button class="color-yellow actived-color"></button>
+                  <button class="color-black actived-color"></button>
+                </div>
               </div>
             </div>
           </div>
@@ -472,9 +504,11 @@
                 src="../assets/images/Capture d’écran 2021-03-18 à 00.08 1.png"
                 alt=""
               />
-              <div class="text">
-                <p class="description">áo mưa</p>
-                <p class="money">290 000 VND</p>
+              <div class="container-text-color">
+                <div class="text">
+                  <h5 class="description">áo mưa</h5>
+                  <h5 class="money">290 000 VND</h5>
+                </div>
               </div>
             </div>
           </div>
@@ -505,9 +539,11 @@
           <div class="item">
             <div class="content">
               <img src="../assets/images/L_front 1.png" alt="" />
-              <div class="text">
-                <p class="description">một cặp lót giày</p>
-                <p class="money">120 000 VND</p>
+              <div class="container-text-color">
+                <div class="text">
+                  <h5 class="description">một cặp lót giày</h5>
+                  <h5 class="money">120 000 VND</h5>
+                </div>
               </div>
             </div>
           </div>
@@ -517,9 +553,11 @@
                 src="../assets/images/Wadensocken-plus_schwarz 1.png"
                 alt=""
               />
-              <div class="text">
-                <p class="description">vớ Tất-cả</p>
-                <p class="money">120 000 VND</p>
+              <div class="container-text-color">
+                <div class="text">
+                  <h5 class="description">vớ Tất-cả</h5>
+                  <h5 class="money">120 000 VND</h5>
+                </div>
               </div>
             </div>
           </div>
@@ -547,13 +585,14 @@
           <div>
             <h4>giữ liên lạc nhé?</h4>
             <h5>điền địa chỉ e-mail để nhận mọi tin tức và quà tặng từ Một</h5>
-            <div style="position: relative">
+            <div class="container-input-email">
               <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="email của bạn"
               />
+              <hr class="email-hr" />
               <span class="enter-input">
                 <img src="../assets/icons/right-white.png" alt="" />
               </span>
@@ -566,7 +605,7 @@
               <img src="../assets/icons/Bitmap.png" alt="" />
             </div>
             <div>
-              <h5> &#169 2021 Mot</h5> 
+              <!-- <h5> &#169 2021 Mot</h5>  -->
             </div>
           </div>
         </div>
@@ -580,9 +619,12 @@
         });
 
         $(".actived-color").click(function () {
-          $(this).toggleClass("active-circle");
+          console.log(this);
+          $("button").removeClass("active-circle");
+          $(this).addClass("active-circle");
         });
       });
+
       function handleColor() {
         var x = document.getElementById("colors");
         if (x.style.display === "none") {

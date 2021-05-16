@@ -1,7 +1,15 @@
+h4 {
+  font-weight: 300;
+}
+
+h5 {
+  font-weight: 400;
+}
+
 .my-footer {
   background-color: #111820;
   color: #7d868c;
-  padding: 30px 120px;
+  padding: 64px 120px;
 }
 
 .my-footer .col-one h4 {
@@ -25,8 +33,17 @@
   padding-left: 0;
 }
 
+.menu-footer .menu-one h4 {
+  width: fit-content;
+}
+
 .menu-footer .menu-two {
   padding-left: 0;
+}
+
+.container-input-email {
+  position: relative;
+  width: 480px;
 }
 
 .menu-footer ul li {
@@ -58,10 +75,11 @@
 
 .enter-input {
   position: absolute;
-    margin-left: -2em;
-    width: 46px;
-    height: 46px;
-    bottom: -14px;
+  margin-left: -2em;
+  width: 46px;
+  height: 46px;
+  bottom: 0;
+  right: 0;
 }
 
 .enter-input:hover {
@@ -69,14 +87,15 @@
 }
 
 .enter-input img {
-  width: 50%;
+  width: 46px;
+  height: 46px;
 }
 
 input[type="email"] {
   width: 100%;
   border: none;
   background: none;
-  border-bottom: 1px solid white;
+  /* border-bottom: 1px solid white; */
   color: #fff;
   font-weight: bold;
   font-size: 27px;
@@ -86,6 +105,10 @@ input[type="email"] {
 
 input[type="email"]::placeholder {
   color: #fff;
+}
+
+.email-hr {
+  border-bottom: 1px solid #fff;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -117,20 +140,33 @@ input[type="email"]::placeholder {
   }
 
   .my-footer {
-    padding: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 48px 20px;
+  }
+
+  .container-input-email {
+    width: 100%;
+  }
+
+  .enter-input img {
+    width: 32px;
+    height: 32px;
   }
 
   .hero-footer {
     flex-direction: column;
   }
 
-  .enter-input{
-    bottom: 12px;
-  }
-
   .hero-footer .menu-footer {
     display: flex;
     justify-content: space-between;
+  }
+  .enter-input {
+    right: 0;
+    bottom: 10px;
+    width: 32px;
+    height: 32px;
   }
 
   .hero-footer .menu-footer .menu-one {
@@ -143,19 +179,9 @@ input[type="email"]::placeholder {
   .logo-social {
     margin-top: 3rem;
   }
-
-  .my-footer .col-two input{
-    margin-bottom: 1em;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  h1 {
-    /* color: green !important; */
-  }
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   h1 {
