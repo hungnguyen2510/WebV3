@@ -218,8 +218,6 @@ h5 {
   padding: 7% 7% 4% 7%;
   z-index: 16;
 }
-
-
 /* select */
 
 .sidebar-bottom-region label {
@@ -1147,11 +1145,11 @@ select#language {
   }
   
 
-  .main__product-title {
+  /* .main__product-title {
     margin-top: 20%;
     margin-bottom: 10%;
     font-weight: bold !important  ;
-  }
+  } */
 
   .main__product-mt {
     margin-bottom: 0;
