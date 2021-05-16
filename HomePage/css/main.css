@@ -663,7 +663,7 @@ select#language {
 }
 
 .slider-01.owl-carousel .owl-item {
-  width: auto !important;
+  /* width: auto !important; */
   max-width: 592.47px !important;
 }
 

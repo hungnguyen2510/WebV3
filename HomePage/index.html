@@ -58,7 +58,7 @@
     <script src="../assets/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- <link rel="stylesheet" href="css/base.css" /> -->
-    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="css/main.css" /> -->
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="../assets/css/footer.css" />
     <link
@@ -642,7 +642,7 @@
                 e.classList.remove("active");
               } else {
                 if (e.id.includes("main_about_text01")) {
-                  console.log("main_about_text01");
+                  // console.log("main_about_text01");
                   e.classList.add("active");
                 }
               }
@@ -657,7 +657,7 @@
                 e.classList.remove("active");
               } else {
                 if (e.id.includes("main_about_text02")) {
-                  console.log("main_about_text02");
+                  // console.log("main_about_text02");
                   e.classList.add("active");
                 }
               }
@@ -673,7 +673,7 @@
               } else {
                 // console.log(e.classList)
                 if (e.id.includes("main_about_text03")) {
-                  console.log("main_about_text03");
+                  // console.log("main_about_text03");
                   e.classList.add("active");
                 }
               }
@@ -685,21 +685,22 @@
         loop: true,
         margin: 20,
         responsiveClass: true,
+        autoWidth:true,
         dots: false,
+        nav: false,
 
         responsive: {
           0: {
             items: 1,
-            nav: false,
+            loop: true,
           },
           600: {
-            items: 3,
-            nav: false,
+            items: 1,
+            loop: true,
           },
           1000: {
             items: 3,
-            nav: false,
-            loop: false,
+            loop: true,
           },
         },
       });
