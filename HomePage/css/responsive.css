@@ -218,6 +218,7 @@ h5 {
   padding: 7% 7% 4% 7%;
   z-index: 16;
 }
+
 /* select */
 
 .sidebar-bottom-region label {
@@ -670,6 +671,15 @@ select#language {
   max-height: 400px !important;
 }
 
+
+.item-about{
+  display: none;
+}
+
+.item-about.active{
+  display: block;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   :root {
@@ -1076,233 +1086,4 @@ select#language {
     width: auto !important;
   }
  
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-  :root {
-    --text-header-size: 5.6rem;
-    --product-img: 60rem !important;
-  }
-
-  .main__about-list {
-    width: 90%;
-  }
-
-  .main__about-content {
-    /* padding: 0 16px; */
-    width: 90%;
-    font-size: 2rem;
-    line-height: 2.7rem;
-  }
-
-  .main__content-slogan-text {
-    font-size: 12rem;
-    line-height: 12rem;
-  }
-
-  .main__product-title {
-    font-weight: bold !important  ;
-  }
-
-  .carousel-indicators {
-    margin-left: 120px !important;
-  }
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  :root {
-    --product-img: 60rem !important;
-  }
-
-  .hide-on-tablet {
-    display: none !important;
-  }
-  .show-on-tablet {
-    display: flex !important;
-  }
-  .heading {
-    height: 100vh;
-  }
-
-  .container {
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: 0 11% !important;
-    width: 100% !important;
-    margin: 0 !important;
-  }
-
-  .main__product-item {
-    margin-bottom: 4rem;
-  }
-
-  .col-right .main__product-item:last-child {
-    margin-bottom: 9.6rem;
-  }
-  
-
-  /* .main__product-title {
-    margin-top: 20%;
-    margin-bottom: 10%;
-    font-weight: bold !important  ;
-  } */
-
-  .main__product-mt {
-    margin-bottom: 0;
-  }
-
-  .col-right .main__product-item {
-    float: unset;
-    margin-right: 0 !important;
-  }
-
-  .header__content-btn {
-    font-size: 1.5rem;
-    padding: 0 2.7rem 2px;
-    height: 44px;
-  }
-
-  .main__content-story {
-    margin-right: 2rem;
-  }
-
-  .main__content-preface {
-    width: 98% !important;
-  }
-
-  .main__content-slogan-text {
-    font-size: 9rem;
-    line-height: 9rem;
-  }
-
-  .main__content-preface {
-    font-weight: 300;
-    max-width: 100%;
-  }
-
-  .main__content-slogan-text {
-    font-size: 12rem;
-    line-height: 12rem;
-  }
-
-  
-  .carousel-indicators {
-    margin-left: 120px !important;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-  :root {
-    --product-img: 34.1rem !important;
-  }
-
-  .main__product-mt {
-    margin-top: 0;
-  }
-
-  .container {
-    padding-left: 120px !important;
-    min-width: 100% !important;
-    margin: 0 !important;
-  }
-  
-
-  .main__product-mt {
-    margin-top: 240px;
-  }
-
-  .main__content-slogan-text {
-    font-size: 15rem;
-    line-height: 15rem;
-    
-  }
-
-  .carousel-indicators {
-    margin-left: 120px !important;
-  }
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  :root {
-    --product-img: 48rem !important;
-  }
-
-  .hide-on-pc {
-    display: none !important;
-  }
-  .show-on-pc {
-    display: flex !important;
-  }
-
-  .main__about-list {
-    width: 60%;
-  }
-
-  .main__about-content {
-    /* padding: 0 16px; */
-    width: 82%;
-    font-size: var(--font-size-lg);
-    line-height: var(--line-height-lg);
-  }
-
-  .main__content-slogan-text {
-    font-size: 18.6rem;
-    line-height: 18.6rem;
-    font-weight: 700;
-  }
-
-  .main__about-list {
-    width: 38vw;
-  }
-
-  .main__about-title {
-    font-size: 27px !important;
-    line-height: 35px !important;
-    font-weight: 900 !important;
-  }
-
-  .container {
-    padding-left: 120px !important;
-    min-width: 100% !important;
-    margin: 0 !important;
-  }
-  
-
-  .carousel-indicators {
-    margin-left: 120px !important;
-  }
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1484px) {
-  
-  .container {
-    padding-left: 120px !important;
-    min-width: 100% !important;
-    margin: 0 !important;
-  }
-
-  .main__about-list {
-    width: 28vw;
-  }
-  .main__about-content {
-    /* padding: 0 16px; */
-    width: 62%;
-    font-size: var(--font-size-lg);
-    line-height: var(--line-height-lg);
-  }
-
-  .carousel-indicators {
-    margin-left: 120px !important;
-  }
-  
 }
