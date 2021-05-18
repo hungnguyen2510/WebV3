@@ -456,6 +456,10 @@ h5 {
     padding-top: 60px;
   }
 
+  .user{
+    display: flex;
+  }
+
   h2 {
     font-size: 36px !important;
     line-height: 40px !important;
