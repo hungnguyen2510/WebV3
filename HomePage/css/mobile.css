@@ -21,7 +21,7 @@
 }
 
 .container {
-  padding-left: 120px!important;
+  padding-left: 120px !important;
   min-width: 100% !important;
   margin: 0 !important;
 }
@@ -36,7 +36,7 @@ h1,
 h4,
 h5 {
   /* padding: 0 !important; */
-  margin: 0 ;
+  margin: 0;
 }
 
 .your-email h5 {
@@ -93,14 +93,13 @@ html {
   height: 100vh;
   width: 100% !important;
   padding-top: 50%;
-  background-size: cover !important; 
+  background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   -webkit-background-size: cover !important;
   -moz-background-size: cover !important;
   -o-background-size: cover !important;
   background-size: cover !important;
-
 }
 
 .carousel {
@@ -136,13 +135,13 @@ html {
   left: 0;
   bottom: 0;
   background-color: var(--white-color);
-  width: 40px ;
+  width: 40px;
   height: 8px;
   border-radius: 5px;
 }
 
 .nav-content {
-  position: relative; 
+  position: relative;
 }
 
 h1 {
@@ -240,7 +239,7 @@ select {
 }
 
 select:focus {
-  outline:none;
+  outline: none;
 }
 
 select > option {
@@ -337,7 +336,6 @@ select#language {
   float: right;
   margin-right: 120px !important;
 }
-
 
 .main__product-item {
   margin-bottom: 12rem;
@@ -461,10 +459,12 @@ select#language {
   height: 3.5rem;
   line-height: 3.5rem;
   padding-top: 2.6rem;
+  opacity: .3;
 }
 
 .main__about-item--active {
   position: relative;
+  opacity: 1;
 }
 
 .main__about-item--active::before {
@@ -473,7 +473,7 @@ select#language {
   height: 0.8rem;
   top: 0;
   width: 100%;
-  background-color: var(--border-color) ;
+  background-color: var(--border-color);
   z-index: 1;
 }
 .main__about-title {
@@ -485,7 +485,6 @@ select#language {
   margin: 0;
 }
 
-
 .main__about-link {
   font-weight: 700;
 }
@@ -496,6 +495,7 @@ select#language {
   line-height: var(--line-height-sm);
   font-weight: 300;
   margin-bottom: 20px;
+  margin-top:73px;
   width: 60%;
 }
 
@@ -503,7 +503,7 @@ select#language {
   display: block;
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
-  color: #7D868C;
+  color: #7d868c;
   font-weight: 400;
 }
 
@@ -671,13 +671,17 @@ select#language {
   max-height: 400px !important;
 }
 
-
-.item-about{
+.item-about {
   display: none;
 }
 
-.item-about.active{
+.item-about.active {
   display: block;
+}
+
+#img-slogan {
+  width: 1200px;
+  height: 180px;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -713,7 +717,6 @@ select#language {
     line-height: 22px !important;
   }
 
-  
   .top_nav {
     padding-left: 1em !important;
     padding-right: 1em !important;
@@ -723,21 +726,30 @@ select#language {
     margin-left: 2.5em;
   }
 
-
   .main__product-title {
     font-weight: 700 !important;
   }
-  
+
   .heading {
     height: 100vh;
   }
-  
+
   .heading-bg-main {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(../../assets/images/T&T_Poster-21.png) !important;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0)
+      ),
+      url(../../assets/images/T&T_Poster-21.png) !important;
   }
 
   .heading-bg-child1 {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(../../assets/images/T&T_Poster-21.png) !important;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0)
+      ),
+      url(../../assets/images/T&T_Poster-21.png) !important;
   }
 
   .header__content-description {
@@ -760,7 +772,6 @@ select#language {
   .col-right .main__product-item:last-child {
     margin-bottom: 9.6rem;
   }
-  
 
   .main__product-title {
     margin-top: 20%;
@@ -853,6 +864,7 @@ select#language {
     width: 98%;
     font-size: var(--font-size-md);
     line-height: var(--line-height-md);
+    margin-top: 71px;
   }
 
   .main__content-preface {
@@ -878,24 +890,22 @@ select#language {
     line-height: 4rem;
   }
 
-  
   .carousel-indicators {
     bottom: 2.4rem !important;
     margin-left: 4% !important;
   }
 
-  .account .col-two .item{
+  .account .col-two .item {
     margin-bottom: 1em;
   }
 
-  .bold{
+  .bold {
     font-weight: bold !important;
   }
 
-  .number-quantity{
+  .number-quantity {
     display: none;
   }
-
 
   .hide-on-mobile {
     display: none !important;
@@ -1014,11 +1024,9 @@ select#language {
     line-height: 22px;
   }
 
-  
-.cookie-close-btn {
-  margin-top: -12px;
-}
-
+  .cookie-close-btn {
+    margin-top: -12px;
+  }
 
   .cookie-img {
     margin: 0 1.6rem;
@@ -1085,12 +1093,15 @@ select#language {
   .slider-01.owl-carousel .owl-item img {
     width: auto !important;
   }
- 
+
+  #img-slogan {
+    width: 343px;
+    height: 176px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
   :root {
     --text-header-size: 5.6rem;
     --product-img: 60rem !important;
@@ -1126,13 +1137,10 @@ select#language {
   .carousel-indicators {
     margin-left: 120px !important;
   }
-
 }
-
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
   :root {
     --product-img: 34.1rem !important;
   }
@@ -1140,7 +1148,7 @@ select#language {
   .hide-on-pc {
     display: none !important;
   }
-  
+
   .show-on-pc {
     display: flex !important;
   }
@@ -1163,13 +1171,11 @@ select#language {
   .main__content-slogan-text {
     font-size: 15rem;
     line-height: 15rem;
-    
   }
 
   .carousel-indicators {
     margin-left: 120px !important;
   }
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1177,7 +1183,6 @@ select#language {
   :root {
     --product-img: 48rem !important;
   }
-
 
   .main__about-list {
     width: 60%;
@@ -1209,12 +1214,10 @@ select#language {
   .carousel-indicators {
     margin-left: 120px !important;
   }
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1484px) {
-  
   .container {
     padding-left: 120px !important;
     padding-right: 0 !important;
@@ -1235,5 +1238,4 @@ select#language {
   .carousel-indicators {
     margin-left: 120px !important;
   }
-  
 }

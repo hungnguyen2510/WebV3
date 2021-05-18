@@ -18,11 +18,12 @@
 
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="desktop.css" /> -->
     <link rel="stylesheet" type="text/css" media="screen" href="range.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="mobile.css" />
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="mobile.css"
+      href="../assets/css/topmenu.css"
     />
     <link
       rel="stylesheet"
@@ -48,22 +49,86 @@
     <script src="rangeSlider.js"></script>
   </head>
   <body>
-    <div class="top_nav d-flex justify-content-between py-4">
+    <div class="top_nav d-flex justify-content-between px-5 py-4">
       <div class="menu">
-        <a href="">
-          <img src="../assets/icons/menu-black.png" alt="" class="icon" />
-        </a>
+        <nav class="nav-content">
+          <div class="nav-btn navtop-icon" id="" onclick="ToggleNav()">
+            <img src="../assets/icons/menu-black.png" alt="" class="icon" />
+          </div>
+
+          <div id="overlay-element" class="nav-overlay"></div>
+
+          <div class="nav-slider" id="nav-slider-element">
+            <div class="nav-btn-close" onclick="CloseNav()">
+              <img src="../assets/icons/sidebarclose.svg" alt="" />
+            </div>
+
+            <div class="slidebar-content d-flex flex-column">
+              <ul class="nav-list">
+                <li class="nav-list-item">
+                  <h2>
+                    <a href="" class="nav-link">câu-chuyện</a>
+                  </h2>
+                </li>
+                <li class="nav-list-item">
+                  <h2>
+                    <a href="" class="nav-link">cửa-hàng</a>
+                  </h2>
+                </li>
+                <li class="nav-list-item">
+                  <h2>
+                    <a href="" class="nav-link">nơi-bán</a>
+                  </h2>
+                </li>
+                <li class="nav-list-item">
+                  <h2>
+                    <a href="" class="nav-link">thắc-mắc</a>
+                  </h2>
+                </li>
+              </ul>
+
+              <div class="sidebar-bottom ml-3">
+                <div class="sidebar-bottom-ship d-flex justify-content-bettwen">
+                  <div class="sidebar-bottom-region">
+                    <label for="region">Ship to:</label>
+                    <select name="region" id="region">
+                      <option selected value="0">VietNam</option>
+                      <option value="1">Other</option>
+                    </select>
+                  </div>
+                  <div class="slidebar-bottom-separate"></div>
+                  <div class="sidebar-bottom-language">
+                    <label for="language"></label>
+                    <select name="language" id="language">
+                      <option selected value="0">Tiếng Việt</option>
+                      <option value="1">English</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
       <div class="logo">
-        <a href="">
-          <img src="../assets/icons/logo.svg" alt="" class="icon" />
+        <a class="navtop-icon" href="">
+          <img
+            src="../assets/icons/logo.svg"
+            alt=""
+            class="icon hide-on-mobile"
+          />
+          <img
+            src="../assets/icons/Fill 1.svg"
+            alt=""
+            class="icon hide-on-pc hide-on-tablet"
+          />
         </a>
       </div>
       <div class="user">
-        <a href="">
+        <a class="navtop-icon" href="">
           <img src="../assets/icons/Smiley.svg" alt="" class="icon" />
         </a>
-        <a href="">
+        <a class="navtop-icon" href="">
           <img src="../assets/icons/sneaker-black.png" alt="" class="icon" />
         </a>
         <span class="number-quantity" style="font-weight: bold">0</span>
@@ -188,14 +253,6 @@
                           <!-- <span id="slider-range-temp2"></span> -->
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <form>
-                            <input type="hidden" name="min-value" value="" />
-                            <input type="hidden" name="max-value" value="" />
-                          </form>
-                        </div>
-                      </div>
                     </div>
                   </div>
                   <div class="col-two">
@@ -306,7 +363,7 @@
     <div class="section section-one container">
       <div class="row justify-content-between">
         <div class="col-one col col-xl-6 col-mb-6 col-sm-12">
-          <div style="position: relative">
+          <div class="custom-card-master">
             <div class="text bottom-45">
               <h2>
                 Một đôi <br />
@@ -347,6 +404,7 @@
                   <button class="color-grey-dark actived-color"></button>
                   <button class="color-grey-photo actived-color"></button>
                   <button class="color-purple actived-color"></button>
+                  <button class="color-two-color actived-color"></button>
                 </div>
               </div>
             </div>
@@ -370,8 +428,9 @@
           <div class="content">
             <h5>
               vải Đời-mới — phiên bản đặc-biệt cho mùa lễ hội 2021. Dáng hình
-              quen thuộc dưới <span class="bold">Một làn da mới</span>: Một
-              kết-hợp với hoạ sĩ Trần Ngọc Sinh
+              quen thuộc dưới
+              <span style="font-weight: 700">Một làn da mới</span>: Một kết-hợp
+              với hoạ sĩ Trần Ngọc Sinh
             </h5>
             <button class="btn-shop">mua liền !</button>
           </div>
@@ -418,7 +477,7 @@
           </div>
         </div>
         <div class="col-one col col-xl-6 col-mb-6 col-sm-12">
-          <div style="position: relative">
+          <div class="custom-card-master">
             <div class="bottom-45 text">
               <h2>
                 Một đôi <br />
@@ -462,7 +521,7 @@
     <div class="section section-five container">
       <div class="row justify-content-between">
         <div class="col-one col col-xl-6 col-mb-6 col-sm-12">
-          <div style="position: relative">
+          <div class="custom-card-master">
             <div class="text">
               <h2>dép Ngang</h2>
               <h5>ngang mà sang</h5>
@@ -515,7 +574,7 @@
           </div>
         </div>
         <div class="col-one col col-xl-6 col-mb-6 col-sm-12">
-          <div style="position: relative">
+          <div class="custom-card-master">
             <div class="text">
               <h2>áo mưa Nhanh</h2>
               <h5>bất chấp thời tiết</h5>
@@ -528,8 +587,8 @@
     <div class="section section-seven container">
       <div class="row justify-content-between">
         <div class="col-one col col-xl-6 col-mb-6 col-sm-12">
-          <div style="position: relative">
-            <div class="text" style="bottom: -1.5em">
+          <div class="custom-card-master">
+            <div class="text">
               <h2>phụ kiện</h2>
               <p>thích thì mua</p>
             </div>
@@ -606,7 +665,7 @@
               <img src="../assets/icons/Bitmap.png" alt="" />
             </div>
             <div>
-              <h5> &#169 2021 Mot</h5> 
+              <!-- <h5> &#169 2021 Mot</h5>  -->
             </div>
           </div>
         </div>
@@ -627,12 +686,10 @@
           $(this).addClass("active-circle");
         });
 
-        
-        if($(".noUi-origin.noUi-connect")[0].attributes.style !== undefined){
-          console.log($(".noUi-origin.noUi-connect")[0].attributes)
-        }
-        else{
-          console.log($(".noUi-origin.noUi-connect"))
+        if ($(".noUi-origin.noUi-connect")[0].attributes.style !== undefined) {
+          console.log($(".noUi-origin.noUi-connect")[0].attributes);
+        } else {
+          console.log($(".noUi-origin.noUi-connect"));
         }
       });
 
@@ -672,6 +729,18 @@
           document.getElementById("btn-plus-3").style.display = "block";
           document.getElementById("btn-minus-3").style.display = "none";
         }
+      }
+
+      var overlayElement = document.getElementById("overlay-element");
+      var navSliderElement = document.getElementById("nav-slider-element");
+      function ToggleNav() {
+        overlayElement.classList.add("nav-active");
+        navSliderElement.classList.add("nav-active");
+        // navSliderElement.style.width = "48.7%"
+      }
+      function CloseNav() {
+        overlayElement.classList.remove("nav-active");
+        navSliderElement.classList.remove("nav-active");
       }
 
       function myFunction() {

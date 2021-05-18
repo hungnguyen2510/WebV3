@@ -412,10 +412,6 @@ h5 {
   right: -8px;
 }
 
-.bottom-45 {
-  bottom: -4.5em !important;
-}
-
 .box {
   width: 100%;
   height: 100%;
@@ -450,6 +446,14 @@ h5 {
     /* color: red !important; */
     font-size: 56px !important;
     line-height: 56px !important;
+  }
+
+  .section .col-one{
+    padding: 74px 61px 48px 61px;
+  }
+
+  .header h1{
+    padding-top: 60px;
   }
 
   h2 {
@@ -493,9 +497,6 @@ h5 {
     font-size: 20px;
     display: block;
   }
-  .bottom-45{
-    bottom: -3.5em !important;
-  }
 
   .number-quantity {
     display: none;
@@ -530,8 +531,8 @@ h5 {
   .section .col-one .text {
     display: block;
     margin-left: 0;
-    left: 1em;
-    bottom: -3.5em;
+    left: 20%;
+    bottom: 0;
   }
 
   .bottom-75 {

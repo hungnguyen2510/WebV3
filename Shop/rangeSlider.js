@@ -25,13 +25,9 @@ $(document).ready(function() {
   // Set visual min and max values and also update value hidden form inputs
   rangeSlider.noUiSlider.on('update', function(values, handle) {
     document.getElementById('slider-range-value1').innerHTML = values[0];
-    document.getElementById('slider-range-temp1').innerHTML = values[0];
+    // document.getElementById('slider-range-temp1').innerHTML = values[0];
     document.getElementById('slider-range-value2').innerHTML = values[1];
-    document.getElementById('slider-range-temp2').innerHTML = values[1];
-    document.getElementsByName('min-value').value = moneyFormat.from(
-      values[0]);
-    document.getElementsByName('max-value').value = moneyFormat.from(
-      values[1]);
+    // document.getElementById('slider-range-temp2').innerHTML = values[1];
   });
 });
 
@@ -1064,6 +1060,8 @@ $(document).ready(function() {
         }
 
         function getTags(offset, source, values) {
+
+          
           return 'class="' + source + ' ' + source + '-' + style + ' ' +
             source + getSize(values[1]) + '" style="' + options.style +
             ': ' + offset + '%"';

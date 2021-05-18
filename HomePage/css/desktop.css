@@ -461,10 +461,12 @@ select#language {
   height: 3.5rem;
   line-height: 3.5rem;
   padding-top: 2.6rem;
+  opacity: .3;
 }
 
 .main__about-item--active {
   position: relative;
+  opacity: 1;
 }
 
 .main__about-item--active::before {
@@ -496,6 +498,7 @@ select#language {
   line-height: var(--line-height-sm);
   font-weight: 300;
   margin-bottom: 20px;
+  margin-top:73px;
   width: 60%;
 }
 
@@ -690,4 +693,13 @@ select#language {
 
 .main__product-mt{
   margin-top: 240px;
+}
+
+#img-slogan{
+  width: 1200px;
+  height: 180px;
+}
+
+.main__about-icon{
+  max-height: 35px;
 }

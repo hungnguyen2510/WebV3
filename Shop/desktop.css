@@ -87,13 +87,17 @@ h5 {
   background-color: #6d5093;
 }
 
+.btn-colors .color-two-color{
+  background: linear-gradient(to top right, #F4EEE2 50%, #12312B 50%);;
+}
+
 .container-left {
   margin-left: 120px;
 }
 
 .header h1 {
   padding-bottom: 2rem;
-  margin-top: 80px;
+  padding-top: 80px;
   font-weight: 700;
 }
 
@@ -188,7 +192,7 @@ h5 {
 
 .btn-colors {
   display: grid;
-  grid-template-columns: repeat(5, 0fr);
+  grid-template-columns: repeat(6, 0fr);
 }
 
 .btn-colors button {
@@ -245,9 +249,6 @@ h5 {
 
 .section .col-one{
   padding: 139px 119px 139px 115px;
-  display: flex;
-  justify-content: center;
-  position: relative;
 }
 
 .section .col-two  {
@@ -266,7 +267,7 @@ h5 {
   color: white;
   position: absolute;
   bottom: -4.5em;
-  left: 7em;
+  left: 10%;
   z-index: 10;
 }
 
@@ -308,7 +309,7 @@ h5 {
 /* ********************************************************  */
 
 .section-without-container{
-  margin: 5em;
+  margin: 120px;
 }
 
 .section-two {
@@ -356,7 +357,7 @@ h5 {
 .section-without-container .content{
   position: absolute;
   bottom: 0;
-  width: 90%;
+  width: 70%;
   right: 0;
 }
 
@@ -426,7 +427,7 @@ h5 {
 
 .h2-special {
   position: absolute !important;
-  left: 3.7em;
+  left: 2.9em;
   width: unset !important;
 }
 
@@ -436,4 +437,13 @@ h5 {
 
 .bold {
   font-weight: bold;
+}
+
+.custom-card-master{
+  position: relative;
+  display: flex;
+}
+
+.custom-card-master > img{
+  flex: 1;
 }

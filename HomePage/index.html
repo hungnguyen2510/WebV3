@@ -389,7 +389,7 @@
                   <h5>câu-chuyện</h5>
                 </button>
                 <div class="main__content-slogan">
-                  <h1 class="main__content-slogan-text">Một cho tất cả.</h1>
+                  <img src="../assets/images/mot-cho-tat-ca-desktop.png" alt="" id="img-slogan">
                 </div>
               </div>
             </div>
@@ -455,7 +455,7 @@
                     <ul class="main__about-list mb-0">
                       <li id="main_about_icon01" class="main__about-item">
                         <img
-                          src="../assets/icons/tinhte.vn-2855788884367194 copie.png"
+                          src="../assets/icons/tinh-te.png"
                           alt=""
                           class="main__about-icon"
                         />
@@ -465,14 +465,14 @@
                         class="main__about-item main__about-item--active"
                       >
                         <img
-                          src="../assets/icons/logo-text 1.png"
+                          src="../assets/icons/vietcetera.png"
                           alt=""
                           class="main__about-icon"
                         />
                       </li>
                       <li id="main_about_icon03" class="main__about-item">
                         <img
-                          src="../assets/icons/Capture d’écran 2021-03-17 à 12.38 1.png"
+                          src="../assets/icons/de-zeen.png"
                           alt=""
                           class="main__about-icon"
                         />
@@ -622,6 +622,18 @@
 
     <script>
       $(document).ready(function () {
+        const imgSlogan = document.getElementById("img-slogan");
+        console.log(screen.width)
+        if(screen.width < 600){
+          console.log("mobile")
+          //mobile
+          imgSlogan.src = "../assets/images/mot-cho-tat-ca-mobile.png"
+        }
+        else{
+          console.log("desktop")
+          imgSlogan.src = "../assets/images/mot-cho-tat-ca-desktop.png"
+        }
+
         $(".main__about-item").click(function () {
           $(".main__about-list")
             .children()
