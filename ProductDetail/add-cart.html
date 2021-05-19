@@ -32,6 +32,13 @@
 
     <link
       rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../assets/css/topmenu.css"
+    />
+
+    <link
+      rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
@@ -65,27 +72,100 @@
     <script src="../assets/owlcarousel/owl.carousel.min.js"></script>
   </head>
   <body>
-    <div class="top_nav d-flex justify-content-between py-4">
+    <div class="top_nav w-100 d-flex justify-content-between">
       <div class="menu">
-        <a href="">
-          <img src="../assets/icons/menu-black.png" alt="" class="icon" />
-        </a>
+        <nav class="nav-content">
+          <div class="nav-btn navtop-icon" id="" onclick="ToggleNav()">
+            <img src="../assets/icons/menu-black.png" alt="" class="icon" />
+          </div>
+
+          <div id="overlay-element" class="nav-overlay"></div>
+
+          <div class="nav-slider" id="nav-slider-element">
+            <div class="nav-btn-close" onclick="CloseNav()">
+              <img src="../assets/icons/sidebarclose.svg" alt="" />
+            </div>
+
+            <div class="slidebar-content d-flex flex-column">
+              <ul class="nav-list">
+                <li class="nav-list-item">
+                  <h2>
+                    <a href="" class="nav-link">câu-chuyện</a>
+                  </h2>
+                </li>
+                <li class="nav-list-item">
+                  <h2>
+                    <a href="" class="nav-link">cửa-hàng</a>
+                  </h2>
+                </li>
+                <li class="nav-list-item">
+                  <h2>
+                    <a href="" class="nav-link">nơi-bán</a>
+                  </h2>
+                </li>
+                <li class="nav-list-item">
+                  <h2>
+                    <a href="" class="nav-link">thắc-mắc</a>
+                  </h2>
+                </li>
+              </ul>
+
+              <div class="sidebar-bottom ml-3">
+                <div
+                  class="sidebar-bottom-ship d-flex justify-content-bettwen"
+                >
+                  <div class="sidebar-bottom-region">
+                    <label for="region"
+                      ><h5
+                        class="ptgn-address"
+                        style="color: #7d868c; font-weight: 400"
+                      >
+                        Ship to:
+                      </h5></label
+                    >
+                    <select name="region" id="region">
+                      <option selected value="0">VietNam</option>
+                      <option value="1">Other</option>
+                    </select>
+                  </div>
+                  <div class="slidebar-bottom-separate"></div>
+                  <div class="sidebar-bottom-language">
+                    <label for="language"></label>
+                    <select name="language" id="language">
+                      <option selected value="0">Tiếng Việt</option>
+                      <option value="1">English</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
       <div class="logo">
-        <a href="">
-          <img src="../assets/icons/logo.svg" alt="" class="icon" />
+        <a class="navtop-icon" href="">
+          <img
+            src="../assets/icons/logo.svg"
+            alt=""
+            class="icon"
+          />
         </a>
       </div>
-      <div class="user">
-        <a href="">
+      <div class="user h-100">
+        <a class="navtop-icon" href="">
           <img src="../assets/icons/Smiley.svg" alt="" class="icon" />
         </a>
-        <a href="">
+        <a class="navtop-icon ml-4" href="">
           <img src="../assets/icons/sneaker-black.png" alt="" class="icon" />
         </a>
-        <span class="number-quantity" style="font-weight: bold">0</span>
+        <span
+          class="number-quantity h-100 hide-on-mobile"
+          style="font-weight: bold; color: black"
+          >0</span
+        >
       </div>
     </div>
+
     <div class="section-one">
       <div class="add-cart container-fluid">
         <div class="row">
@@ -333,6 +413,18 @@
       function xAddCart() {
         const addCartEle = document.getElementById("add-cart");
         addCartEle.style.display = "none";
+      }
+
+      var overlayElement = document.getElementById("overlay-element");
+      var navSliderElement = document.getElementById("nav-slider-element");
+      function ToggleNav() {
+        overlayElement.classList.add("nav-active");
+        navSliderElement.classList.add("nav-active");
+        // navSliderElement.style.width = "48.7%"
+      }
+      function CloseNav() {
+        overlayElement.classList.remove("nav-active");
+        navSliderElement.classList.remove("nav-active");
       }
     </script>
   </body>
