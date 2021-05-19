@@ -1,15 +1,35 @@
+:root {
+  --white-color: #fff;
+  --text-color: #111820;
+}
+
+html {
+  /*Trick de fontsize 62,5% thì 1rem  sẽ là 10px muốn để
+    font-size = 12 thì --> 1.2rem*/
+  font-size: 62.5%;
+  line-height: 2.7rem;
+  /*font sans-serif là chủng font chữ k chân, sẽ hiển thị
+    trong khi đợi font Roboto được tải về*/
+  font-family: "Lab Grotesque VN", sans-serif;
+  box-sizing: border-box;
+}
+
+/* navigation */
+.nav-content {
+  position: relative;
+}
+
 .top_nav {
-  padding-left: 3rem;
-  padding-right: 3rem;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  padding: 2.4rem 4rem;
   z-index: 2;
 }
 
-.nav-content {
-  position: relative;
+.number-quantity {
+  color: #fff;
 }
 
 .nav-overlay {
@@ -18,14 +38,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color:rgba(0, 0, 0, 0.3);
   z-index: 1;
   display: none;
 }
 
 .nav-link {
   text-decoration: none;
-  color: #111820;
+  color: var(--text-color);
 }
 
 .nav-active {
@@ -38,25 +58,56 @@
   left: 0;
   bottom: 0;
   width: 48.7%;
-  background-color: #fff;
+  background-color: var(--white-color);
   z-index: 1;
   display: none;
-  transition: 0.5s;
+  transition: all 0.2s;
   padding: 7% 7% 4% 7%;
   z-index: 16;
 }
 
-.nav-list {
-  padding-left: 0;
-  /* margin:  */
-  list-style: none;
-  flex: 1;
+
+/* select */
+
+.sidebar-bottom-region label {
+  margin-top: 0.6rem;
+  font-size: 1.7rem;
+  line-height: 2.7rem;
 }
 
-.nav-list-item {
-  display: block;
-  margin-bottom: 3.2rem;
+select {
+  border: none;
+  outline: none;
+  /* background: transparent; */
+  /* width: 10vh; */
+  color: var(--text-color);
+  font-size: 1.7rem !important;
+  line-height: 2.7rem !important;
+  font-weight: 700 !important;
+  box-shadow: none;
 }
+
+select:focus {
+  outline:none;
+}
+
+select > option {
+  border: none;
+  outline: 0px;
+  background: transparent;
+  color: #b7bfc5;
+}
+/* 
+select#language {
+  width: 12vh;
+} */
+
+.slidebar-bottom-separate {
+  border: 1px solid #b7bfc5;
+  height: 2vh;
+  margin: 0 1vh 0 2vh;
+}
+/* end select */
 
 .nav-btn {
   cursor: pointer;
@@ -68,14 +119,19 @@
   left: 7%;
 }
 
-.slidebar-content {
-  height: 100%;
+.nav-list {
+  padding-left: 0;
+  list-style: none;
+  flex: 1;
 }
 
-.sidebar-bottom-region label {
-  font-size: 1.7rem;
-  line-height: 2.7rem;
-  margin-bottom: 0;
+.nav-list-item {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.slidebar-content {
+  height: 100%;
 }
 
 .sidebar-bottom-ship {
@@ -96,36 +152,22 @@
   margin-bottom: 0;
 }
 
-.slidebar-bottom-separate {
-  border: 1px solid #b7bfc5;
-  height: 2vh;
-  margin: 0 1vh 0 2vh;
-}
 
-select {
-  border: none;
-  outline: none;
-  /* background: transparent; */
-  /* width: 10vh; */
-  color: var(--text-color);
-  font-size: 1.7rem;
-  line-height: 2.7rem;
-  font-weight: bold;
-  box-shadow: none;
-}
-
-select:focus {
-  outline: none;
-}
-
-select > option {
-  border: none;
-  outline: 0px;
-  background: transparent;
-  color: #b7bfc5;
+.header h1 {
+  padding-top: 0;
+  margin-top: 180px;
 }
 
 @media only screen and (max-width: 600px) {
+  
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .show-on-mobile {
+    display: block !important ;
+  }
+
   .top_nav {
     padding-left: 1em !important;
     padding-right: 1em !important;
@@ -135,18 +177,9 @@ select > option {
     margin-left: 2.5em;
   }
 
-  .nav-slider {
-    width: 100%;
-  }
-
-  .nav-link {
-    font-size: 3.6rem !important;
-    line-height: 4rem !important;
-  }
-  .navtop-icon {
-    display: flex;
-    width: 100%;
-    height: 3.6rem;
+  .button-conf {
+    padding: 0 2.4rem 2px !important;
+    height: 44px !important;
   }
 
   .nav-btn-close {
@@ -154,20 +187,35 @@ select > option {
     top: 0.9rem;
     left: 1.2rem;
   }
+
+  .nav-list {
+    margin: 5rem -2rem 0;
+  }
+
   .nav-list-item {
     margin-bottom: 2rem;
   }
 
-  .nav-list {
-    margin: 8rem -2rem;
-  }
-  .sidebar-bottom-text {
-    font-size: 1.5rem;
-    line-height: 2.2rem;
+  .top_nav {
+    padding: 1rem 1.2rem;
   }
 
-  .sidebar-bottom {
-    margin: 0 -0.6rem !important;
+  .top_nav .logo {
+    margin-left: 2.5em;
+  }
+
+  .top_nav .logo .icon {
+    padding-top: 0;
+  }
+
+  .user {
+    display: flex;
+  }
+
+  .navtop-icon {
+    display: flex;
+    height: 3.2rem;
+    width: 3.2rem;
   }
 
   .sidebar-bottom-region label {
@@ -177,8 +225,8 @@ select > option {
 
   select {
     width: 14vh;
-    font-size: 1.5rem;
-    line-height: 2.3rem;
+    font-size: 1.5rem !important;
+    line-height: 2.2rem !important;
     background-color: transparent !important;
   }
 
@@ -191,4 +239,36 @@ select > option {
     height: 2.8vh;
     margin: 0 1vh 0 2vh;
   }
+
+  /* .container {
+    padding: 0 3.8% !important;
+    min-width: 100% !important;
+    margin: 0 !important;
+  } */
+
+  .nav-slider {
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 3.6rem;
+    line-height: 4rem;
+  }
+
+  .top_nav {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  
+  .top_nav .icon {
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+  }
+
+  .header h1 {
+    padding-top: 0;
+    margin-top: 106px;
+  }
+  
 }
