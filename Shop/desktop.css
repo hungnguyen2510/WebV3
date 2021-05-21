@@ -447,3 +447,7 @@ h5 {
 .custom-card-master > img{
   flex: 1;
 }
+
+.section-six-mobile, .section-three-mobile{
+  display: none;
+}
