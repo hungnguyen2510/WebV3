@@ -12,6 +12,7 @@
   --line-height-md: 3.5rem;
   --font-size-sm: 1.7rem;
   --line-height-sm: 2.7rem;
+  --text-grey-color: #7D868C;
 }
 
 * {
@@ -71,6 +72,7 @@ html {
   align-items: center;
   font-weight: 400;
 }
-.mb-132 {
-  margin-bottom: 13.2rem;
+
+.grey {
+  color: var(--text-grey-color);
 }

@@ -109,7 +109,7 @@ select {
 }
 
 select:focus {
-  outline:none;
+  outline: none;
 }
 
 select > option {
@@ -118,10 +118,10 @@ select > option {
   background: transparent;
   color: #b7bfc5;
 }
-/* 
+ 
 select#language {
-  width: 12vh;
-} */
+  width: 14vh !important;
+} 
 
 .slidebar-bottom-separate {
   border: 1px solid #b7bfc5;
@@ -142,7 +142,7 @@ select#language {
 
 .nav-list {
   padding-left: 0;
-  margin-top: 8rem !important;
+  margin-top: 5rem !important;
   list-style: none;
   flex: 1;
 }
@@ -273,73 +273,6 @@ select#language {
   font-weight: 700;
   color: var(--white-color);
 }
-/* footer */
-.my-footer {
-  color: #7d868c;
-  padding: 30px 120px;
-}
-
-.my-footer h2 {
-  color: #fff;
-}
-
-.menu-footer ul {
-  margin: 0;
-  padding: 0;
-}
-
-.menu-footer .menu-one {
-  margin-bottom: 2.5rem;
-}
-
-.menu-footer ul li {
-  list-style: none;
-  margin-bottom: 3px;
-}
-
-.menu-footer ul li:hover {
-  cursor: pointer;
-  color: #fff;
-}
-
-.logo-social {
-  margin-top: 5rem;
-}
-
-.logo-social img {
-  height: 34px;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.logo-social span {
-  float: right;
-}
-
-.my-footer .col-two input::placeholder {
-  color: #fff;
-}
-
-.enter-input {
-  position: absolute;
-  margin-left: -2em;
-}
-
-.enter-input:hover {
-  cursor: pointer;
-}
-
-.enter-input img {
-  width: 50%;
-}
-
-.my-footer .col-two input {
-  width: 100%;
-  border: none;
-  background: none;
-  border-bottom: 1px solid white;
-  color: #fff;
-}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -377,15 +310,6 @@ select#language {
     line-height: 22px !important;
   }
 
-  .top_nav {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-  .top_nav .logo {
-    margin-left: 2.5em;
-  }
-
   .heading {
     height: 88vh;
   }
@@ -396,6 +320,86 @@ select#language {
     margin: 0 !important;
   }
 
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .show-on-mobile {
+    display: block !important ;
+  }
+
+  .top_nav {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
+
+  .top_nav .logo {
+    margin-left: 2.5em;
+  }
+
+  .button-conf {
+    padding: 0 2.4rem 2px !important;
+    height: 44px !important;
+  }
+
+  .nav-btn-close {
+    position: absolute;
+    top: 0.9rem;
+    left: 1.2rem;
+  }
+
+  .nav-list {
+    margin: 5rem -2rem 0;
+  }
+
+  .nav-list-item {
+    margin-bottom: 2rem;
+  }
+
+  .top_nav {
+    padding: 1rem 1.2rem;
+  }
+
+  .top_nav .logo {
+    margin-left: 2.5em;
+  }
+
+  .top_nav .logo .icon {
+    padding-top: 0;
+  }
+
+  .user {
+    display: flex;
+  }
+
+  .navtop-icon {
+    display: flex;
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  .sidebar-bottom-region label {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+
+  select {
+    width: 12vh;
+    font-size: 1.5rem !important;
+    line-height: 2.2rem !important;
+    background-color: transparent !important;
+  }
+
+  select#language {
+    width: 12vh;
+  }
+
+  .slidebar-bottom-separate {
+    border: 1px solid #b7bfc5;
+    height: 2.8vh;
+    margin: 0 1vh 0 2vh;
+  }
+
   .nav-slider {
     width: 100%;
   }
@@ -403,6 +407,22 @@ select#language {
   .nav-link {
     font-size: 3.6rem;
     line-height: 4rem;
+  }
+
+  .top_nav {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .top_nav .icon {
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+  }
+
+  .header h1 {
+    padding-top: 0;
+    margin-top: 106px;
   }
 
   .heading {
@@ -431,7 +451,7 @@ select#language {
   .location-region {
     /* width: 36%; */
     position: relative;
-    margin-top: 14rem;
+    margin-top: 20rem;
   }
 
   .location__list {
@@ -439,7 +459,7 @@ select#language {
   }
 
   .row-location-details {
-    padding-left: 1.6rem;
+    /* padding-left: 1.6rem; */
   }
 
   .header__content-description {
@@ -455,8 +475,43 @@ select#language {
     margin: 0;
   }
 
-  .location-item-active { 
+  .location-item-active {
     border-bottom: 4px solid var(--white-color);
+  }
+
+  .row-location-details__item {
+    user-select: none;
+  }
+
+  .row-location-details__item:hover {
+    cursor: pointer !important;
+  }
+
+  .row-location-details__item.active {
+    width: 100%;
+  }
+
+  .row-location-details .row-location-details__item.active::before {
+    content: "";
+    position: absolute;
+    top: 6.4rem !important;
+    margin-bottom: 40px;
+    z-index: -1;
+  }
+
+  .location-details__item-hide {
+    background-image: url(../../assets/icons/closeemail.svg);
+    position: absolute;
+    top: 7.5rem;
+    right: 1.2rem !important;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  .text__detail-mobile {
+    display: block;
   }
 }
 
@@ -496,5 +551,4 @@ select#language {
   .show-on-pc {
     display: block;
   }
-
 }

@@ -224,14 +224,14 @@ select#language {
   }
 
   select {
-    width: 14vh;
+    width: 12vh;
     font-size: 1.5rem !important;
     line-height: 2.2rem !important;
     background-color: transparent !important;
   }
 
   select#language {
-    width: 16vh;
+    width: 14vh;
   }
 
   .slidebar-bottom-separate {
