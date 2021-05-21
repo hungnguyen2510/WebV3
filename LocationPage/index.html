@@ -50,7 +50,7 @@
         <div class="top_nav d-flex justify-content-between px-5 py-4">
           <div class="menu">
             <nav class="nav-content">
-              <div class="nav-btn" id="" onclick="ToggleNav()">
+              <div class="nav-btn navtop-icon" id="" onclick="ToggleNav()">
                 <img src="../assets/icons/menu.svg" alt="" class="icon" />
               </div>
 
@@ -58,52 +58,83 @@
 
               <div class="nav-slider" id="nav-slider-element">
                 <div class="nav-btn-close" onclick="CloseNav()">
-                  <img src="../assets/icons/Close.png" alt="" />
+                  <img src="../assets/icons/sidebarclose.svg" alt="" />
                 </div>
-                <ul class="nav-list">
-                  <li class="nav-list-item">
-                    <h2>
-                      <a href="" class="nav-link">câu-chuyện</a>
-                    </h2>
-                  </li>
-                  <li class="nav-list-item">
-                    <h2>
-                      <a href="" class="nav-link">cửa-hàng</a>
-                    </h2>
-                  </li>
-                  <li class="nav-list-item">
-                    <h2>
-                      <a href="" class="nav-link">nơi-bán</a>
-                    </h2>
-                  </li>
-                  <li class="nav-list-item">
-                    <h2>
-                      <a href="" class="nav-link">thắc-mắc</a>
-                    </h2>
-                  </li>
-                  <li class="nav-list-item">
-                    <div class="nav-ship-to"></div>
-                    <div class="nav-language"></div>
-                  </li>
-                </ul>
+
+                <div class="slidebar-content d-flex flex-column">
+                  <ul class="nav-list">
+                    <li class="nav-list-item">
+                      <h2>
+                        <a href="" class="nav-link">câu-chuyện</a>
+                      </h2>
+                    </li>
+                    <li class="nav-list-item">
+                      <h2>
+                        <a href="" class="nav-link">cửa-hàng</a>
+                      </h2>
+                    </li>
+                    <li class="nav-list-item">
+                      <h2>
+                        <a href="" class="nav-link">nơi-bán</a>
+                      </h2>
+                    </li>
+                    <li class="nav-list-item">
+                      <h2>
+                        <a href="" class="nav-link">thắc-mắc</a>
+                      </h2>
+                    </li>
+                  </ul>
+
+                  <div class="sidebar-bottom ml-3">
+                    <div
+                      class="sidebar-bottom-ship d-flex justify-content-bettwen"
+                    >
+                      <div class="sidebar-bottom-region">
+                        <label for="region">Ship to:</label>
+                        <select name="region" id="region">
+                          <option selected value="0">VietNam</option>
+                          <option value="1">Other</option>
+                        </select>
+                      </div>
+                      <div class="slidebar-bottom-separate"></div>
+                      <div class="sidebar-bottom-language">
+                        <label for="language"></label>
+                        <select name="language" id="language">
+                          <option selected value="0">Tiếng Việt</option>
+                          <option value="1">English</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </nav>
           </div>
           <div class="logo">
-            <a href="">
-              <img src="../assets/icons/Logo.png" alt="" class="icon" />
+            <a class="navtop-icon" href="">
+              <img
+                src="../assets/icons/Logo.png"
+                alt=""
+                class="icon hide-on-mobile"
+              />
+              <img
+                src="../assets/icons/Fill 1.svg"
+                alt=""
+                class="icon hide-on-pc hide-on-tablet"
+              />
             </a>
           </div>
           <div class="user">
-            <a href="">
+            <a class="navtop-icon" href="">
               <img src="../assets/icons/user.svg" alt="" class="icon" />
             </a>
-            <a href="">
+            <a class="navtop-icon" href="">
               <img src="../assets/icons/sneaker.svg" alt="" class="icon" />
             </a>
-            <span class="number-quantity" style="font-weight: bold">0</span>
+            <span class="number-quantity hide-on-mobile" style="font-weight: bold">0</span>
           </div>
         </div>
+
         <div class="heading">
           <div class="container">
             <header class="header__content">
