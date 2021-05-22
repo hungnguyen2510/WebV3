@@ -191,7 +191,7 @@
                       </div>
                   </div>
                   </div>
-                  <div class="row-location-details__item active">  
+                  <div class="row-location-details__item">  
                     <h2><span class="text__detail-mobile">Vesta Lifestyle &</span> Gifts</h2>
                       <div class="location-details__item-hide">
                           <div>
@@ -300,7 +300,7 @@
                   <div class="row-location-details__item">  
                     <h2>Tim Tay</h2>
                   </div>
-                  <div class="row-location-details__item active">  
+                  <div class="row-location-details__item">  
                     <h2><span class="text__detail-mobile">Vesta Lifestyle &</span> Gifts</h2>
                   </div>
                   <div class="row-location-details__item">  
@@ -399,7 +399,7 @@
                   <div class="row-location-details__item">  
                     <h2>Tim Tay</h2>
                   </div>
-                  <div class="row-location-details__item active">  
+                  <div class="row-location-details__item">  
                     <h2><span class="text__detail-mobile">Vesta Lifestyle &</span> Gifts</h2>
                   </div>
                   <div class="row-location-details__item">  
@@ -560,7 +560,6 @@
                   e.classList.remove("active");
                 } else {
                   if (e.id.includes("location-detail__content1")) {
-                    // console.log("main_about_text01");
                     e.classList.add("active");
                   }
                 }
@@ -575,7 +574,6 @@
                   e.classList.remove("active");
                 } else {
                   if (e.id.includes("location-detail__content2")) {
-                    // console.log("main_about_text02");
                     e.classList.add("active");
                   }
                 }
@@ -591,13 +589,21 @@
                 } else {
                   // console.log(e.classList)
                   if (e.id.includes("location-detail__content3")) {
-                    // console.log("main_about_text03");
                     e.classList.add("active");
                   }
                 }
               });
           });
 
+          $(".row-location-details__item").click(function (){
+            
+            if($(this).hasClass("active")){
+              $(this).removeClass("active")
+            }
+            else{
+              $(this).addClass("active")
+            }
+          })
       });
 
       var overlayElement = document.getElementById("overlay-element");

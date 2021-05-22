@@ -16,9 +16,9 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="desktop.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="desktop.css" /> -->
     <link rel="stylesheet" type="text/css" media="screen" href="range.css" />
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="mobile.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="mobile.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -50,99 +50,93 @@
     <script src="../assets/js/topnav.js"></script>
   </head>
   <body>
-      <div class="top_nav w-100 d-flex justify-content-between">
-        <div class="menu">
-          <nav class="nav-content">
-            <div class="nav-btn navtop-icon" id="" onclick="ToggleNav()">
-              <img src="../assets/icons/menu-black.png" alt="" class="icon" />
+    <div class="top_nav w-100 d-flex justify-content-between">
+      <div class="menu">
+        <nav class="nav-content">
+          <div class="nav-btn navtop-icon" id="" onclick="ToggleNav()">
+            <img src="../assets/icons/menu-black.png" alt="" class="icon" />
+          </div>
+
+          <div id="overlay-element" class="nav-overlay"></div>
+
+          <div class="nav-slider" id="nav-slider-element">
+            <div class="nav-btn-close" onclick="CloseNav()">
+              <img src="../assets/icons/sidebarclose.svg" alt="" />
             </div>
 
-            <div id="overlay-element" class="nav-overlay"></div>
+            <div class="slidebar-content d-flex flex-column">
+              <ul class="nav-list">
+                <li class="nav-list-item">
+                  <h2>
+                    <a href="" class="nav-link">câu-chuyện</a>
+                  </h2>
+                </li>
+                <li class="nav-list-item">
+                  <h2>
+                    <a href="" class="nav-link">cửa-hàng</a>
+                  </h2>
+                </li>
+                <li class="nav-list-item">
+                  <h2>
+                    <a href="" class="nav-link">nơi-bán</a>
+                  </h2>
+                </li>
+                <li class="nav-list-item">
+                  <h2>
+                    <a href="" class="nav-link">thắc-mắc</a>
+                  </h2>
+                </li>
+              </ul>
 
-            <div class="nav-slider" id="nav-slider-element">
-              <div class="nav-btn-close" onclick="CloseNav()">
-                <img src="../assets/icons/sidebarclose.svg" alt="" />
-              </div>
-
-              <div class="slidebar-content d-flex flex-column">
-                <ul class="nav-list">
-                  <li class="nav-list-item">
-                    <h2>
-                      <a href="" class="nav-link">câu-chuyện</a>
-                    </h2>
-                  </li>
-                  <li class="nav-list-item">
-                    <h2>
-                      <a href="" class="nav-link">cửa-hàng</a>
-                    </h2>
-                  </li>
-                  <li class="nav-list-item">
-                    <h2>
-                      <a href="" class="nav-link">nơi-bán</a>
-                    </h2>
-                  </li>
-                  <li class="nav-list-item">
-                    <h2>
-                      <a href="" class="nav-link">thắc-mắc</a>
-                    </h2>
-                  </li>
-                </ul>
-
-                <div class="sidebar-bottom ml-3">
-                  <div
-                    class="sidebar-bottom-ship d-flex justify-content-bettwen"
-                  >
-                    <div class="sidebar-bottom-region">
-                      <label for="region"
-                        ><h5
-                          class="ptgn-address"
-                          style="color: #7d868c; font-weight: 400"
-                        >
-                          Ship to:
-                        </h5></label
+              <div class="sidebar-bottom ml-3">
+                <div class="sidebar-bottom-ship d-flex justify-content-bettwen">
+                  <div class="sidebar-bottom-region">
+                    <label for="region"
+                      ><h5
+                        class="ptgn-address"
+                        style="color: #7d868c; font-weight: 400"
                       >
-                      <select name="region" id="region">
-                        <option selected value="0">VietNam</option>
-                        <option value="1">Other</option>
-                      </select>
-                    </div>
-                    <div class="slidebar-bottom-separate"></div>
-                    <div class="sidebar-bottom-language">
-                      <label for="language"></label>
-                      <select name="language" id="language">
-                        <option selected value="0">Tiếng Việt</option>
-                        <option value="1">English</option>
-                      </select>
-                    </div>
+                        Ship to:
+                      </h5></label
+                    >
+                    <select name="region" id="region">
+                      <option selected value="0">VietNam</option>
+                      <option value="1">Other</option>
+                    </select>
+                  </div>
+                  <div class="slidebar-bottom-separate"></div>
+                  <div class="sidebar-bottom-language">
+                    <label for="language"></label>
+                    <select name="language" id="language">
+                      <option selected value="0">Tiếng Việt</option>
+                      <option value="1">English</option>
+                    </select>
                   </div>
                 </div>
               </div>
             </div>
-          </nav>
-        </div>
-        <div class="logo">
-          <a class="navtop-icon" href="">
-            <img
-              src="../assets/icons/logo.svg"
-              alt=""
-              class="icon"
-            />
-          </a>
-        </div>
-        <div class="user h-100">
-          <a class="navtop-icon" href="">
-            <img src="../assets/icons/Smiley.svg" alt="" class="icon" />
-          </a>
-          <a class="navtop-icon ml-4" href="">
-            <img src="../assets/icons/sneaker-black.png" alt="" class="icon" />
-          </a>
-          <span
-            class="number-quantity h-100 hide-on-mobile"
-            style="font-weight: bold; color: black"
-            >0</span
-          >
-        </div>
+          </div>
+        </nav>
       </div>
+      <div class="logo">
+        <a class="navtop-icon" href="">
+          <img src="../assets/icons/logo.svg" alt="" class="icon" />
+        </a>
+      </div>
+      <div class="user h-100">
+        <a class="navtop-icon" href="">
+          <img src="../assets/icons/Smiley.svg" alt="" class="icon" />
+        </a>
+        <a class="navtop-icon ml-4" href="">
+          <img src="../assets/icons/sneaker-black.png" alt="" class="icon" />
+        </a>
+        <span
+          class="number-quantity h-100 hide-on-mobile"
+          style="font-weight: bold; color: black"
+          >0</span
+        >
+      </div>
+    </div>
     <div class="header container-left my-5">
       <h1>Một cho mọi người</h1>
       <hr />
@@ -254,11 +248,11 @@
                       </div>
                       <div class="row slider-labels justify-content-between">
                         <div class="col-xs-6 caption">
-                          <span id="slider-range-value1"></span>
+                          <h5 id="slider-range-value1"></h5>
                           <!-- <span id="slider-range-temp1"></span> -->
                         </div>
                         <div class="col-xs-6 text-right caption">
-                          <span id="slider-range-value2"></span>
+                          <h5 id="slider-range-value2"></h5>
                           <!-- <span id="slider-range-temp2"></span> -->
                         </div>
                       </div>
@@ -441,7 +435,7 @@
               <span style="font-weight: 700">Một làn da mới</span>: Một kết-hợp
               với hoạ sĩ Trần Ngọc Sinh
             </h5>
-            <button class="btn-shop">mua liền !</button>
+            <button class="btn-shop"><h5>mua liền !</h5></button>
           </div>
         </div>
       </div>
@@ -590,7 +584,6 @@
             </div>
 
             <img src="../assets/images/Rectangle 13.png" alt="" />
-            <div class="box stack-top"></div>
           </div>
         </div>
         <div class="col-two col col-xl-6 col-mb-6 col-sm-12">
@@ -683,7 +676,7 @@
           <div class="custom-card-master">
             <div class="text">
               <h2>phụ kiện</h2>
-              <p>thích thì mua</p>
+              <h5>thích thì mua</h5>
             </div>
             <img src="../assets/images/Rectangle 10.png" alt="" />
           </div>
