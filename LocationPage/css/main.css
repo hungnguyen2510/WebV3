@@ -299,7 +299,7 @@ select#language {
 .row-location-details__item.active {
   position: relative;
   padding-bottom: 332px;
-  width: 840px;
+  width: calc(50% + 184px);
   z-index: 1;
 }
 
@@ -314,6 +314,10 @@ select#language {
   background-color: #000 !important;
   margin-bottom: 56px;
   z-index: -1;
+}
+
+.row-location-details__item.active.item-hide__large {
+  width: calc(50% + 284px) !important;
 }
 
 .row-location-details .row-location-details__item.active::after {
