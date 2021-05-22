@@ -74,5 +74,5 @@ html {
 }
 
 .grey {
-  color: var(--text-grey-color);
+  color: var(--text-grey-color) !important;
 }
