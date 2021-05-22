@@ -365,6 +365,7 @@ input[type="radio"] {
   }
   
   .question-answer__left {
+    margin: 106px 0 40px 0 !important; 
   }
   
   .question-answer__left-item {
@@ -430,5 +431,13 @@ input[type="radio"] {
 @media only screen and (min-width: 1200px) {
   h1 {
     /* color: black !important; */
+  }
+
+  .hide-on-pc {
+    display: none !important;
+  }
+
+  .show-on-pc {
+    display: block !important;
   }
 }
