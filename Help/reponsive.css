@@ -314,6 +314,18 @@ input[type="radio"] {
     line-height: 22px !important;
   }
 
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .show-on-mobile {
+    display: block !important;
+  }
+  .mention {
+    font-size: 11px !important;
+    line-height: 14px !important;
+  }
+
   .top_nav {
     padding-left: 1em;
     padding-right: 1em;
@@ -325,6 +337,11 @@ input[type="radio"] {
 
   .my-container {
     margin: 5%;
+  }
+
+  
+  .item-step .item > h5{
+    margin-top: 2rem;
   }
 
   .btn-conf {
@@ -339,7 +356,52 @@ input[type="radio"] {
   }
   .item-flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  .my-container .col-one {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .question-answer__left {
+  }
+  
+  .question-answer__left-item {
+    display: unset;
+  }
+  
+  .question-answer__img {
+    margin-left: 0 !important;
+    margin-bottom: 4rem;
+  }
+  
+  .question-answer__right {
+  }
+  
+  .question-answer__right-item {
+    display: unset;
+  }
+
+  .davai-mobile {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .col-csg-mobile {
+    padding: 1.6rem 0 0 2.5rem !important;
+  }
+  
+  .card-color {
+    margin-top: 4rem;
+  }
+
+  .take-calling-mobile {
+    margin-left: 3.1rem;
+  }
+
+  .take-calling-mobile-date {
+    display: block !important;
   }
 }
 

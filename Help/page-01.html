@@ -74,20 +74,20 @@
     <div class="my-container">
       <div class="row">
         <div class="col-one col-xl-12 col-md-12 col-sm-12">
-          <h1>
-            <span>bạn</span> <br />
+          <h1 class="question-answer__left bold-700">
+            <span class="question-answer__left-item">bạn</span>
             hỏi
           </h1>
-          <img src="assets/icons/Rectangle 17.png" alt="" />
-          <h1>
-            <span style="float: right">Một</span> <br />
+          <img class="question-answer__img" src="../assets/icons/Rectangle 17.png" alt="" />
+          <h1 class="bold-700 question-answer__right">
+            <span class="question-answer__right-item">Một</span>
             trả lời
           </h1>
         </div>
         <div class="col-two col-xl-12 col-md-12 col-sm-12">
           <hr />
           <div class="item">
-            <h3>về một sản phẩm</h3>
+            <h3 class="bold-700">về Một sản phẩm</h3>
             <button class="btn-toggle" onclick="veMotSanPham()">
               <img src="../assets/icons/plus.png" alt="" id="btn-plus-1" />
               <img src="../assets/icons/minus.png" alt="" id="btn-minus-1" />
@@ -95,12 +95,61 @@
           </div>
           <div id="vmsp" class="toggle-div">
             <hr class="hr-2" />
-            <div class="row">
+            <div class="row pb-0">
               <div class="col-xl-3 col-md-12 col-sm-12">
                 <h4 class="bold">giày</h4>
               </div>
+              <!-- <div class="col-xl-6 col-md-12 col-sm-12 col-csg-mobile">
+                <h4 class="bold davai-mobile show-on-mobile">da / vải</h4> -->
+              <div class="item-flex col-xl-3 col-md-12 col-sm-12 hide-on-mobile">
+                <h4 class="bold">Đời mới / đời thường ?</h4>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12 col-csg-mobile">
+                <h4 class="bold davai-mobile show-on-mobile">Đời mới / đời thường ?</h4>
+                <h5>
+                  <span class="bold-700">Đời-mới</span> là dòng giày đầu tiên Một ra mắt thị trường. Đời-mới
+                  có dây vì vậy dễ điều chỉnh hơn cho bàn chân rộng bề ngang.
+                  dây giày Đời-mới có thể được cột lại và giấu vào bên trong -
+                  tuỳ sở thích người mang
+                </h5>
+
+                <h5 class="mt-4">
+                  <span class="bold-700">Đời-thường </span> là dòng giày dành cho những
+                  ai mê sự nhanh gọn. Đời-thường không có dây mà thay vào đó là
+                  bản dây thun, giúp người mang xỏ chân, kéo gót và bước đi - tự
+                  do làm điều mình thích
+                </h5>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <!-- <h4 class="bold">giày</h4> -->
+              </div>
+              <div class="item-flex col-xl-3 col-md-12 col-sm-12 hide-on-mobile">
+                <h4 class="bold">da / vải ?</h4>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12 col-csg-mobile pt-0">
+                <h4 class="bold davai-mobile show-on-mobile mt-0">da / vải ?</h4>
+                <h5>
+                  Một chọn da bò thật cho các sản phẩm giày. da thật êm,
+                  bền đẹp với thời gian và co dãn nhẹ theo bàn chân người mang
+                </h5>
+                <h5 class="mt-4">
+                  Một chọn vải bố cô-tông 100% cho các sản phẩm giày vải,
+                  để chân bạn thoáng nhẹ thoải mái suốt ngày dài
+                </h5>
+              </div>
+            </div>
+            
+            <!-- đoạn chia cắt đây này -->
+            <hr class="mt-5" style="border-top: 1px solid black !important;" />
+
+            <div class="row">
+              <div class="col-xl-3 col-md-12 col-sm-12">
+                <h4 class="bold">phụ kiện</h4>
+              </div>
               <div class="item-flex col-xl-3 col-md-12 col-sm-12">
-                <h4 class="bold">Đời mới / đời thường</h4>
+                <h4 class="bold">miếng lót</h4>
               </div>
               <div class="col-xl-6 col-md-12 col-sm-12">
                 <h5>
@@ -119,7 +168,6 @@
                 <!-- <h4 class="bold">giày</h4> -->
               </div>
               <div class="item-flex col-xl-3 col-md-12 col-sm-12">
-                <h4 class="bold">da / vải</h4>
               </div>
               <div class="col-xl-6 col-md-12 col-sm-12">
                 <h5>
@@ -134,9 +182,10 @@
               </div>
             </div>
           </div>
+          
           <hr />
           <div class="item">
-            <h3>đo size thế nào ?</h3>
+            <h3 class="bold-700">đo size thế nào ?</h3>
             <button class="btn-toggle" onclick="doSizeTheNao()">
               <img src="../assets/icons/plus.png" alt="" id="btn-plus-2" />
               <img src="../assets/icons/minus.png" alt="" id="btn-minus-2" />
@@ -146,7 +195,7 @@
             <hr class="hr-2" />
             <div class="row">
               <div class="col-xl-6 col-md-12 col-sm-12">
-                <h4 class="bold">làm sao đo chân?</h4>
+                <h4 class="bold mb-5">làm sao đo chân?</h4>
               </div>
               <div class="item-step col-xl-6 col-md-12 col-sm-12">
                 <div class="item">
@@ -175,12 +224,12 @@
                 </div>
                 <h5>
                   <span class="bold">Một vài lưu ý khi đo chân</span><br />
-                  — luôn đo cả hai bàn chân và chọn số đo lớn hơn <br />— nếu bề
+                  — luôn <span class="bold-700">đo cả hai bàn chân</span> và chọn số đo lớn hơn <br />— nếu bề
                   ngang chân to hơn, nên chọn size nam; nếu bề ngang chân mỏng
-                  hơn, nên chọn size nữ <br />— nên siết nhẹ thước dây khi đo bề
+                  hơn, nên chọn size nữ <br />— nên <span class="bold-700">siết nhẹ thước dây</span> khi đo bề
                   ngang chân, vì giày cũng sẽ ôm sát theo chân <br />— luôn chọn
-                  size theo số đo lớn hơn (ví dụ: bàn chân nữ dài 22cm, tương
-                  ứng size 35W, nhưng vòng chân là 21.5cm thì nên chọn size 36)
+                  size theo số đo lớn hơn <span style="color: grey;">(ví dụ: bàn chân nữ dài 22cm, tương
+                    ứng size 35W, nhưng vòng chân là 21.5cm thì nên chọn size 36)</span>
                 </h5>
               </div>
             </div>
@@ -204,9 +253,9 @@
                       <table class="table custom-table">
                         <thead>
                           <tr>
-                            <th><p>size</p></th>
-                            <th><p>bề dài chân (cm)</p></th>
-                            <th><p>bề dài chân (cm)</p></th>
+                            <th><p class="mention" style="color:#111802; font-weight: 400;">size</p></th>
+                            <th><p class="mention" style="color:#111802; font-weight: 400;">bề dài chân (cm)</p></th>
+                            <th><p class="mention" style="color:#111802; font-weight: 400;">bề dài chân (cm)</p></th>
                           </tr>
                         </thead>
                         <tbody>
@@ -216,35 +265,36 @@
                             <th><h5>21 - 21.4</h5></th>
                           </tr>
                           <tr>
+                          <tr>
                             <th><h5 class="bold">36W</h5></th>
-                            <th><h5>21.6 - 22.3</h5></th>
-                            <th><h5>21 - 21.4</h5></th>
+                            <th><h5>22.3 - 22.9</h5></th>
+                            <th><h5>21.4 - 21.9</h5></th>
                           </tr>
                           <tr>
                             <th><h5 class="bold">37W</h5></th>
-                            <th><h5>21.6 - 22.3</h5></th>
-                            <th><h5>21 - 21.4</h5></th>
+                            <th><h5>22.9 - 23.6</h5></th>
+                            <th><h5>21.9 - 22.3</h5></th>
                           </tr>
                           <tr>
                             <th><h5 class="bold">38W</h5></th>
-                            <th><h5>21.6 - 22.3</h5></th>
-                            <th><h5>21 - 21.4</h5></th>
+                            <th><h5>23.6 - 24.3</h5></th>
+                            <th><h5>22.3 - 22.8</h5></th>
                           </tr>
                           <tr>
                             <th><h5 class="bold">39W</h5></th>
-                            <th><h5>21.6 - 22.3</h5></th>
-                            <th><h5>21 - 21.4</h5></th>
+                            <th><h5>24.3 - 24.9</h5></th>
+                            <th><h5>22.8 - 23.2</h5></th>
                           </tr>
                           <tr>
                             <th><h5 class="bold">40W</h5></th>
-                            <th><h5>21.6 - 22.3</h5></th>
-                            <th><h5>21 - 21.4</h5></th>
+                            <th><h5>24.9 - 25.6</h5></th>
+                            <th><h5>23.2 - 23.7</h5></th>
                           </tr>
                           <tr>
                             <th><h5 class="bold">41W</h5></th>
-                            <th><h5>21.6 - 22.3</h5></th>
-                            <th><h5>21 - 21.4</h5></th>
-                          </tr>
+                            <th><h5>25.6 - 26.3</h5></th>
+                            <th><h5>23.7 - 24.2</h5></th>
+                          </tr> 
                         </tbody>
                       </table>
                     </div>
@@ -258,46 +308,46 @@
                       <table class="table custom-table">
                         <thead>
                           <tr>
-                            <th><p>size</p></th>
-                            <th><p>bề dài chân (cm)</p></th>
-                            <th><p>bề dài chân (cm)</p></th>
+                            <th><p class="mention" style="color:#111802; font-weight: 400;">size</p></th>
+                            <th><p class="mention" style="color:#111802; font-weight: 400;">bề dài chân (cm)</p></th>
+                            <th><p class="mention" style="color:#111802; font-weight: 400;">bề dài chân (cm)</p></th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <th><h5 class="bold">35W</h5></th>
-                            <th><h5>21.6 - 22.3</h5></th>
-                            <th><h5>21 - 21.4</h5></th>
+                            <th><h5>21.3 - 22</h5></th>
+                            <th><h5>19.8 - 21.2</h5></th>
                           </tr>
                           <tr>
                             <th><h5 class="bold">36W</h5></th>
-                            <th><h5>21.6 - 22.3</h5></th>
-                            <th><h5>21 - 21.4</h5></th>
+                            <th><h5>22 - 22.6</h5></th>
+                            <th><h5>21.2 - 21.6</h5></th>
                           </tr>
                           <tr>
                             <th><h5 class="bold">37W</h5></th>
-                            <th><h5>21.6 - 22.3</h5></th>
-                            <th><h5>21 - 21.4</h5></th>
+                            <th><h5>22.6 - 23.3</h5></th>
+                            <th><h5>21.6 - 22</h5></th>
                           </tr>
                           <tr>
                             <th><h5 class="bold">38W</h5></th>
-                            <th><h5>21.6 - 22.3</h5></th>
-                            <th><h5>21 - 21.4</h5></th>
+                            <th><h5>23.3 - 24</h5></th>
+                            <th><h5>22 - 22.7</h5></th>
                           </tr>
                           <tr>
                             <th><h5 class="bold">39W</h5></th>
-                            <th><h5>21.6 - 22.3</h5></th>
-                            <th><h5>21 - 21.4</h5></th>
+                            <th><h5>24 - 24.6</h5></th>
+                            <th><h5>22.7 - 23</h5></th>
                           </tr>
                           <tr>
                             <th><h5 class="bold">40W</h5></th>
-                            <th><h5>21.6 - 22.3</h5></th>
-                            <th><h5>21 - 21.4</h5></th>
+                            <th><h5>24.6 - 25.3</h5></th>
+                            <th><h5>23 - 23.5</h5></th>
                           </tr>
                           <tr>
                             <th><h5 class="bold">41W</h5></th>
-                            <th><h5>21.6 - 22.3</h5></th>
-                            <th><h5>21 - 21.4</h5></th>
+                            <th><h5>25.3 - 26</h5></th>
+                            <th><h5>23.5 - 24</h5></th>
                           </tr>
                         </tbody>
                       </table>
@@ -309,7 +359,7 @@
           </div>
           <hr />
           <div class="item">
-            <h3>chăm sóc giày</h3>
+            <h3 class="bold-700">chăm sóc giày</h3>
             <button class="btn-toggle" onclick="khuyenMai()">
               <img src="../assets/icons/plus.png" alt="" id="btn-plus-3" />
               <img src="../assets/icons/minus.png" alt="" id="btn-minus-3" />
@@ -321,15 +371,16 @@
               <div class="col-xl-3 col-md-12 col-sm-12">
                 <h4 class="bold">giày</h4>
               </div>
-              <div class="item-flex col-xl-3 col-md-12 col-sm-12">
+              <div class="item-flex col-xl-3 col-md-12 col-sm-12 hide-on-mobile">
                 <h4 class="bold">da / vải</h4>
               </div>
-              <div class="col-xl-6 col-md-12 col-sm-12">
+              <div class="col-xl-6 col-md-12 col-sm-12 col-csg-mobile">
+                <h4 class="bold davai-mobile show-on-mobile">da / vải</h4>
                 <h5>
-                  với các sản phẩm da bạn nhớ tránh dính nước, dính mưa và nếu
+                  với các <span class="bold-700">sản phẩm da</span> bạn nhớ tránh dính nước, dính mưa và nếu
                   cần làm sạch xin hãy tìm đến cách dịch vụ uy tín !
                   <br /><br />
-                  bạn có thể làm vệ sinh giày vải theo cách bên dưới : <br />—
+                  bạn có thể làm vệ sinh <span class="bold-700">giày vải</span> theo cách bên dưới : <br />—
                   pha loãng dầu gội / dầu tắm <br />— dùng bàn chải đánh răng
                   nhẹ nhàng chải lên bề mặt giày bị dính bẩn <br />— rửa sạch xà
                   bông với nuớc <br />— bọc những nơi bị thấm ướt bằng giấy ăn
@@ -344,7 +395,7 @@
           </div>
           <hr />
           <div class="item">
-            <h3>phương thức thanh toán</h3>
+            <h3 class="bold-700">phương-thức thanh toán</h3>
             <button class="btn-toggle" onclick="phuongThucThanhToan()">
               <img src="../assets/icons/plus.png" alt="" id="btn-plus-4" />
               <img src="../assets/icons/minus.png" alt="" id="btn-minus-4" />
@@ -360,14 +411,14 @@
                 <h5>
                   Một chấp nhận phương thức COD (thanh toán khi nhận hàng) và
                   thanh toán thẻ, thanh toán qua ví điện tử trực tuyến khi mua
-                  hàng tại www.motdoigiay.vn/shop
+                  hàng tại <span class="bold-700">www.motdoigiay.vn/shop</span>
                 </h5>
               </div>
             </div>
           </div>
           <hr />
           <div class="item">
-            <h3>chính sách bảo hành và đổi trả</h3>
+            <h3 class="bold-700">chính-sách bảo hành và đổi-trả</h3>
             <button class="btn-toggle" onclick="chinhSachDoiTra()">
               <img src="../assets/icons/plus.png" alt="" id="btn-plus-5" />
               <img src="../assets/icons/minus.png" alt="" id="btn-minus-5" />
@@ -384,8 +435,9 @@
               </div>
               <div class="col-xl-6 col-md-12 col-sm-12">
                 <h5>
-                  Một thực hiện chính sách đổi – trả dễ dàng để bạn luôn vui khi
-                  mua hàng ! các sản phẩm giày của Một đều được hưởng chính sách
+                  <span class="bold-700 d-block mb-3">Một thực hiện chính sách đổi – trả dễ dàng để bạn luôn vui khi
+                    mua hàng !</span> <br /> 
+                  các sản phẩm giày của Một đều được hưởng chính sách
                   đổi – trả trong vòng 30 ngày kể từ ngày giày được giao đi, khi
                   thoả các điều kiện sau : — giày chưa mang (đế còn mới nguyên)
                   — giày còn nguyên vẹn không hư hỏng — túi và hộp giày còn mới
@@ -427,8 +479,8 @@
                   sản phẩm được mua tại các điểm bán của Một đối tác, bạn vui
                   lòng đổi trả tại đúng điểm bán nếu bạn nghi ngờ sản phẩm mình
                   mua mắc phải lỗi sản xuất, liên hệ ngay với Một qua e-mail
-                  hello@motdoigiay.vn hoặc trang facebook của Một
-                  www.facebook.com/motdoigiay; chúng tôi sẽ giải quyết các
+                  <span class="bold-700">hello@motdoigiay.vn</span> hoặc trang facebook của Một
+                  <span class="bold-700">www.facebook.com/motdoigiay;</span> chúng tôi sẽ giải quyết các
                   trường hợp đổi – trả nhanh nhất có thể nếu bạn có nhầm lẫn
                   trong khi mua hàng, đừng ngần ngại tìm đến team Một. chúng tôi
                   sẽ làm mọi điều tốt nhất để hỗ trợ bạn trong khoảng thời gian
@@ -447,8 +499,8 @@
               <div class="col-xl-6 col-md-12 col-sm-12">
                 <h5>
                   — Một áp dụng chính sách 1 đổi 1 cho các sản phẩm áo mưa mắc
-                  phải lỗi sản xuất — với các trường hợp đổi màu / size, Một chỉ
-                  áp dụng đổi khi áo mưa còn nguyên trong bao chưa xé — Một
+                  phải lỗi sản xuất <br /> — với các trường hợp đổi màu / size, Một chỉ
+                  áp dụng đổi khi áo mưa còn nguyên trong bao chưa xé <br /> — Một
                   không áp dụng chính sách trả hàng với áo mưa
                 </h5>
               </div>
@@ -463,7 +515,7 @@
               </div>
               <div class="col-xl-6 col-md-12 col-sm-12">
                 <h5>
-                  — chỉ áp dụng chính sách 1 đổi 1 khi sản phẩm mắc lỗi sản xuất
+                  — chỉ áp dụng chính sách 1 đổi 1 khi sản phẩm mắc lỗi sản xuất<br />
                   — không áp dụng chính sách đổi - trả với hàng đúng quy cách
                 </h5>
               </div>
@@ -471,7 +523,7 @@
           </div>
           <hr />
           <div class="item">
-            <h3>liên hệ</h3>
+            <h3 class="bold-700">liên hệ</h3>
             <button class="btn-toggle" onclick="lienHe()">
               <img src="../assets/icons/plus.png" alt="" id="btn-plus-6" />
               <img src="../assets/icons/minus.png" alt="" id="btn-minus-6" />
@@ -483,7 +535,7 @@
               <div class="col-xl-6 col-md-12 col-sm-12">
                 <h4 class="bold">bằng điện thoại</h4>
               </div>
-              <div class="col-xl-6 col-md-12 col-sm-12">
+              <div class="col-xl-6 col-md-12 col-sm-12 take-calling-mobile">
                 <h5>
                   số hotline : nhận điện từ 09:30 - 22:00, thứ Hai đến Chủ Nhật
                 </h5>
@@ -495,11 +547,11 @@
               <div class="col-xl-6 col-md-12 col-sm-12">
                 <h4 class="bold">bằng facebook</h4>
               </div>
-              <div class="col-xl-6 col-md-12 col-sm-12">
-                <h5>chat với Một từ 09:30 – 18:00; từ Thứ Hai đến Thứ Sáu</h5>
+              <div class="col-xl-6 col-md-12 col-sm-12 take-calling-mobile">
+                <h5><span class="take-calling-mobile-date">chat với Một từ 09:30 – 18:00; từ Thứ Hai đến</span> Thứ Sáu</h5>
                 <div class="d-flex align-items-center">
                   <img src="../assets/icons/Facebook-black.png" alt="" />
-                  <h3 class="bold ml-3" style="margin-bottom: 0">
+                  <h3 id="fb_motdoigiay" class="bold ml-3" style="margin-bottom: 0">
                     facebook.com/motdoigiay
                   </h3>
                 </div>
@@ -510,15 +562,18 @@
               <div class="col-xl-6 col-md-12 col-sm-12">
                 <h4 class="bold">bằng email</h4>
               </div>
-              <div class="col-xl-6 col-md-12 col-sm-12">
+              <div class="col-xl-6 col-md-12 col-sm-12 take-calling-mobile">
                 <h5>
-                  bạn vui lòng gửi email đến hello@motdoigiay.vn hoặc điền vào
+                  bạn vui lòng gửi email đến <span class="bold-700">hello@motdoigiay.vn</span> hoặc điền vào
                   form dưới đây, Một sẽ trả lời bạn trong thời gian sớm nhất
                 </h5>
                 <div class="card-custom none-clip-path">
                   <input type="text" placeholder="tên đầy đủ">
-                  <input type="email" placeholder="email của bạn">
+                  <input class="card-custom__email mt-0" type="email" placeholder="email của bạn">
                   <input type="text" placeholder="nội dung" class="area-input">
+                  <input class="text-of-content" type="text">
+                  <input class="text-of-content" type="text">
+                  <input class="text-of-content" type="text">
                 </div>
               </div>
             </div>
@@ -575,6 +630,18 @@
     </footer>
 
     <script>
+      $(document).ready(function () {
+        if(screen.width < 600){
+          console.log("mobile")
+          //mobile
+          $("#fb_motdoigiay").html("motdoigiay")
+        }
+        else{
+          console.log("desktop")
+          $("#fb_motdoigiay").html("facebook.com/motdoigiay")
+        }
+      });
+      
       function veMotSanPham() {
         var x = document.getElementById("vmsp");
         if (x.style.display === "none") {
