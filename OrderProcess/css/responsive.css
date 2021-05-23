@@ -1,0 +1,568 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  :root {
+    --nav-height: 5rem;
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .show-on-mobile {
+    display: block !important ;
+  }
+
+  h1 {
+    /* color: red !important; */
+    font-size: 56px !important;
+    line-height: 56px !important;
+  }
+
+  h2 {
+    font-size: 36px !important;
+    line-height: 40px !important;
+  }
+
+  h3 {
+    font-size: 27px !important;
+    line-height: 35px !important;
+  }
+
+  h4 {
+    font-size: 20px !important;
+    line-height: 27px !important;
+  }
+
+  h5 {
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+
+  input::placeholder {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  input[type="text"] {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .top_nav {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
+
+  .top_nav .logo {
+    margin-left: 2.5em;
+  }
+
+  .button-conf {
+    padding: 0 2.4rem 2px !important;
+    height: 44px !important;
+  }
+
+  .nav-btn-close {
+    position: absolute;
+    top: 0.9rem;
+    left: 1.2rem;
+  }
+
+  .nav-list {
+    margin: 8rem -2rem;
+  }
+
+  .nav-list-item {
+    margin-bottom: 2rem;
+  }
+
+  .top_nav {
+    padding: 1rem 1.2rem;
+  }
+
+  .top_nav .logo {
+    margin-left: 2.5em;
+  }
+
+  .top_nav .logo .icon {
+    padding-top: 0;
+  }
+
+  .user {
+    display: flex;
+  }
+
+  .navtop-icon {
+    display: flex;
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  .sidebar-bottom-region label {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+
+  select {
+    width: 14vh;
+    font-size: 1.5rem !important;
+    line-height: 2.2rem !important;
+    background-color: transparent !important;
+  }
+
+  select#language {
+    width: 16vh;
+  }
+
+  .slidebar-bottom-separate {
+    border: 1px solid #b7bfc5;
+    height: 2.8vh;
+    margin: 0 1vh 0 2vh;
+  }
+
+  .container {
+    padding: 0 3.8% !important;
+    min-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .nav-slider {
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 3.6rem;
+    line-height: 4rem;
+  }
+
+  .app__shopping-mobile {
+    position: absolute;
+    top: 5rem;
+    width: 10%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #ebeded;
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem 0 1.6rem;
+  }
+
+  .app__shopping-mobile h5 {
+    color: var(--text-color) !important;
+    font-weight: 700 !important;
+  }
+
+  .app__shopping-pay {
+    display: flex;
+    align-items: center;
+  }
+
+  .app__shopping-pay-icon {
+    font-size: 1.7rem;
+    font-weight: 400 !important;
+  }
+
+  .heading {
+    /* position: relative; */
+    padding-top: 50%;
+    background: url(../../assets/images/www.rimowa\ 1.png) right top / contain
+      no-repeat;
+  }
+
+  .header__content {
+    position: unset;
+    color: var(--white-color);
+    margin-top: 26%;
+  }
+
+  .header__content-description {
+    width: 100%;
+    padding: 4rem 0;
+    font-weight: 400;
+  }
+
+  .header__content-greeting {
+    font-weight: 400;
+  }
+
+  .location-region {
+    /* width: 36%; */
+    position: relative;
+    margin-top: 14rem;
+  }
+
+  .location__list {
+    width: 95%;
+  }
+
+  .row-location-details {
+    padding-left: 1.6rem;
+  }
+
+  .header__content-description {
+    padding: 2rem 0;
+  }
+
+  .location-region::before {
+    top: 4.6rem;
+  }
+
+  .location-detail {
+    padding: 6.4rem 0;
+    margin: 0;
+  }
+
+  .location-item-active {
+    border-bottom: 4px solid var(--white-color);
+  }
+
+  .content-col-right {
+    padding: calc(4rem + var(--nav-height)) 4.5% 6.4rem !important;
+  }
+
+  .step-number .item-step.active::after {
+    content: "";
+    background-image: url("../../assets/icons/Rectangle\ 17.png");
+    margin-left: 2rem;
+    background-size: 60px 2px;
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+
+  .ptgn-item {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #b7bfc5;
+    border-bottom: unset;
+    padding: 1rem 2.4rem;
+    margin-right: 0;
+  }
+
+  .ptgn-item:last-child {
+    border-bottom: 1px solid #b7bfc5;
+  }
+
+  .ptgn-item.active {
+    --pt-b: calc(1rem - 4px);
+    border: 4px solid #111820;
+    padding: var(--pt-b) 2.4rem var(--pt-b);
+    margin-bottom: 0.8rem;
+  }
+
+  /* //thông tin giao hàng// */
+
+  .ttgh {
+    max-width: 98%;
+  }
+
+  .ttgh .ttgh__city-province {
+    display: unset !important;
+  }
+
+  .ttgh__city-province .ttgh__province {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .ttgh__city-province .ttgh__city {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .ttgh__province {
+    position: relative;
+  }
+
+  .ttgh__province::before {
+    content: "";
+    background-image: url("../../assets/icons/Chevron_down.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1.9rem;
+    width: 1.8rem;
+    position: absolute;
+    right: 0;
+    bottom: 0.942rem;
+    display: inline-block;
+  }
+
+  /* <!-- Phương thức thanh toán  --> */
+
+  .pttt-table {
+    width: 100% !important;
+    height: 192px !important;
+  }
+
+  .pttt-table td {
+    padding: 12px 0 12px 20px !important;
+    width: 240px;
+  }
+
+  .vertical-center {
+    line-height: 44px !important;
+  }
+
+  .pttt-table__item.active {
+    border: 4px solid #111820;
+  }
+
+  .pttt-step-2 {
+    position: relative;
+    width: 100% !important;
+  }
+
+  .pttt-step__bank {
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
+    z-index: 1;
+  }
+
+  .pttt-step__bank img {
+    width: 39px;
+  }
+
+  .pttt-step-3 {
+    position: relative;
+    width: 100% !important;
+  }
+
+  .pttt__bank-card.pttt__bank-card--after {
+    background: rgba(233, 244, 251, 1) !important;
+    box-shadow: unset;
+    position: relative;
+    margin-left: 4.7rem;
+    margin-top: 22rem;
+  }
+
+  .pttt__bank-card {
+    background: rgba(233, 244, 251, 1);
+    width: 95%;
+    height: 188px;
+    box-shadow: -2px -2px 0px rgba(255, 255, 255, 0.5),
+      30px 30px 60px rgba(0, 65, 106, 0.4);
+    border-radius: 20px;
+    position: absolute;
+    top: -9rem !important;
+    left: -2.5rem;
+  }
+
+  .pttt__card-input {
+    width: 90%;
+    margin: auto;
+    padding-top: 6.2rem;
+  }
+
+  .pttt__card-input-item input {
+    margin-top: 0.38rem !important;
+    background-color: transparent !important;
+  }
+
+  .pttt__card-input-item--2 .pttt__card-input-item:last-child input {
+    width: 100%;
+  }
+
+  .pttt-button {
+    position: absolute;
+    margin-top: 0 !important;
+    left: 0;
+    bottom: 0;
+  }
+
+  /* // Thông tin giao hàng //*/
+  .ttdh {
+    width: 100% !important;
+  }
+
+  .ttdh table.table {
+    margin-top: 2.4rem;
+  }
+
+  .ttdh table.table > tbody > tr > th {
+    color: #7d868c;
+    width: 86px;
+  }
+
+  .table__address-user {
+    max-width: 70%;
+  }
+
+  .ttdh table.table h5.bold {
+    font-weight: 700 !important;
+    margin-right: 0.6rem;
+  }
+
+  /* thanks page */
+  /* ////////////// page thank you /////////////////// */
+
+  .container-thanks {
+    padding: 90px 16px 0 !important;
+    color: var(--white-color);
+  }
+
+  .container-thanks__main {
+    flex-direction: column;
+  }
+
+  .container-thanks__info {
+    flex: 1;
+  }
+
+  .container-thanks__info h2 {
+    font-weight: 700;
+  }
+
+  .thanks__info-des {
+    font-weight: 400;
+    margin: 0.4rem 0 3.2rem !important;
+  }
+
+  .grey + .bold {
+    margin-bottom: 1.6em;
+  }
+
+  .btn__thanks-page {
+    margin-top: 4rem !important;
+    margin-bottom: 6.4rem !important;
+  }
+
+  .container-thanks__detail {
+    padding-left: 0 !important;
+    flex: 1;
+  }
+
+  .container-thanks__detail .card-custom {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 20px 0 20px;
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+  .saw-on-bottom {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 25px;
+    bottom: -25px;
+    right: 0;
+    left: 0;
+    clip-path: polygon(
+      0% 0%,
+      0 75%,
+      2.5% 100%,
+      5% 75%,
+      7.5% 100%,
+      10% 75%,
+      12.5% 100%,
+      15% 75%,
+      17.5% 100%,
+      20% 75%,
+      22.5% 100%,
+      25% 75%,
+      27.5% 100%,
+      30% 75%,
+      32.5% 100%,
+      35% 75%,
+      37.5% 100%,
+      40% 75%,
+      42.5% 100%,
+      45% 75%,
+      47.5% 100%,
+      50% 75%,
+      52.5% 100%,
+      55% 75%,
+      57.5% 100%,
+      60% 75%,
+      62.5% 100%,
+      65% 75%,
+      67.5% 100%,
+      70% 75%,
+      72.5% 100%,
+      75% 75%,
+      77.5% 100%,
+      80% 75%,
+      82.5% 100%,
+      85% 75%,
+      87.5% 100%,
+      90% 75%,
+      92.5% 100%,
+      95% 75%,
+      97.5% 100%,
+      100% 75%,
+      100% 0
+    );
+  }
+
+  hr {
+    border-top: 1px solid #fff !important;
+    margin-top: 2rem !important;
+  }
+}
+
+/* tablet */
+@media (min-width: 600px) and (max-width: 768px) {
+  .hide-on-tablet {
+    display: none !important;
+  }
+  .show-on-tablet {
+    display: block !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .hide-on-pc {
+    display: none !important;
+  }
+  .show-on-pc {
+    display: block !important;
+  }
+  .main__product-mt {
+    margin-top: 0;
+  }
+
+  .container {
+    margin: 0 1rem !important;
+  }
+
+  .app {
+    height: 100vh;
+  }
+
+  .main__product-left {
+    height: 100vh !important;
+  }
+
+  .content-col-right {
+    padding: calc(4rem + var(--nav-height)) 8% 6.4rem !important;
+    height: 100vh;
+  }
+
+  .product-left__order-list {
+    height: 80vh;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .content-col-right {
+    padding: calc(4rem + var(--nav-height)) 14.3% 7.1rem !important;
+    /* height: 100vh !important; */
+  }
+
+  .product-left__order-list {
+    height: 70vh;
+  }
+}
