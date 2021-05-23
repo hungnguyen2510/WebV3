@@ -1,33 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Order Process</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
     <link
-      href="../assets/fonts/LabGrotesque VN/stylesheet.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
     <link
+      href="http://fonts.cdnfonts.com/css/lab-grotesque-medium"
       rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="orderProcess.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="reponsive.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="../assets/css/footer.css"
     />
 
     <link
@@ -36,17 +27,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
     <link
       rel="stylesheet"
-      href="../assets/owlcarousel/assets/owl.carousel.min.css"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
     />
-    <!-- Default Theme -->
-    <link
-      rel="stylesheet"
-      href="../assets/owlcarousel/assets/owl.theme.default.min.css"
-    />
-
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -62,235 +48,700 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="../assets/owlcarousel/owl.carousel.min.js"></script>
   </head>
+
   <body>
-    <!-- <div class="top_nav d-flex justify-content-between py-4">
-      <div class="menu">
-        <a href="">
-          <img src="../assets/icons/menu-black.png" alt="" class="icon" />
-        </a>
-      </div>
-      <div class="logo">
-        <a href="">
-          <img src="../assets/icons/logo.svg" alt="" class="icon" />
-        </a>
-      </div>
-      <div class="user">
-        <a href="">
-          <img src="../assets/icons/Smiley.svg" alt="" class="icon" />
-        </a>
-        <a href="">
-          <img src="../assets/icons/sneaker-black.png" alt="" class="icon" />
-        </a>
-        <span class="number-quantity" style="font-weight: bold">0</span>
-      </div>
-    </div> -->
-    <div class="section-one">
-      <div class="container-fluid">
-        <div class="row">
-          <!-- <div class="col-one col-xl-4 col-md-12 col-sm-12" id="add-cart">
-            <div class="section my-container choose-cart">
-              <div class="x-button">
-                <img
-                  src="../assets/icons/Icon-x.png"
-                  alt=""
-                  onclick="xAddCart()"
-                />
+    <div class="main">
+      <div class="app">
+        <div class="top_nav w-100 d-flex justify-content-between">
+          <div class="menu">
+            <nav class="nav-content">
+              <div class="nav-btn navtop-icon" id="" onclick="ToggleNav()">
+                <img src="../assets/icons/menu-black.png" alt="" class="icon" />
               </div>
-              <div class="scroll-items">
-                <div class="item-cart">
-                  <div class="img-card-item">
-                    <img src="../assets/images/Group 87.png" alt="" />
-                  </div>
-                  <div class="info-cart-item">
-                    <h5>
-                      <span style="font-weight: bold">vải Đời mới</span> quá-đỏ
-                    </h5>
-                    <h5>nam - 40</h5>
-                    <div class="input-number">
-                      <img
-                        src="../assets/icons/moins-cart.png"
-                        alt=""
-                        onclick="minusQuantity()"
-                      />
-                      <label id="item-quantity">1</label>
-                      <img
-                        src="../assets/icons/plus-cart.png"
-                        alt=""
-                        onclick="plusQuantity()"
-                      />
+
+              <div id="overlay-element" class="nav-overlay"></div>
+
+              <div class="nav-slider" id="nav-slider-element">
+                <div class="nav-btn-close" onclick="CloseNav()">
+                  <img src="../assets/icons/sidebarclose.svg" alt="" />
+                </div>
+
+                <div class="slidebar-content d-flex flex-column">
+                  <ul class="nav-list">
+                    <li class="nav-list-item">
+                      <h2>
+                        <a href="" class="nav-link">câu-chuyện</a>
+                      </h2>
+                    </li>
+                    <li class="nav-list-item">
+                      <h2>
+                        <a href="" class="nav-link">cửa-hàng</a>
+                      </h2>
+                    </li>
+                    <li class="nav-list-item">
+                      <h2>
+                        <a href="" class="nav-link">nơi-bán</a>
+                      </h2>
+                    </li>
+                    <li class="nav-list-item">
+                      <h2>
+                        <a href="" class="nav-link">thắc-mắc</a>
+                      </h2>
+                    </li>
+                  </ul>
+
+                  <div class="sidebar-bottom ml-3">
+                    <div
+                      class="sidebar-bottom-ship d-flex justify-content-bettwen"
+                    >
+                      <div class="sidebar-bottom-region">
+                        <label for="region"
+                          ><h5
+                            class="ptgn-address"
+                            style="color: #7d868c; font-weight: 400"
+                          >
+                            Ship to:
+                          </h5></label
+                        >
+                        <select name="region" id="region">
+                          <option selected value="0">VietNam</option>
+                          <option value="1">Other</option>
+                        </select>
+                      </div>
+                      <div class="slidebar-bottom-separate"></div>
+                      <div class="sidebar-bottom-language">
+                        <label for="language"></label>
+                        <select name="language" id="language">
+                          <option selected value="0">Tiếng Việt</option>
+                          <option value="1">English</option>
+                        </select>
+                      </div>
                     </div>
-                  </div>
-                  <div class="price-cart-item">
-                    <h5 class="bold">720 000 VND</h5>
                   </div>
                 </div>
-                <div class="item-cart">
-                  <div class="img-card-item">
-                    <img src="../assets/images/L_front 1.png" alt="" />
-                  </div>
-                  <div class="info-cart-item">
-                    <h5>
-                      <span style="font-weight: bold">Một cặp lót giày</span>
-                    </h5>
-                    <h5>size M</h5>
-                    <div class="input-number">
-                      <img
-                        src="../assets/icons/moins-cart.png"
-                        alt=""
-                        onclick="minusQuantity()"
-                      />
-                      <label id="item-quantity">1</label>
-                      <img
-                        src="../assets/icons/plus-cart.png"
-                        alt=""
-                        onclick="plusQuantity()"
-                      />
-                    </div>
-                  </div>
-                  <div class="price-cart-item">
-                    <h5 class="bold">120 000 VND</h5>
-                  </div>
+              </div>
+            </nav>
+          </div>
+          <div class="logo">
+            <a class="navtop-icon" href="">
+              <img
+                src="../assets/icons/logo.svg"
+                alt=""
+                class="icon hide-on-mobile"
+              />
+              <img
+                src="../assets/icons/Fill 1 black.svg"
+                alt=""
+                class="icon hide-on-pc hide-on-tablet show-on-mobile"
+              />
+            </a>
+          </div>
+          <div class="user h-100">
+            <a class="navtop-icon" href="">
+              <img src="../assets/icons/user-black.svg" alt="" class="icon" />
+            </a>
+            <a class="navtop-icon ml-4" href="">
+              <img
+                src="../assets/icons/sneaker-black.png"
+                alt=""
+                class="icon"
+              />
+            </a>
+            <span
+              class="number-quantity h-100 hide-on-mobile"
+              style="font-weight: bold; color: black"
+              >1</span
+            >
+          </div>
+        </div>
+
+        <div
+          class="
+            app__shopping-mobile
+            justify-content-bettwen
+            w-100
+            position-relative
+            hide-on-pc hide-on-tablet
+          "
+        >
+          <div class="app__shopping-cart">
+            <h5>giỏ hàng của bạn</h5>
+          </div>
+          <div class="app__shopping-pay">
+            <h5 class="app__shopping-pay-price mr-3">840 000 VNĐ</h5>
+            <i class="app__shopping-pay-icon fas fa-chevron-down"></i>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div
+              class="
+                col-xl-4 col-lg-5
+                m-0
+                p-0
+                hide-on-mobile hide-on-tablet
+                content-col-left
+              "
+            >
+              <div class="main__product-left">
+                <div class="product-left__order">
+                  <ul class="product-left__order-list">
+                    <li class="product-left__order-list-item">
+                      <div class="product-left__order-item">
+                        <div class="product-left__image">
+                          <img src="../assets/images/VDM-QD-03 1.png" alt="" />
+                        </div>
+                        <div class="product-left__info">
+                          <div class="product-left__info-heading">
+                            <h5 class="product-left__info-name bold">
+                              Vải Đời-mới
+                            </h5>
+                            <h5 class="product-left__info-description">
+                              quá đỏ
+                            </h5>
+                          </div>
+                          <span class="product-left__info-size">nam - 40</span>
+                          <div class="product-left__quantity-price">
+                            <span class="product-left__quantity">sỉ: 1</span>
+                            <span class="product-left__price">720 000 VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- accessories -->
+                    <li class="product-left__order-list-item">
+                      <div class="product-left__order-accessories">
+                        <div class="product-left__accessories-image">
+                          <img src="../assets/images/L_front 1.png" alt="" />
+                        </div>
+                        <div class="product-left__info">
+                          <div class="product-left__info-heading">
+                            <h5 class="product-left__info-name bold">
+                              một cặp lót giày
+                            </h5>
+                          </div>
+                          <span class="product-left__info-size">size M</span>
+                          <div class="product-left__quantity-price">
+                            <span class="product-left__quantity">sỉ: 1</span>
+                            <span class="product-left__price">120 000 VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="product-left__order-list-item">
+                      <div class="product-left__order-accessories">
+                        <div class="product-left__accessories-image">
+                          <img src="../assets/images/L_front 1.png" alt="" />
+                        </div>
+                        <div class="product-left__info">
+                          <div class="product-left__info-heading">
+                            <h5 class="product-left__info-name bold">
+                              một cặp lót giày
+                            </h5>
+                          </div>
+                          <span class="product-left__info-size">size M</span>
+                          <div class="product-left__quantity-price">
+                            <span class="product-left__quantity">sỉ: 1</span>
+                            <span class="product-left__price">120 000 VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="product-left__order-list-item">
+                      <div class="product-left__order-accessories">
+                        <div class="product-left__accessories-image">
+                          <img src="../assets/images/L_front 1.png" alt="" />
+                        </div>
+                        <div class="product-left__info">
+                          <div class="product-left__info-heading">
+                            <h5 class="product-left__info-name bold">
+                              một cặp lót giày
+                            </h5>
+                          </div>
+                          <span class="product-left__info-size">size M</span>
+                          <div class="product-left__quantity-price">
+                            <span class="product-left__quantity">sỉ: 1</span>
+                            <span class="product-left__price">120 000 VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="product-left__order-list-item">
+                      <div class="product-left__order-accessories">
+                        <div class="product-left__accessories-image">
+                          <img src="../assets/images/L_front 1.png" alt="" />
+                        </div>
+                        <div class="product-left__info">
+                          <div class="product-left__info-heading">
+                            <h5 class="product-left__info-name bold">
+                              một cặp lót giày
+                            </h5>
+                          </div>
+                          <span class="product-left__info-size">size M</span>
+                          <div class="product-left__quantity-price">
+                            <span class="product-left__quantity">sỉ: 1</span>
+                            <span class="product-left__price">120 000 VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="product-left__order-list-item">
+                      <div class="product-left__order-accessories">
+                        <div class="product-left__accessories-image">
+                          <img src="../assets/images/L_front 1.png" alt="" />
+                        </div>
+                        <div class="product-left__info">
+                          <div class="product-left__info-heading">
+                            <h5 class="product-left__info-name bold">
+                              một cặp lót giày
+                            </h5>
+                          </div>
+                          <span class="product-left__info-size">size M</span>
+                          <div class="product-left__quantity-price">
+                            <span class="product-left__quantity">sỉ: 1</span>
+                            <span class="product-left__price">120 000 VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="product-left__order-list-item">
+                      <div class="product-left__order-accessories">
+                        <div class="product-left__accessories-image">
+                          <img src="../assets/images/L_front 1.png" alt="" />
+                        </div>
+                        <div class="product-left__info">
+                          <div class="product-left__info-heading">
+                            <h5 class="product-left__info-name bold">
+                              một cặp lót giày
+                            </h5>
+                          </div>
+                          <span class="product-left__info-size">size M</span>
+                          <div class="product-left__quantity-price">
+                            <span class="product-left__quantity">sỉ: 1</span>
+                            <span class="product-left__price">120 000 VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="product-left__order-list-item">
+                      <div class="product-left__order-accessories">
+                        <div class="product-left__accessories-image">
+                          <img src="../assets/images/L_front 1.png" alt="" />
+                        </div>
+                        <div class="product-left__info">
+                          <div class="product-left__info-heading">
+                            <h5 class="product-left__info-name bold">
+                              một cặp lót giày
+                            </h5>
+                          </div>
+                          <span class="product-left__info-size">size M</span>
+                          <div class="product-left__quantity-price">
+                            <span class="product-left__quantity">sỉ: 1</span>
+                            <span class="product-left__price">120 000 VNĐ</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-                <div class="item-cart">
-                  <div class="img-card-item">
-                    <img src="../assets/images/L_front 1.png" alt="" />
-                  </div>
-                  <div class="info-cart-item">
-                    <h5>
-                      <span style="font-weight: bold">Một cặp lót giày</span>
-                    </h5>
-                    <h5>size S</h5>
-                    <div class="input-number">
-                      <img
-                        src="../assets/icons/moins-cart.png"
-                        alt=""
-                        onclick="minusQuantity()"
-                      />
-                      <label id="item-quantity">1</label>
-                      <img
-                        src="../assets/icons/plus-cart.png"
-                        alt=""
-                        onclick="plusQuantity()"
-                      />
+
+                <div class="product-left__order-pay">
+                  <div class="product-left__pay">
+                    <div class="product-left__pay-provisional">
+                      <h5 class="product__pay-provisional-title">tạm tính</h5>
+                      <h5 class="product__pay-provisional-price">
+                        840 000 VNĐ
+                      </h5>
                     </div>
-                  </div>
-                  <div class="price-cart-item">
-                    <h5 class="bold">120 000 VND</h5>
-                  </div>
-                </div>
-                <div class="item-cart">
-                  <div class="img-card-item">
-                    <img src="../assets/images/L_front 1.png" alt="" />
-                  </div>
-                  <div class="info-cart-item">
-                    <h5>
-                      <span style="font-weight: bold">Một cặp lót giày</span>
-                    </h5>
-                    <h5>size S</h5>
-                    <div class="input-number">
-                      <img
-                        src="../assets/icons/moins-cart.png"
-                        alt=""
-                        onclick="minusQuantity()"
-                      />
-                      <label id="item-quantity">1</label>
-                      <img
-                        src="../assets/icons/plus-cart.png"
-                        alt=""
-                        onclick="plusQuantity()"
-                      />
+
+                    <div class="product-left__delivery-charges">
+                      <h5 class="product__delivery-charges-title">
+                        phí giao hàng
+                      </h5>
+                      <h5 class="product__delivery-charges-price">
+                        120 000 VNĐ
+                      </h5>
                     </div>
-                  </div>
-                  <div class="price-cart-item">
-                    <h5 class="bold">120 000 VND</h5>
-                  </div>
-                </div>
-                <div class="item-cart">
-                  <div class="img-card-item">
-                    <img src="../assets/images/L_front 1.png" alt="" />
-                  </div>
-                  <div class="info-cart-item">
-                    <h5>
-                      <span style="font-weight: bold">Một cặp lót giày</span>
-                    </h5>
-                    <h5>size S</h5>
-                    <div class="input-number">
-                      <img
-                        src="../assets/icons/moins-cart.png"
-                        alt=""
-                        onclick="minusQuantity()"
-                      />
-                      <label id="item-quantity">1</label>
-                      <img
-                        src="../assets/icons/plus-cart.png"
-                        alt=""
-                        onclick="plusQuantity()"
-                      />
+                    <div class="product-left__pay-seperate"></div>
+                    <div class="product-left__pay-total">
+                      <h5 class="product__pay-total-title bold">tổng cộng</h5>
+                      <h5 class="product__pay-total-price bold">960 000 VNĐ</h5>
                     </div>
-                  </div>
-                  <div class="price-cart-item">
-                    <h5 class="bold">120 000 VND</h5>
                   </div>
                 </div>
               </div>
             </div>
-            <div>
-              <div class="section my-container choose-cart">
-                <div class="voucher">
+            <div
+              class="
+                col-xl-8 col-lg-7 col-md-12 col-sm-12 col-12
+                content-col-right
+              "
+            >
+              <!-- main step -->
+
+              <div class="main__step-right">
+                <div class="step-number">
+                  <div class="item-step active">
+                    <h1 class="bold">1</h1>
+                    <div class="content-step"></div>
+                  </div>
+                  <div class="item-step">
+                    <h1 class="bold">2</h1>
+                    <div class="content-step"></div>
+                  </div>
+                  <div class="item-step">
+                    <h1 class="bold">3</h1>
+                    <div class="content-step"></div>
+                  </div>
+                  <div class="item-step">
+                    <h1 class="bold">4</h1>
+                    <div class="content-step"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-content__right flex-column display-none">
+                <div id="tttk" class="toggle-div">
+                  <h4 class="font-weight-bold">bạn đã có tài khoản Một?</h4>
+                  <input
+                    type="password"
+                    placeholder="email của bạn"
+                    name="txtPasswordOld"
+                  />
+                  <div style="position: relative">
+                    <input
+                      type="password"
+                      placeholder="mật khẩu"
+                      name="txtPasswordNew"
+                    />
+                    <button class="btn-togglePass">
+                      <i class="fa fa-eye" id="togglePassword"></i>
+                    </button>
+                  </div>
+                  <div
+                    class="
+                      tttk-login
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                      mt-5
+                    "
+                  >
+                    <button class="button-conf btn-black tttk-login mt-0">
+                      <h5>đăng nhập</h5>
+                    </button>
+                    <a class="tttk-login-forget" href=""
+                      >tôi quên mật khẩu rồi !!!</a
+                    >
+                  </div>
+                </div>
+
+                <!-- kmhvl -> khách mua hàng vãng lai -->
+
+                <div class="kmhvl">
+                  <h4 class="font-weight-bold">mua hàng vãng lai</h4>
+                  <span class="kmhvl_description"
+                    >tiếp tục với tư cách là khách vãng lai, hoặc đăng ký Một
+                    tài khoản để tra cứu đơn hàng nhanh gọn và nhận mọi khuyến
+                    mãi mới nhất</span
+                  >
+                  <input
+                    type="password"
+                    placeholder="email của bạn"
+                    name="txtPasswordOld"
+                  />
+                  <button class="button-conf btn-white btn-size-l tttk-login">
+                    <h5>mua hàng vãng lai</h5>
+                  </button>
+                  <button class="button-conf btn-black tttk-login">
+                    <h5>đăng ký</h5>
+                  </button>
+                </div>
+              </div>
+
+              <!-- ptgn-Phương thức giao nhận -->
+              <div class="ptgn display-none">
+                <h4 class="font-weight-bold">phương-thức giao nhận</h4>
+
+                <div class="sidebar-bottom-region">
+                  <label for="region"
+                    ><h5
+                      class="ptgn-address"
+                      style="color: #7d868c; font-weight: 400"
+                    >
+                      địa chỉ giao hàng của bạn hiện ở
+                    </h5></label
+                  >
+                  <select name="region" id="region">
+                    <option selected value="0">VietNam</option>
+                    <option value="1">Other</option>
+                  </select>
+                </div>
+
+                <div class="ptgn-item">
+                  <div class="ptgn-item__left">
+                    <div class="ptgn-item__position">
+                      <h5>nội thành TP. HCM</h5>
+                    </div>
+                    <div class="ptgn-item__work-time">
+                      <span class="mention">2-3 ngày làm việc</span>
+                    </div>
+                  </div>
+                  <div class="ptgn-item__price"><h5>0 VNĐ</h5></div>
+                </div>
+                <div class="ptgn-item">
+                  <div class="ptgn-item__left">
+                    <div class="ptgn-item__position">
+                      <h5>nội thành TP. HCM</h5>
+                    </div>
+                    <div class="ptgn-item__work-time">
+                      <span class="mention">2-3 ngày làm việc</span>
+                    </div>
+                  </div>
+                  <div class="ptgn-item__price"><h5>30 000 VNĐ</h5></div>
+                </div>
+                <div class="ptgn-item active">
+                  <div class="ptgn-item__left">
+                    <div class="ptgn-item__position">
+                      <h5>nội thành TP. HCM</h5>
+                    </div>
+                    <div class="ptgn-item__work-time">
+                      <span class="mention">2-3 ngày làm việc</span>
+                    </div>
+                  </div>
+                  <div class="ptgn-item__price"><h5>120 000 VNĐ</h5></div>
+                </div>
+                <button class="button-conf btn-black tttk-login">
+                  <h5>đăng ký</h5>
+                </button>
+              </div>
+
+              <!-- ttgh - Thông tin giao hàng -->
+              <div class="ttgh display-none">
+                <h4 class="font-weight-bold">thông tin giao nhận hàng</h4>
+                <span class="mention">nhập địa chỉ nhận hàng</span>
+                <div class="ttgh-input w-100">
                   <input
                     type="text"
-                    placeholder="nhập mã trong thẻ quà tặng / mã khuyến mãi"
+                    placeholder="họ tên"
+                    name="txtPasswordOld"
                   />
                 </div>
-                <div class="temp-total item-cart">
-                  <div class="temp-total-title">
-                    <h5 class="bold">tạm tính</h5>
-                    <h5 style="color: #7d868c">
-                      giao hàng miễn phí nội thành TP.HCM
-                    </h5>
+                <div class="ttgh-input w-100">
+                  <input
+                    type="text"
+                    placeholder="số điện thoại"
+                    name="txtPasswordOld"
+                  />
+                </div>
+                <div class="ttgh-input w-100">
+                  <input
+                    type="text"
+                    placeholder="địa chỉ"
+                    name="txtPasswordOld"
+                  />
+                </div>
+                <div class="ttgh__city-province d-flex">
+                  <div class="ttgh__province mr-3 w-50">
+                    <input
+                      type="text"
+                      placeholder="tỉnh"
+                      name="txtPasswordOld"
+                    />
+                    <!-- <i class="app__shopping-pay-icon fas fa-chevron-down ttgh__province-icon"></i> -->
                   </div>
-                  <div class="temp-total-price">
-                    <h5 class="bold">720 000 VND</h5>
+                  <div class="ttgh__city ml-3 w-50">
+                    <input
+                      type="text"
+                      placeholder="huyện/thành phố"
+                      name="txtPasswordOld"
+                    />
+                  </div>
+                </div>
+
+                <button class="button-conf btn-white tttk-login">
+                  <h5>trở lại</h5>
+                </button>
+                <button class="button-conf btn-black btn-size-l tttk-login">
+                  <h5>tiếp tục thanh toán</h5>
+                </button>
+              </div>
+
+              <!-- Phương thức thanh toán  -->
+              <div class="pttt display-none">
+                <h4 class="font-weight-bold">phương-thức thanh toán</h4>
+                <span class="mention">bạn chọn thanh toán thế nào ?</span>
+
+                <div class="pttt-step-1 display-none">
+                  <!-- table -->
+                  <table class="table table-bordered pttt-table">
+                    <tbody>
+                      <tr>
+                        <td class="pttt-table__item active">
+                          <h5>
+                            thẻ tín dụng / <br />
+                            ghi nợ
+                          </h5>
+                        </td>
+                        <td class="pttt-table__item">
+                          <h5 class="vertical-center">ví điện tử MoMo</h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="pttt-table__item">
+                          <h5>
+                            chuyển khoản / <br />
+                            ngân hàng
+                          </h5>
+                        </td>
+                        <td class="pttt-table__item">
+                          <h5 class="vertical-center">QR ZaloPay</h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="pttt-table__item">
+                          <h5 class="vertical-center">Vn Pay</h5>
+                        </td>
+                        <td class="pttt-table__item">
+                          <h5>
+                            thanh toán khi <br />
+                            nhận hàng / COD
+                          </h5>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- step2 -->
+                <div class="pttt-step-2">
+                  <div class="pttt__bank-card pttt__bank-card--after">
+                    <div class="pttt__card-input">
+                      <div class="pttt__card-input-item w-100">
+                        <input type="number" style="opacity: 0" />
+                      </div>
+                      <div class="pttt__card-input-item--2 d-flex">
+                        <div class="pttt__card-input-item mr-3">
+                          <input type="text" style="opacity: 0" />
+                        </div>
+                        <div class="pttt__card-input-item ml-5">
+                          <input
+                            type="text"
+                            placeholder="CVV"
+                            name="text"
+                            class="ml-3 w-75"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pttt__bank-card">
+                      <div class="pttt-step__bank">
+                        <img src="../assets/images/Bank-Visa.png" alt="" />
+                      </div>
+                      <div class="pttt__card-input">
+                        <div class="pttt__card-input-item w-100">
+                          <input
+                            type="number"
+                            placeholder="số thẻ"
+                            name="text"
+                          />
+                        </div>
+                        <div class="pttt__card-input-item--2 d-flex">
+                          <div class="pttt__card-input-item mr-3">
+                            <input
+                              type="text"
+                              placeholder="tên chủ thẻ"
+                              name="text"
+                            />
+                            <!-- <i class="app__shopping-pay-icon fas fa-chevron-down ttgh__province-icon"></i> -->
+                          </div>
+                          <div class="pttt__card-input-item ml-3">
+                            <input
+                              type="text"
+                              placeholder="hiệu lực"
+                              name="text"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pttt-button--un-focus pttt-button display-none">
+                    <button class="button-conf btn-white btn-size-l">
+                      <h5>phương thức khác</h5>
+                    </button>
+                  </div>
+                  <div class="pttt-button--focus pttt-button">
+                    <button class="button-conf btn-white">
+                      <h5>trở lại</h5>
+                    </button>
+                    <button class="button-conf btn-black btn-size-l">
+                      <h5>tiếp tục thanh toán</h5>
+                    </button>
                   </div>
                 </div>
               </div>
-              <div class="btn-cart">
-                <button
-                  class="btn-cart-item btn-white-black btn-white-black-border-top"
-                >
-                  tiếp tục mua hàng
-                </button>
-                <button class="btn-cart-item btn-black-white">
-                  thanh toán
-                </button>
-              </div>
-            </div>
-          </div> -->
-          <div class="col-two col-xl-8 col-md-12 col-sm-12">
-            <div class="step-number">
-              <div class="item-step active">
-                <h1 class="bold">1</h1>
-                <div class="content-step">A</div>
-              </div>
-              <div class="item-step">
-                <h1 class="bold">2</h1>
-                <div class="content-step">B</div>
-              </div>
-              <div class="item-step">
-                <h1 class="bold">3</h1>
-                <div class="content-step">C</div>
-              </div>
-              <div class="item-step">
-                <h1 class="bold">4</h1>
-                <div class="content-step">D</div>
+
+              <!-- Thông tin đơn hàng -->
+              <div class="ttdh">
+                <h4 class="font-weight-bold">thông tin đơn hàng</h4>
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <th scope="row"><h5>liên hệ</h5></th>
+                      <td>
+                        <h5 class="bold">truc@dcsg.vn</h5>
+                      </td>
+                    </tr>
+                    <tr class="row__ship-to">
+                      <th scope="row"><h5>gửi đến</h5></th>
+                      <td>
+                        <h5 class="table__name-user bold">
+                          Huỳnh Quang Ngọc Hoàng
+                        </h5>
+                        <h5 class="table__phone-number bold">0908 123456 
+                        </h5>
+                        <h5 class="table__address-user">
+                          3A Lê Quý Đôn, Phường 6, Quận 3, TPHCM
+                        </h5>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><h5>giao nhận</h5></th>
+                      <td class="d-flex">
+                        <h5 class="bold">giao hàng nhanh</h5>
+                        <h5>(1-2 ngày làm việc)</h5>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="pb-0"><h5>thanh toán</h5></th>
+                      <td class="d-flex pb-0"> 
+                        <h5 class="bold">VISA credit card</h5>
+                        <h5> ***-4327</h5>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="pttt-button--focus ttdh-button">
+                  <button class="button-conf btn-white">
+                    <h5>chỉnh sửa</h5>
+                  </button>
+                  <button class="button-conf btn-black btn-size-l">
+                    <h5>xác nhận thanh toán</h5>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <script>
       $(document).ready(function () {
         $(".item-step").click(function () {
@@ -299,31 +750,22 @@
             .toArray()
             .forEach((element) => {
               if (element.className.includes("active")) {
-                element.classList.remove("active")
-                $(this).addClass("active")
+                element.classList.remove("active");
+                $(this).addClass("active");
               }
             });
         });
       });
-      function minusQuantity() {
-        var quantity_temp = document.getElementById("item-quantity").innerText;
-        if (parseInt(quantity_temp) <= 0) return;
-        var quantity_int = parseInt(quantity_temp) - 1;
-        document.getElementById(
-          "item-quantity"
-        ).innerHTML = quantity_int.toString();
-      }
-      function plusQuantity() {
-        var quantity_temp = document.getElementById("item-quantity").innerText;
-        var quantity_int = parseInt(quantity_temp) + 1;
-        document.getElementById(
-          "item-quantity"
-        ).innerHTML = quantity_int.toString();
-      }
 
-      function xAddCart() {
-        const addCartEle = document.getElementById("add-cart");
-        addCartEle.style.display = "none";
+      var overlayElement = document.getElementById("overlay-element");
+      var navSliderElement = document.getElementById("nav-slider-element");
+      function ToggleNav() {
+        overlayElement.classList.add("nav-active");
+        navSliderElement.classList.add("nav-active");
+      }
+      function CloseNav() {
+        overlayElement.classList.remove("nav-active");
+        navSliderElement.classList.remove("nav-active");
       }
     </script>
   </body>

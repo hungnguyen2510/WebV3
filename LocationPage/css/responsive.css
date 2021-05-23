@@ -60,18 +60,15 @@ h5 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  background-color:rgba(0, 0, 0, 0.3);
+  z-index: 1; 
   display: none;
+  animation: fadeIn linear 0.5s;
 }
 
 .nav-link {
   text-decoration: none;
   color: var(--text-color);
-}
-
-.nav-active {
-  display: initial !important;
 }
 
 .nav-slider {
@@ -81,11 +78,21 @@ h5 {
   bottom: 0;
   width: 48.7%;
   background-color: var(--white-color);
-  z-index: 1;
-  display: none;
-  transition: 0.5s;
   padding: 7% 7% 4% 7%;
   z-index: 16;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform linear 0.5s, opacity linear 0.5s;
+}
+
+
+.nav-active.nav-slider {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.nav-active.nav-overlay {
+  display: block;
 }
 
 /* select */
@@ -479,40 +486,50 @@ select#language {
     border-bottom: 4px solid var(--white-color);
   }
 
-  .row-location-details__item {
+  /* .row-location-details__item {
     user-select: none;
-  }
+  } */
 
-  .row-location-details__item:hover {
-    cursor: pointer !important;
-  }
-
-  .row-location-details__item.active {
-    width: 100%;
-  }
-
-  .row-location-details .row-location-details__item.active::before {
-    content: "";
-    position: absolute;
-    top: 6.4rem !important;
+  .location-details__item-hide{
+    top: 2.4rem;
+    padding: 4.3rem 0 4rem 2.4rem;
+    min-height: 331px;
     margin-bottom: 40px;
-    z-index: -1;
   }
 
-  .location-details__item-hide {
-    background-image: url(../../assets/icons/closeemail.svg);
-    position: absolute;
-    top: 7.5rem;
-    right: 1.2rem !important;
-    width: 3.2rem;
-    height: 3.2rem;
-    background-repeat: no-repeat;
-    z-index: 1;
+  #text__detail-mobile + .location-details__item-hide{
+    top: 6.5rem !important;
   }
 
   .text__detail-mobile {
     display: block;
   }
+  
+  .location-details__item-hide .item-hide_content {
+    max-width: 75%;
+  }
+
+  .row-location-details .row-location-details__item.active::after {
+    top: 4rem;
+  }
+
+  .row-location-details .row-location-details__item.details__item--large.active::after {
+    top: 8rem;
+  }
+  .row-location-details__item.active.item-hide__large,
+  .row-location-details__item.active{
+    /* padding: ; */
+    width: 100% !important;
+  }
+  
+  .open-all {
+    display: block;
+  }
+  
+  .details__item--large {
+    width: calc(50% + 284px) !important;
+  }
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

@@ -54,7 +54,7 @@
                 <img src="../assets/icons/menu.svg" alt="" class="icon" />
               </div>
 
-              <div id="overlay-element" class="nav-overlay"></div>
+              <div id="overlay-element" class="nav-overlay" onclick="CloseNav()"></div>
 
               <div class="nav-slider" id="nav-slider-element">
                 <div class="nav-btn-close" onclick="CloseNav()">
@@ -158,60 +158,91 @@
             </ul> 
           </div>
 
+          <!-- Việt Nam -->
           <div id="location-detail__content1" class="location-detail__items active">
             <div class="row location-detail">
               <div class="col-xl-2 col-sm-12 p-0">
                 <h4 href="#" class="row-location">Sài Gòn<span class="number-nav">10</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
+                <div class="row-location-details" id="row-details__1">
                   <div class="row-location-details__item">  
                     <h2>Biker Shield</h2>
                     <div class="location-details__item-hide">
-                      <div>
-                        <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
-                        <h5 class="grey" style="font-weight: 400;">Mở cửa hàng ngày từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                      <div class="item-hide_content">
+                        <h5 style="font-weight: 400;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
                       </div>
-                      <div class="mt-5">
+                      <div class="mt-5 item-hide_content">
                         <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
-                        <h5 class="grey" style="font-weight: 400;">Mở cửa hàng ngày từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
                       </div>
-                  </div>
+                    </div>
                   </div>            
                   <div class="row-location-details__item">  
                     <h2>Tim Tay</h2>
                     <div class="location-details__item-hide">
-                      <div>
-                        <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
-                        <h5 class="grey" style="font-weight: 400;">Mở cửa hàng ngày từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                      <div class="item-hide_content">
+                        <h5 style="font-weight: 400;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
                       </div>
-                      <div class="mt-5">
+                      <div class="mt-5 item-hide_content">
                         <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
-                        <h5 class="grey" style="font-weight: 400;">Mở cửa hàng ngày từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
                       </div>
+                    </div>
                   </div>
-                  </div>
-                  <div class="row-location-details__item">  
-                    <h2><span class="text__detail-mobile">Vesta Lifestyle &</span> Gifts</h2>
+                  <div class="row-location-details__item details__item--large">  
+                    <h2 id="text__detail-mobile"><span class="text__detail-mobile">Vesta Lifestyle &</span> Gifts</h2>
                       <div class="location-details__item-hide">
-                          <div>
+                          <div class="item-hide_content">
                             <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
-                            <h5 class="grey" style="font-weight: 400;">Mở cửa hàng ngày từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
                           </div>
-                          <div class="mt-5">
+                          <div class="mt-5 item-hide_content">
                             <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
-                            <h5 class="grey" style="font-weight: 400;">Mở cửa hàng ngày từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
                           </div>
                       </div>
                   </div>
-                  <div class="row-location-details__item">  
-                    <h2><span class="text__detail-mobile">The Craft House</span>Thương Xá Tax</h2>
+                  <div class="item-pc row-location-details__item details__item--large">  
+                    <h2 id="text__detail-mobile"><span class="text__detail-mobile text__detail-pc">The Craft House</span>Thương Xá Tax</h2>
+                    <div class="location-details__item-hide item-pc">
+                      <div class="item-hide_content">
+                        <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                      </div>
+                      <div class="mt-5 item-hide_content">
+                        <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                      </div>
+                    </div>
                   </div>
                   <div class="row-location-details__item">  
                     <h2>Okkio Caffe</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
                   </div>
                   <div class="row-location-details__item">  
                     <h2>Ki-ốt Bà Na</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -222,9 +253,33 @@
                 <h4 href="#" class="row-location">Lâm Đồng<span class="number-nav">2</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Là Việt Coffee </h2>
-                  <h2>Tiệm cà phê Hoa hồng</h2>
+                <div class="row-location-details" id="row-details__2">
+                  <div class="row-location-details__item">
+                    <h2>Là Việt Coffee </h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="row-location-details__item details__item--large">
+                    <h2 id="text__detail-mobile"><span class="text__detail-mobile">Tiệm cà phê</span> Hoa hồng</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -234,8 +289,20 @@
                 <h4 href="#" class="row-location">Nha Trang<span class="number-nav">1</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Lam.Lam</h2>
+                <div class="row-location-details" id="row-details__3">
+                  <div class="row-location-details__item">
+                    <h2>Lam.Lam</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -245,8 +312,20 @@
                 <h4 href="#" class="row-location">Phú Quốc<span class="number-nav">1</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Loca</h2>
+                <div class="row-location-details" id="row-details__4">
+                  <div class="row-location-details__item">
+                    <h2>Loca</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -256,9 +335,33 @@
                 <h4 href="#" class="row-location">Hà Nội<span class="number-nav">2</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Đây đó</h2>
-                  <h2>Xin-chào</h2>
+                <div class="row-location-details" id="row-details__5">
+                  <div class="row-location-details__item">            
+                    <h2>Đây đó</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="row-location-details__item">
+                    <h2>Xin-chào</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -268,9 +371,33 @@
                 <h4 href="#" class="row-location">Tokyo<span class="number-nav">2</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Isetan Tachikawa</h2>
-                  <h2>Isetan Urawa</h2>
+                <div class="row-location-details" id="row-details__6">
+                  <div class="row-location-details__item">
+                    <h2>Isetan Tachikawa</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="row-location-details__item">
+                    <h2>Isetan Urawa</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -280,37 +407,109 @@
                 <h4 href="#" class="row-location">Thailand<span class="number-nav">1</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Siam Discovery </h2>
+                <div class="row-location-details" id="row-details__7">
+                  <div class="row-location-details__item">
+                    <h2>Siam Discovery </h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
+          <!-- Nhật Bản -->
           <div id="location-detail__content2" class="location-detail__items">
             <div class="row location-detail">
               <div class="col-xl-2 col-sm-12 p-0">
                 <h4 href="#" class="row-location">Tokyo<span class="number-nav">10</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
+                <div class="row-location-details" id="row-details__1">
                   <div class="row-location-details__item">  
                     <h2>Biker Shield</h2>
+                    <div class="location-details__item-hide">
+                      <div class="item-hide_content">
+                        <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                      </div>
+                      <div class="mt-5 item-hide_content">
+                        <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                      </div>
+                    </div>
                   </div>            
                   <div class="row-location-details__item">  
                     <h2>Tim Tay</h2>
+                    <div class="location-details__item-hide">
+                      <div class="item-hide_content">
+                        <h5 style="font-weight: 400;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                      </div>
+                      <div class="mt-5 item-hide_content">
+                        <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                      </div>
+                    </div>
                   </div>
-                  <div class="row-location-details__item">  
-                    <h2><span class="text__detail-mobile">Vesta Lifestyle &</span> Gifts</h2>
+                  <div class="row-location-details__item details__item--large">  
+                    <h2 id="text__detail-mobile"><span class="text__detail-mobile">Vesta Lifestyle &</span> Gifts</h2>
+                      <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                      </div>
                   </div>
-                  <div class="row-location-details__item">  
-                    <h2><span class="text__detail-mobile">The Craft House</span>Thương Xá Tax</h2>
+                  <div class="row-location-details__item details__item--large">  
+                    <h2 id="text__detail-mobile"><span class="text__detail-mobile">The Craft House</span>Thương Xá Tax</h2>
+                    <div class="location-details__item-hide">
+                      <div class="item-hide_content">
+                        <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                      </div>
+                      <div class="mt-5 item-hide_content">
+                        <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                      </div>
+                    </div>
                   </div>
                   <div class="row-location-details__item">  
                     <h2>Okkio Caffe</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
                   </div>
                   <div class="row-location-details__item">  
                     <h2>Ki-ốt Bà Na</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -321,9 +520,33 @@
                 <h4 href="#" class="row-location">Lâm Đồng<span class="number-nav">2</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Là Việt Coffee </h2>
-                  <h2>Tiệm cà phê Hoa hồng</h2>
+                <div class="row-location-details" id="row-details__2">
+                  <div class="row-location-details__item">
+                    <h2>Là Việt Coffee </h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="row-location-details__item details__item--large">
+                    <h2 id="text__detail-mobile">Tiệm cà phê Hoa hồng</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -333,8 +556,20 @@
                 <h4 href="#" class="row-location">Nha Trang<span class="number-nav">1</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Lam.Lam</h2>
+                <div class="row-location-details" id="row-details__3">
+                  <div class="row-location-details__item">
+                    <h2>Lam.Lam</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -344,8 +579,20 @@
                 <h4 href="#" class="row-location">Phú Quốc<span class="number-nav">1</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Loca</h2>
+                <div class="row-location-details" id="row-details__4">
+                  <div class="row-location-details__item">
+                    <h2>Loca</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -355,9 +602,33 @@
                 <h4 href="#" class="row-location">Hà Nội<span class="number-nav">2</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Đây đó</h2>
-                  <h2>Xin-chào</h2>
+                <div class="row-location-details" id="row-details__5">
+                  <div class="row-location-details__item">            
+                    <h2>Đây đó</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="row-location-details__item">
+                    <h2>Xin-chào</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -367,9 +638,33 @@
                 <h4 href="#" class="row-location">Tokyo<span class="number-nav">2</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Isetan Tachikawa</h2>
-                  <h2>Isetan Urawa</h2>
+                <div class="row-location-details" id="row-details__6">
+                  <div class="row-location-details__item">
+                    <h2>Isetan Tachikawa</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="row-location-details__item">
+                    <h2>Isetan Urawa</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -379,37 +674,109 @@
                 <h4 href="#" class="row-location">Thailand<span class="number-nav">1</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Siam Discovery </h2>
+                <div class="row-location-details" id="row-details__7">
+                  <div class="row-location-details__item">
+                    <h2>Siam Discovery </h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          
+          <!-- Thái Lan -->
           <div id="location-detail__content3" class="location-detail__items">
             <div class="row location-detail">
               <div class="col-xl-2 col-sm-12 p-0">
                 <h4 href="#" class="row-location">BangKok<span class="number-nav">10</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
+                <div class="row-location-details" id="row-details__1">
                   <div class="row-location-details__item">  
                     <h2>Biker Shield</h2>
+                    <div class="location-details__item-hide">
+                      <div class="item-hide_content">
+                        <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                      </div>
+                      <div class="mt-5 item-hide_content">
+                        <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                      </div>
+                    </div>
                   </div>            
                   <div class="row-location-details__item">  
                     <h2>Tim Tay</h2>
+                    <div class="location-details__item-hide">
+                      <div class="item-hide_content">
+                        <h5 style="font-weight: 400;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                      </div>
+                      <div class="mt-5 item-hide_content">
+                        <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                      </div>
+                    </div>
                   </div>
-                  <div class="row-location-details__item">  
-                    <h2><span class="text__detail-mobile">Vesta Lifestyle &</span> Gifts</h2>
+                  <div class="row-location-details__item details__item--large">  
+                    <h2 id="text__detail-mobile"><span class="text__detail-mobile">Vesta Lifestyle &</span> Gifts</h2>
+                      <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                      </div>
                   </div>
-                  <div class="row-location-details__item">  
-                    <h2><span class="text__detail-mobile">The Craft House</span>Thương Xá Tax</h2>
+                  <div class="row-location-details__item details__item--large">  
+                    <h2 id="text__detail-mobile"><span class="text__detail-mobile">The Craft House</span>Thương Xá Tax</h2>
+                    <div class="location-details__item-hide">
+                      <div class="item-hide_content">
+                        <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                      </div>
+                      <div class="mt-5 item-hide_content">
+                        <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                        <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                      </div>
+                    </div>
                   </div>
                   <div class="row-location-details__item">  
                     <h2>Okkio Caffe</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
                   </div>
                   <div class="row-location-details__item">  
                     <h2>Ki-ốt Bà Na</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -420,9 +787,33 @@
                 <h4 href="#" class="row-location">Lâm Đồng<span class="number-nav">2</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Là Việt Coffee </h2>
-                  <h2>Tiệm cà phê Hoa hồng</h2>
+                <div class="row-location-details" id="row-details__2">
+                  <div class="row-location-details__item">
+                    <h2>Là Việt Coffee </h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="row-location-details__item details__item--large">
+                    <h2 id="text__detail-mobile">Tiệm cà phê Hoa hồng</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -432,8 +823,20 @@
                 <h4 href="#" class="row-location">Nha Trang<span class="number-nav">1</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Lam.Lam</h2>
+                <div class="row-location-details" id="row-details__3">
+                  <div class="row-location-details__item">
+                    <h2>Lam.Lam</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -443,8 +846,20 @@
                 <h4 href="#" class="row-location">Phú Quốc<span class="number-nav">1</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Loca</h2>
+                <div class="row-location-details" id="row-details__4">
+                  <div class="row-location-details__item">
+                    <h2>Loca</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -454,9 +869,33 @@
                 <h4 href="#" class="row-location">Hà Nội<span class="number-nav">2</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Đây đó</h2>
-                  <h2>Xin-chào</h2>
+                <div class="row-location-details" id="row-details__5">
+                  <div class="row-location-details__item">            
+                    <h2>Đây đó</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="row-location-details__item">
+                    <h2>Xin-chào</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -466,9 +905,33 @@
                 <h4 href="#" class="row-location">Tokyo<span class="number-nav">2</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Isetan Tachikawa</h2>
-                  <h2>Isetan Urawa</h2>
+                <div class="row-location-details" id="row-details__6">
+                  <div class="row-location-details__item">
+                    <h2>Isetan Tachikawa</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="row-location-details__item">
+                    <h2>Isetan Urawa</h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -478,13 +941,24 @@
                 <h4 href="#" class="row-location">Thailand<span class="number-nav">1</span></h4>
               </div>
               <div class="col-xl-9 col-sm-12 p-0">
-                <div class="row-location-details">
-                  <h2>Siam Discovery </h2>
+                <div class="row-location-details" id="row-details__7">
+                  <div class="row-location-details__item">
+                    <h2>Siam Discovery </h2>
+                    <div class="location-details__item-hide">
+                          <div class="item-hide_content">
+                            <h5 style="font-weight: 400;;">33A Thảo Điền, phường Thảo Điền, quận 2, Sài Gòn </h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 09:00 sáng — 09:00 tối <br /> Hotline 0396249650 </h5>
+                          </div>
+                          <div class="mt-5 item-hide_content">
+                            <h5 style="font-weight: 400;">25F, lầu 3, Crescent Mall, 101 Tôn Dật Tiên, quận 7, Sài Gòn</h5>
+                            <h5 class="grey" style="font-weight: 400;"><span class="open-all">Mở cửa hàng ngày</span> từ 10:00 sáng — 10:00 tối<br />Hotline 0769744220</h5>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -596,14 +1070,17 @@
           });
 
           $(".row-location-details__item").click(function (){
-            
+            $(".row-location-details .row-location-details__item > h2").addClass("grey")
+
             if($(this).hasClass("active")){
               $(this).removeClass("active")
+              $(".row-location-details .row-location-details__item > h2").removeClass("grey")
             }
             else{
               $(this).addClass("active")
+              $("h2",this).removeClass("grey")
             }
-          })
+          });
       });
 
       var overlayElement = document.getElementById("overlay-element");
@@ -611,7 +1088,7 @@
       function ToggleNav() {
         overlayElement.classList.add("nav-active");
         navSliderElement.classList.add("nav-active");
-      }
+      } 
       function CloseNav() {
         overlayElement.classList.remove("nav-active");
         navSliderElement.classList.remove("nav-active");
@@ -620,3 +1097,5 @@
     </script>
   </body>
 </html>
+
+
