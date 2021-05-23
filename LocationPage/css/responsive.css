@@ -1,3 +1,81 @@
+:root {
+  --nav-height: 100px;
+  --product-img: 48rem;
+  --white-color: #fff;
+  --nav-item-height: 46px;
+  --text-header-size: 11.2rem;
+  --text-color: #111820;
+  --border-color: #111820;
+  --font-size-lg: 4rem;
+  --line-height-lg: 4.8rem;
+  --font-size-md: 2.7rem;
+  --line-height-md: 3.5rem;
+  --font-size-sm: 1.7rem;
+  --line-height-sm: 2.7rem;
+  --text-grey-color: #7D868C;
+}
+
+* {
+  margin: 0;
+  font-family: Lab Grotesque VN;
+  font-style: normal;
+}
+
+.container {
+  padding: 0 0 0 6% !important;
+  min-width: 100% !important;
+  margin: 0 !important;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 68px;
+}
+
+h1,
+h4,
+h5 {
+  margin: 0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /*Trick de fontsize 62,5% thì 1rem  sẽ là 10px muốn để
+    font-size = 12 thì --> 1.2rem*/
+  font-size: 62.5%;
+  line-height: 2.7rem;
+  /*font sans-serif là chủng font chữ k chân, sẽ hiển thị
+    trong khi đợi font Roboto được tải về*/
+  font-family: "Lab Grotesque VN", sans-serif;
+  box-sizing: border-box;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.button-conf {
+  min-width: 110px;
+  height: 48px;
+  text-decoration: none;
+  border: none;
+  padding: 0 40px 2px;
+  border-radius: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+
+.grey {
+  color: var(--text-grey-color) !important;
+}
 .main {
   overflow: hidden;
   background-color: var(--text-color);
@@ -37,16 +115,26 @@ h5 {
   padding-top: 50%;
   background: url("../../assets/images/www.rimowa\ 1.png") right top / 52%
     no-repeat;
+  height: 76vh !important;
+}
+
+
+.active-location-item {
+  color: #fff !important;
+  border-bottom: 4px solid;
 }
 
 /* navigation */
+.nav-content {
+  position: relative;
+}
+
 .top_nav {
-  padding-left: 3rem;
-  padding-right: 3rem;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  padding: 2.4rem 4rem;
   z-index: 2;
 }
 
@@ -85,7 +173,6 @@ h5 {
   transition: transform linear 0.5s, opacity linear 0.5s;
 }
 
-
 .nav-active.nav-slider {
   transform: translateX(0%);
   opacity: 1;
@@ -95,12 +182,13 @@ h5 {
   display: block;
 }
 
+
 /* select */
 
 .sidebar-bottom-region label {
+  margin-top: 0.6rem;
   font-size: 1.7rem;
   line-height: 2.7rem;
-  margin-bottom: 0;
 }
 
 select {
@@ -109,14 +197,14 @@ select {
   /* background: transparent; */
   /* width: 10vh; */
   color: var(--text-color);
-  font-size: 1.7rem;
-  line-height: 2.7rem;
-  font-weight: bold;
+  font-size: 1.7rem !important;
+  line-height: 2.7rem !important;
+  font-weight: 700 !important;
   box-shadow: none;
 }
 
 select:focus {
-  outline: none;
+  outline:none;
 }
 
 select > option {
@@ -125,10 +213,10 @@ select > option {
   background: transparent;
   color: #b7bfc5;
 }
- 
+/* 
 select#language {
-  width: 14vh !important;
-} 
+  width: 12vh;
+} */
 
 .slidebar-bottom-separate {
   border: 1px solid #b7bfc5;
@@ -149,8 +237,8 @@ select#language {
 
 .nav-list {
   padding-left: 0;
-  margin-top: 5rem !important;
   list-style: none;
+  margin-top: 3rem !important;
   flex: 1;
 }
 
@@ -181,6 +269,12 @@ select#language {
   margin-bottom: 0;
 }
 
+
+.header h1 {
+  padding-top: 0;
+  margin-top: 180px;
+}
+
 /* header content */
 
 .header__content {
@@ -192,7 +286,7 @@ select#language {
 
 .header__content-slogan {
   font-weight: 700;
-  letter-spacing: 0px;
+  letter-spacing: 2.5px !important;
   padding-bottom: 1rem;
 }
 
@@ -272,13 +366,80 @@ select#language {
   text-decoration: none;
   font-size: 2.7rem;
   line-height: 3.5rem;
-  font-weight: 900;
+  font-weight: 700 !important;
   position: relative;
 }
 
 .row-location-details h2 {
   font-weight: 700;
   color: var(--white-color);
+}
+
+.row-location-details__item {
+  width: fit-content;
+  cursor: pointer;
+}
+
+.row-location-details__item.active {
+  position: relative;
+  padding-bottom: 332px;
+  width: calc(40% + 184px);
+  z-index: 1;
+}
+
+.row-location-details__item.active .text__detail-pc {
+  display: block;
+}
+
+.location-details__item-hide{
+  position: absolute;
+  top: 3.5rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 7.2rem 0 4.8rem 6rem;
+  color: var(--white-color);
+  background-color: #000 !important;
+  margin-bottom: 56px;
+  z-index: -1;
+}
+
+.item-pc.location-details__item-hide {
+  top: 11rem;
+}
+
+.row-location-details .row-location-details__item.active::after {
+  content: "";
+  background-image: url(../../assets/icons/closeemail.svg);
+  position: absolute;
+  top: 6rem;
+  right: 2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.row-location-details .item-pc.row-location-details__item.active::after  {
+  top: 14rem;
+}
+
+.location-detail__items {
+  display: none;
+}
+
+.location-detail__items.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
