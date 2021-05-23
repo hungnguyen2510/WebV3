@@ -60,8 +60,8 @@ h5 {
 }
 
 .my-container {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .banner {
@@ -82,7 +82,7 @@ h5 {
   width: 40vw;
 }
 
-.bold{
+.bold {
   font-weight: bold;
 }
 
@@ -103,8 +103,8 @@ h5 {
 }
 
 .section {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 120px;
+  margin-bottom: 120px;
   color: #fff;
 }
 
@@ -172,7 +172,7 @@ h5 {
   padding-top: 10em;
 }
 
-.section-four .col-two .item{
+.section-four .col-two .item {
   float: right;
 }
 
