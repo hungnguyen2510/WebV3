@@ -54,7 +54,7 @@
                 <img src="../assets/icons/menu.svg" alt="" class="icon" />
               </div>
 
-              <div id="overlay-element" class="nav-overlay"></div>
+              <div id="overlay-element" class="nav-overlay" onclick="CloseNav()"></div>
 
               <div class="nav-slider" id="nav-slider-element">
                 <div class="nav-btn-close" onclick="CloseNav()">
@@ -1088,7 +1088,7 @@
       function ToggleNav() {
         overlayElement.classList.add("nav-active");
         navSliderElement.classList.add("nav-active");
-      }
+      } 
       function CloseNav() {
         overlayElement.classList.remove("nav-active");
         navSliderElement.classList.remove("nav-active");
