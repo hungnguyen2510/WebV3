@@ -191,18 +191,15 @@ h5 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  background-color:rgba(0, 0, 0, 0.3);
+  z-index: 1; 
   display: none;
+  animation: fadeIn linear 0.5s;
 }
 
 .nav-link {
   text-decoration: none;
   color: var(--text-color);
-}
-
-.nav-active {
-  display: initial !important;
 }
 
 .nav-slider {
@@ -212,13 +209,21 @@ h5 {
   bottom: 0;
   width: 48.7%;
   background-color: var(--white-color);
-  z-index: 1;
-  display: none;
-  transition: 0.5s;
   padding: 7% 7% 4% 7%;
   z-index: 16;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform linear 0.5s, opacity linear 0.5s;
 }
 
+.nav-active.nav-slider {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.nav-active.nav-overlay {
+  display: block;
+}
 /* select */
 
 .sidebar-bottom-region label {
