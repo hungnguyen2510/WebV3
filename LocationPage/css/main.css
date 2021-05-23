@@ -71,17 +71,14 @@ h5 {
   right: 0;
   bottom: 0;
   background-color:rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  z-index: 1; 
   display: none;
+  animation: fadeIn linear 0.5s;
 }
 
 .nav-link {
   text-decoration: none;
   color: var(--text-color);
-}
-
-.nav-active {
-  display: initial !important;
 }
 
 .nav-slider {
@@ -91,11 +88,20 @@ h5 {
   bottom: 0;
   width: 48.7%;
   background-color: var(--white-color);
-  z-index: 1;
-  display: none;
-  transition: all 0.2s;
   padding: 7% 7% 4% 7%;
   z-index: 16;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform linear 0.5s, opacity linear 0.5s;
+}
+
+.nav-active.nav-slider {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.nav-active.nav-overlay {
+  display: block;
 }
 
 
@@ -299,8 +305,12 @@ select#language {
 .row-location-details__item.active {
   position: relative;
   padding-bottom: 332px;
-  width: 840px;
+  width: calc(40% + 184px);
   z-index: 1;
+}
+
+.row-location-details__item.active .text__detail-pc {
+  display: block;
 }
 
 .location-details__item-hide{
@@ -316,6 +326,10 @@ select#language {
   z-index: -1;
 }
 
+.item-pc.location-details__item-hide {
+  top: 11rem;
+}
+
 .row-location-details .row-location-details__item.active::after {
   content: "";
   background-image: url(../../assets/icons/closeemail.svg);
@@ -328,10 +342,24 @@ select#language {
   z-index: 1;
 }
 
+.row-location-details .item-pc.row-location-details__item.active::after  {
+  top: 14rem;
+}
+
 .location-detail__items {
   display: none;
 }
 
 .location-detail__items.active {
   display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
