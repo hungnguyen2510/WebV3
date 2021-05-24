@@ -305,8 +305,12 @@ select#language {
 .row-location-details__item.active {
   position: relative;
   padding-bottom: 332px;
-  width: 840px;
+  width: calc(40% + 184px);
   z-index: 1;
+}
+
+.row-location-details__item.active .text__detail-pc {
+  display: block;
 }
 
 .location-details__item-hide{
@@ -322,6 +326,10 @@ select#language {
   z-index: -1;
 }
 
+.item-pc.location-details__item-hide {
+  top: 11rem;
+}
+
 .row-location-details .row-location-details__item.active::after {
   content: "";
   background-image: url(../../assets/icons/closeemail.svg);
@@ -332,6 +340,10 @@ select#language {
   height: 3.2rem;
   background-repeat: no-repeat;
   z-index: 1;
+}
+
+.row-location-details .item-pc.row-location-details__item.active::after  {
+  top: 14rem;
 }
 
 .location-detail__items {

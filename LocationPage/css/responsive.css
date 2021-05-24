@@ -526,6 +526,10 @@ select#language {
     display: block;
   }
   
+  .details__item--large {
+    width: calc(50% + 284px) !important;
+  }
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
