@@ -28,6 +28,11 @@ h5 {
   line-height: 27px !important;
 }
 
+.mention {
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+
 p {
   color: #7d868c;
 }
@@ -62,6 +67,11 @@ hr {
   border-top: none !important;
 }
 
+.custom-table th
+{
+  padding-left: 0 !important;
+}
+
 .my-container .col-one {
   display: flex;
   justify-content: space-between;
@@ -69,6 +79,18 @@ hr {
 }
 .col-one h1 {
   margin-bottom: 1.5em;
+}
+
+.question-answer__left-item {
+  display: block;
+}
+
+.question-answer__img {
+  margin-left: 3rem !important;
+}
+
+.question-answer__right-item {
+  display: block;
 }
 
 .col-two .item {
@@ -106,6 +128,10 @@ hr {
   font-weight: bold;
 }
 
+.bold-700 {
+  font-weight: 700;
+}
+
 #btn-minus-1,
 #btn-minus-2,
 #btn-minus-3,
@@ -113,6 +139,7 @@ hr {
 #btn-minus-5,
 #btn-minus-6 {
   display: none;
+  width: 46px;
 }
 
 .btn-conf {
@@ -285,4 +312,16 @@ input[type="radio"] {
 
 .area-input{
   padding-bottom: 120px;
+}
+
+.card-custom__email::placeholder {
+  color: #757575 !important;
+}
+
+.text-of-content {
+  border-bottom: 1px solid #B7BFC5 !important;
+}
+
+.davai-mobile {
+  display: none;
 }
