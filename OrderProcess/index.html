@@ -386,19 +386,19 @@
 
               <div class="main__step-right">
                 <div class="step-number">
-                  <div class="item-step active">
+                  <div class="item-step active step-one">
                     <h1 class="bold">1</h1>
                     <div class="content-step"></div>
                   </div>
-                  <div class="item-step">
+                  <div class="item-step step-two">
                     <h1 class="bold">2</h1>
                     <div class="content-step"></div>
                   </div>
-                  <div class="item-step">
+                  <div class="item-step step-three">
                     <h1 class="bold">3</h1>
                     <div class="content-step"></div>
                   </div>
-                  <div class="item-step">
+                  <div class="item-step step-four">
                     <h1 class="bold">4</h1>
                     <div class="content-step"></div>
                   </div>
@@ -465,7 +465,7 @@
               </div>
 
               <!-- ptgn-Phương thức giao nhận -->
-              <div class="ptgn display-none">
+              <div class="ptgn">
                 <h4 class="font-weight-bold">phương-thức giao nhận</h4>
 
                 <div class="sidebar-bottom-region">
@@ -688,7 +688,7 @@
               </div>
 
               <!-- Thông tin đơn hàng -->
-              <div class="ttdh">
+              <div class="ttdh display-none">
                 <h4 class="font-weight-bold">thông tin đơn hàng</h4>
                 <table class="table">
                   <tbody>
@@ -704,8 +704,7 @@
                         <h5 class="table__name-user bold">
                           Huỳnh Quang Ngọc Hoàng
                         </h5>
-                        <h5 class="table__phone-number bold">0908 123456 
-                        </h5>
+                        <h5 class="table__phone-number bold">0908 123456</h5>
                         <h5 class="table__address-user">
                           3A Lê Quý Đôn, Phường 6, Quận 3, TPHCM
                         </h5>
@@ -720,9 +719,9 @@
                     </tr>
                     <tr>
                       <th scope="row" class="pb-0"><h5>thanh toán</h5></th>
-                      <td class="d-flex pb-0"> 
+                      <td class="d-flex pb-0">
                         <h5 class="bold">VISA credit card</h5>
-                        <h5> ***-4327</h5>
+                        <h5>***-4327</h5>
                       </td>
                     </tr>
                   </tbody>
@@ -752,6 +751,26 @@
               if (element.className.includes("active")) {
                 element.classList.remove("active");
                 $(this).addClass("active");
+                if(element.className.includes("step-one active")){
+                  console.log("step 1")
+                  $(".ttdh").addClass("display-none")
+                  $(".ptgn").removeClass("display-none")
+                }
+                else if(element.className.includes("step-two active")){
+                  console.log("step 2")
+                  $(".ptgn").addClass("display-none")
+                  $(".ttgh").removeClass("display-none")
+                }
+                else if(element.className.includes("step-three active")){
+                  console.log("step 3")
+                  $(".ttgh").addClass("display-none")
+                  $(".pttt").removeClass("display-none")
+                }
+                else if(element.className.includes("step-four active")){
+                  console.log("step 4")
+                  $(".pttt").addClass("display-none")
+                  $(".ttdh").removeClass("display-none")
+                }
               }
             });
         });
