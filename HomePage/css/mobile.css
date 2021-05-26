@@ -571,12 +571,12 @@ h5 {
     --product-img: 100% !important;
   }
 
-  .main__product-mt{
+  .main__product-mt {
     margin-top: 0;
   }
 
-  .main__insta-icon{
-    margin-left: 1.17px
+  .main__insta-icon {
+    margin-left: 1.17px;
   }
 
   h1 {
@@ -736,6 +736,7 @@ h5 {
   .main__about-item img {
     padding: 1rem !important;
     width: 6rem;
+    max-height: unset;
   }
 
   .main__about-content {

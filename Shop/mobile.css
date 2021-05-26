@@ -531,6 +531,7 @@ h5 {
     float: right;
     font-size: 20px;
     display: block;
+    margin-top: 14px;
   }
 
   .number-quantity {
@@ -549,7 +550,7 @@ h5 {
   }
   .menu_top.responsive .icon {
     position: absolute;
-    left: 30.5%;
+    left: 33.7%;
     top: 0;
   }
   .menu_top.responsive a {
@@ -707,6 +708,7 @@ h5 {
   .section-six-mobile, .section-three-mobile{
     display: block;
   }
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
