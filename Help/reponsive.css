@@ -390,7 +390,7 @@ input[type="radio"] {
   }
 
   .col-csg-mobile {
-    padding: 1.6rem 0 0 2.5rem !important;
+    padding: 4rem 1.5rem 0 5.6rem !important;
   }
   
   .card-color {
@@ -404,6 +404,22 @@ input[type="radio"] {
   .take-calling-mobile-date {
     display: block !important;
   }
+
+  #btn-minus-1,
+  #btn-minus-2,
+  #btn-minus-3,
+  #btn-minus-4,
+  #btn-minus-5,
+  #btn-minus-6,
+  #btn-plus-1,
+  #btn-plus-2,
+  #btn-plus-3,
+  #btn-plus-4,
+  #btn-plus-5,
+  #btn-plus-6 {
+    display: none;
+    width: 32px;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
