@@ -417,9 +417,19 @@ input[type="radio"] {
   #btn-plus-4,
   #btn-plus-5,
   #btn-plus-6 {
+    width: 32px;  
+  }
+
+  #btn-minus-1,
+  #btn-minus-2,
+  #btn-minus-3,
+  #btn-minus-4,
+  #btn-minus-5,
+  #btn-minus-6 {
     display: none;
-    width: 32px;
-}
+  }
+
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
