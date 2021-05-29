@@ -3,6 +3,7 @@
   font-family: Lab Grotesque VN;
   font-style: normal;
 }
+
 h1 {
   font-size: 112px !important;
   line-height: 112px !important;
@@ -44,7 +45,15 @@ p {
 
 .my-container {
   margin: 5% 15%;
+  margin-right: 0 !important;
 }
+
+.my-container--mr {
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
 
 .number-quantity {
   color: #000;
@@ -89,6 +98,10 @@ hr {
   margin-left: 3rem !important;
 }
 
+.question-answer__right {
+  text-align: end;
+}
+
 .question-answer__right-item {
   display: block;
 }
@@ -104,6 +117,15 @@ hr {
   border: none;
   background: none;
 }
+
+.btn-toggle:focus {
+  outline: none;
+}
+
+.btn-toggle:focus-visible {
+  outline: none;
+}
+
 
 .toggle-div {
   display: none;
@@ -139,7 +161,17 @@ hr {
 #btn-minus-5,
 #btn-minus-6 {
   display: none;
-  width: 46px;
+  margin-right: 6rem;
+}
+
+#btn-plus-1,
+#btn-plus-2,
+#btn-plus-3,
+#btn-plus-4,
+#btn-plus-5,
+#btn-plus-6 {
+  width: 32px;
+  margin-right: 6rem;
 }
 
 .btn-conf {

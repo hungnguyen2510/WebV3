@@ -39,20 +39,6 @@ h5 {
   color: #fff;
 }
 
-.top_nav {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  right: 0;
-}
-
-.number-quantity {
-  color: #fff;
-}
-
 .container-conf {
   padding: 75px;
   margin-right: 0 !important;
