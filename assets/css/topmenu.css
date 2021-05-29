@@ -186,7 +186,7 @@ select#language {
   }
 
   .top_nav .logo {
-    margin-left: 2.5em;
+    margin-left: 15vw;
   }
 
   .button-conf {
@@ -272,6 +272,6 @@ select#language {
   }
 
   .top_nav .user .navtop-icon:nth-child(2) > img {
-    margin-left: 27.83px;
+    margin-left: 0;
   }
 }

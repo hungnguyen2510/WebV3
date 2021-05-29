@@ -30,8 +30,8 @@ h5 {
 
 .h2-special {
   position: absolute !important;
-  left: 4.9em;
-  width: 45%;
+  left: 4.0em;
+  width: 40%;
 }
 
 .header {
@@ -60,8 +60,8 @@ h5 {
 }
 
 .my-container {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .banner {
@@ -77,12 +77,16 @@ h5 {
   flex-direction: column;
   justify-content: space-between;
 }
+.banner img {
+  max-width: 1200px;
+  height: 180px;
+}
 
 .description {
   width: 40vw;
 }
 
-.bold{
+.bold {
   font-weight: bold;
 }
 
@@ -103,8 +107,8 @@ h5 {
 }
 
 .section {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 120px;
+  margin-bottom: 120px;
   color: #fff;
 }
 
@@ -115,6 +119,10 @@ h5 {
   box-shadow: none;
   border: none;
   color: #111820;
+}
+
+.btn-shop > h5{
+  font-weight: 400;
 }
 
 .section .container {
@@ -130,6 +138,7 @@ h5 {
 
 .section .col-one .title {
   margin-top: 1em;
+  font-weight: 300;
 }
 
 .section .col-one .image {
@@ -142,10 +151,19 @@ h5 {
 .section .col-two {
   position: relative;
   max-width: 25%;
+  margin-left: 64px;
 }
 .section .content {
   position: absolute;
   bottom: 0;
+}
+
+.section .content h4{
+  font-weight: 900;
+}
+
+.section .content h5{
+  font-weight: 400;
 }
 
 .section .hero h3 {
@@ -168,22 +186,32 @@ h5 {
   margin-bottom: 5%;
 }
 
+.section-four > h4 {
+  margin-bottom: 64px;
+}
+
 .section-four .col-two {
   padding-top: 10em;
 }
 
-.section-four .col-two .item{
+.section-four .col-two .item {
   float: right;
 }
 
+
 .section-four .item {
   max-width: 480px;
-  margin-bottom: 5em;
+  margin-bottom: 227px;
 }
 
-.section-four .item span {
-  margin-top: 15px;
+.section-four .item h5 {
+  margin-top: 32px;
 }
+
+.on-mobile{
+  display: none;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -213,6 +241,10 @@ h5 {
     line-height: 22px !important;
   }
 
+  .section-four .item{
+    margin-bottom: 141px;
+  }
+
   .section-four .col-two .item{
     float: unset;
   }
@@ -225,6 +257,10 @@ h5 {
     justify-content: unset;
     width: 70%;
     margin-bottom: 0.8em;
+    font-weight: 300;
+  }
+  .section .col-one .title{
+    margin-top: 0;
   }
 
   .top_nav {
@@ -239,7 +275,7 @@ h5 {
   .banner {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
       url("../assets/images/Hero IMG-mobile.png");
-    padding: 100px 30px;
+    padding: 100px 15px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -257,7 +293,7 @@ h5 {
   }
 
   .container-conf {
-    padding: 100px 0;
+    padding: 120px 0;
   }
 
   .section .col-one {
@@ -267,6 +303,7 @@ h5 {
   .section .col-two {
     position: unset;
     max-width: 100%;
+    margin-left: 23px;
   }
 
   .section .col-one .image img {
@@ -276,6 +313,7 @@ h5 {
   .section-four {
     margin-top: 30%;
     margin-bottom: 10%;
+    padding: 0 15px;
   }
 
   .section-four .col-two{
@@ -307,6 +345,21 @@ h5 {
 
   .logo-social {
     margin-top: 3rem;
+  }
+
+  .my-container{
+    margin: 0;
+  }
+  .on-pc{
+    display: none;
+  }
+
+  .on-mobile{
+    display: block;
+  }
+  .banner img{
+    max-width: 343px;
+    height: 176px;
   }
 }
 

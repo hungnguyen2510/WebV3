@@ -30,8 +30,8 @@ h5 {
 
 .h2-special {
   position: absolute !important;
-  left: 4.9em;
-  width: 45%;
+  left: 4.0em;
+  width: 40%;
 }
 
 .header {
@@ -77,6 +77,10 @@ h5 {
   flex-direction: column;
   justify-content: space-between;
 }
+.banner img {
+  max-width: 1200px;
+  height: 180px;
+}
 
 .description {
   width: 40vw;
@@ -117,6 +121,10 @@ h5 {
   color: #111820;
 }
 
+.btn-shop > h5{
+  font-weight: 400;
+}
+
 .section .container {
   padding: 120px 140px;
   position: relative;
@@ -130,6 +138,7 @@ h5 {
 
 .section .col-one .title {
   margin-top: 1em;
+  font-weight: 300;
 }
 
 .section .col-one .image {
@@ -142,10 +151,19 @@ h5 {
 .section .col-two {
   position: relative;
   max-width: 25%;
+  margin-left: 64px;
 }
 .section .content {
   position: absolute;
   bottom: 0;
+}
+
+.section .content h4{
+  font-weight: 900;
+}
+
+.section .content h5{
+  font-weight: 400;
 }
 
 .section .hero h3 {
@@ -168,6 +186,10 @@ h5 {
   margin-bottom: 5%;
 }
 
+.section-four > h4 {
+  margin-bottom: 64px;
+}
+
 .section-four .col-two {
   padding-top: 10em;
 }
@@ -176,11 +198,16 @@ h5 {
   float: right;
 }
 
+
 .section-four .item {
   max-width: 480px;
-  margin-bottom: 5em;
+  margin-bottom: 227px;
 }
 
-.section-four .item span {
-  margin-top: 15px;
+.section-four .item h5 {
+  margin-top: 32px;
+}
+
+.on-mobile{
+  display: none;
 }

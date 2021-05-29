@@ -708,7 +708,25 @@ h5 {
   .section-six-mobile, .section-three-mobile{
     display: block;
   }
-  
+
+
+  .section .col-two {
+    padding: 80px 30px;
+  }
+
+  .section .col-two .item:nth-child(1){
+    margin-top: 64px;
+    margin-bottom: 80px;
+  }
+
+  .section .col-two .item:nth-child(2){
+    /* margin-top: 64px; */
+    margin-bottom: 64px;
+  }
+
+  .section .col-two {
+    /* max-width: 100%; */
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
