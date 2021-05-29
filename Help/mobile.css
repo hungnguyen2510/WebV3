@@ -3,6 +3,15 @@
   font-family: Lab Grotesque VN;
   font-style: normal;
 }
+body,
+.my-container,
+.my-container--mr,
+.top_nav,
+html,
+.row,
+col {
+  overflow-x: hidden !important;
+}
 h1 {
   font-size: 112px !important;
   line-height: 112px !important;
@@ -39,6 +48,13 @@ p {
 
 .my-container {
   margin: 5% 15%;
+  margin-right: 0 !important;
+}
+
+.my-container--mr {
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 0;
 }
 
 .number-quantity {
@@ -81,6 +97,16 @@ hr {
 .btn-none {
   border: none;
   background: none;
+  width: fit-content;
+  height: 100%;
+}
+
+.btn-toggle:focus {
+  outline: none;
+}
+
+.btn-toggle:focus-visible {
+  outline: none;
 }
 
 .toggle-div {
@@ -113,6 +139,17 @@ hr {
 #btn-minus-5,
 #btn-minus-6 {
   display: none;
+  margin-right: 6rem;
+}
+
+#btn-plus-1,
+#btn-plus-2,
+#btn-plus-3,
+#btn-plus-4,
+#btn-plus-5,
+#btn-plus-6 {
+  width: 32px;
+  margin-right: 6rem;
 }
 
 .btn-conf {
@@ -337,6 +374,12 @@ input[type="radio"] {
 
   .my-container {
     margin: 5%;
+    margin-right: 0;
+  }
+
+  .my-container--mr {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   
@@ -390,7 +433,7 @@ input[type="radio"] {
   }
 
   .col-csg-mobile {
-    padding: 4rem 1.5rem 0 5.6rem !important;
+    padding: 1.6rem 0 0 2.5rem !important;
   }
   
   .card-color {
@@ -416,20 +459,11 @@ input[type="radio"] {
   #btn-plus-3,
   #btn-plus-4,
   #btn-plus-5,
-  #btn-plus-6 {
-    width: 32px;  
+  #btn-plus-6  {
+    margin-right: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 0;
   }
-
-  #btn-minus-1,
-  #btn-minus-2,
-  #btn-minus-3,
-  #btn-minus-4,
-  #btn-minus-5,
-  #btn-minus-6 {
-    display: none;
-  }
-
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
