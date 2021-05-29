@@ -249,11 +249,11 @@
                       <div class="row slider-labels justify-content-between">
                         <div class="col-xs-6 caption">
                           <h5 id="slider-range-value1"></h5>
-                          <!-- <span id="slider-range-temp1"></span> -->
+                          <span id="slider-range-temp1" class="temp-value">0</span>
                         </div>
                         <div class="col-xs-6 text-right caption">
                           <h5 id="slider-range-value2"></h5>
-                          <!-- <span id="slider-range-temp2"></span> -->
+                          <span id="slider-range-temp2" class="temp-value">1470</span>
                         </div>
                       </div>
                     </div>
@@ -771,12 +771,6 @@
           $("button").removeClass("active-circle");
           $(this).addClass("active-circle");
         });
-
-        if ($(".noUi-origin.noUi-connect")[0].attributes.style !== undefined) {
-          console.log($(".noUi-origin.noUi-connect")[0].attributes);
-        } else {
-          console.log($(".noUi-origin.noUi-connect"));
-        }
       });
 
       function handleColor() {
