@@ -1,10 +1,81 @@
 @font-face {
-    font-family: 'Lab Grotesque VN';
-    src: url('LabGrotesque-Regular.eot');
-    src: local('Lab Grotesque Regular'), local('LabGrotesque-Regular'),
-        url('LabGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
-        url('LabGrotesqueVN-Regular.woff') format('woff'),
-        url('LabGrotesque-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Lab Grotesque VN";
+  src: local("LabGrotesque-Regular"),
+    url("LabGrotesqueVN-Regular.woff") format("woff"),
+    url("LabGrotesqueVN-Regular.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "Lab Grotesque VN Black";
+  src: local("LabGrotesqueVN-Black"),
+    url("LabGrotesqueVN-Black.woff") format("woff"),
+    url("LabGrotesqueVN-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lab Grotesque VN BlackItalic";
+  src: local("LabGrotesqueVN-BlackItalic"),
+    url("LabGrotesqueVN-BlackItalic.woff") format("woff"),
+    url("LabGrotesqueVN-BlackItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lab Grotesque VN Bold";
+  src: local("LabGrotesqueVN-Bold"),
+    url("LabGrotesqueVN-Bold.woff") format("woff"),
+    url("LabGrotesqueVN-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lab Grotesque VN BoldItalic";
+  src: local("LabGrotesqueVN-BoldItalic"),
+    url("LabGrotesqueVN-BoldItalic.woff") format("woff"),
+    url("LabGrotesqueVN-BoldItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lab Grotesque VN Italic";
+  src: local("LabGrotesqueVN-Italic"),
+    url("LabGrotesqueVN-Italic.woff") format("woff"),
+    url("LabGrotesqueVN-Italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lab Grotesque VN Light";
+  src: local("LabGrotesqueVN-Light"),
+    url("LabGrotesqueVN-Light.woff") format("woff"),
+    url("LabGrotesqueVN-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lab Grotesque VN LightItalic";
+  src: local("LabGrotesqueVN-LightItalic"),
+    url("LabGrotesqueVN-LightItalic.woff") format("woff"),
+    url("LabGrotesqueVN-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lab Grotesque VN Medium";
+  src: local("LabGrotesqueVN-Medium"),
+    url("LabGrotesqueVN-Medium.woff") format("woff"),
+    url("LabGrotesqueVN-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lab Grotesque VN MediumItalic";
+  src: local("LabGrotesqueVN-MediumItalic"),
+    url("LabGrotesqueVN-MediumItalic.woff") format("woff"),
+    url("LabGrotesqueVN-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lab Grotesque VN Thin";
+  src: local("LabGrotesqueVN-Thin"),
+    url("LabGrotesqueVN-Thin.woff") format("woff"),
+    url("LabGrotesqueVN-Thin.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Lab Grotesque VN ThinItalic";
+    src: local("LabGrotesqueVN-ThinItalic"),
+      url("LabGrotesqueVN-ThinItalic.woff") format("woff"),
+      url("LabGrotesqueVN-ThinItalic.woff2") format("woff2");
+  }
