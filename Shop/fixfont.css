@@ -1,0 +1,19 @@
+.header h1{
+    font-family: "Lab Grotesque VN Bold";
+}
+.menu_top a h3{
+    font-family: "Lab Grotesque VN Bold";
+}
+.text > .description, .money{
+    font-family: "Lab Grotesque VN Bold";
+}
+.section .col-one .text h2{
+    font-family: "Lab Grotesque VN Light";
+}
+.h2-special{
+    font-weight: 300;
+    font-family: "Lab Grotesque VN Light";
+}
+.content>h5{
+    font-weight: 700;
+}

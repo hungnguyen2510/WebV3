@@ -14,12 +14,18 @@ h5 {
 
 .my-footer .col-one h4 {
   color: #fff;
+  font-family: "Lab Grotesque VN Black";
+  font-weight: 900 ;
 }
 
 .my-footer .col-two {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.my-footer .col-two h4{
+  font-family: "Lab Grotesque VN Light";
 }
 
 .menu-footer ul h4 {
@@ -33,8 +39,11 @@ h5 {
   padding-left: 0;
 }
 
-.menu-footer .menu-one h4 {
+
+.menu-footer .menu-one h4, .menu-footer .menu-two h4{
   width: fit-content;
+  font-weight: 300;
+  font-family: "Lab Grotesque VN Light";
 }
 
 .menu-footer .menu-two {
