@@ -233,17 +233,10 @@ h5 {
   cursor: pointer;
 }
 
-
-
 .row-location-details__item.active {
   position: relative;
-  padding-bottom: 332px;
   width: calc(40% + 184px);
   z-index: 1;
-}
-
-.row-location-details__item.active.short-content {
-  padding-bottom: 210px;
 }
 
 .row-location-details__item.active .text__detail-pc {
@@ -256,11 +249,22 @@ h5 {
   bottom: 0;
   right: 0;
   left: 0;
-  padding: 7.2rem 0 4.8rem 6rem;
+  height: fit-content;
   color: var(--white-color);
-  background-color: #000 !important;
-  margin-bottom: 56px;
   z-index: -1;
+}
+
+.item-hide_content {
+  padding: 2rem 6rem;
+  background-color: #000 !important;
+}
+
+.location-details__item-hide .item-hide_content:first-child {
+  padding-top: 7.2rem;
+}
+
+.location-details__item-hide .item-hide_content:last-child {
+  padding-bottom: 4rem;
 }
 
 .item-pc.location-details__item-hide {
@@ -290,6 +294,7 @@ h5 {
 .location-detail__items.active {
   display: block;
 }
+
 
 @keyframes fadeIn {
   from {
@@ -416,13 +421,33 @@ h5 {
 
   .location-details__item-hide{
     top: 2.4rem;
-    padding: 4.3rem 0 4rem 2.4rem;
+    /* padding: 4.3rem 0 4rem 2.4rem; */
+    width: 94% !important;
     min-height: 331px;
     margin-bottom: 40px;
+    background: #000;
+  }
+  
+  .row-location-details .row-location-details__item.active::after {
+    right: 4rem;
   }
 
-  .location-details__item-hide.short-content--mobile {
-    min-height: 160px;
+  .row-location-details__item.active.item-hide__large,
+  .row-location-details__item.active{
+    width: 100vw !important;
+  }
+
+  .item-hide_content {
+    padding: 1.4rem 2rem;
+    width: 100%;
+  }
+  
+  .location-details__item-hide .item-hide_content:first-child {
+    padding-top: 4.3rem;
+  }
+  
+  .location-details__item-hide .item-hide_content:last-child {
+    padding-bottom: 4rem;
   }
 
   #text__detail-mobile + .location-details__item-hide{
@@ -434,7 +459,7 @@ h5 {
   }
   
   .location-details__item-hide .item-hide_content {
-    max-width: 75%;
+    max-width: 80%;
   }
 
   .row-location-details .row-location-details__item.active::after {
@@ -444,15 +469,10 @@ h5 {
   .row-location-details .row-location-details__item.details__item--large.active::after {
     top: 8rem;
   }
-  .row-location-details__item.active.item-hide__large,
-  .row-location-details__item.active{
-    width: 100% !important;
-  }
-  
   .open-all {
     display: block;
   }
-  
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
