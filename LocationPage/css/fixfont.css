@@ -1,0 +1,19 @@
+.header__content-slogan{
+    font-family: "Lab Grotesque VN Bold";
+}
+.header__content-description{
+    font-weight: 700;
+}
+.location__item > h4{
+    font-family: "Lab Grotesque VN Black";
+    font-weight: 900;
+}
+.row-location{
+    font-weight: 900 !important;
+    font-family: "Lab Grotesque VN Black";
+}
+.row-location-details{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Lab Grotesque VN Bold";
+}
