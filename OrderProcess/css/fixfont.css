@@ -1,0 +1,33 @@
+.header__content-heading{
+    font-family: "Lab Grotesque VN Bold";   
+}
+.header__content-description{
+    font-family: "Lab Grotesque VN Light";
+}
+.main__product-title{
+    font-weight: 900;
+    font-family: "Lab Grotesque VN Black";
+}
+.main__product-description-large{
+    font-family: "Lab Grotesque VN Light";
+}
+.main__content-preface{
+    font-weight: 300;
+    font-family: "Lab Grotesque VN Light";
+}
+.main__insta-hastag{
+    font-size:27px;
+    font-family: "Lab Grotesque VN Black";
+}
+.main__about-title>h4{
+    font-family: "Lab Grotesque VN Black";
+}
+.main__about-content{
+    font-family: "Lab Grotesque VN Light";
+}
+.main__about-readmore{
+    font-size: 17px;
+}
+.my-footer .col-one h4{
+    font-family: "Lab Grotesque VN Black";
+}

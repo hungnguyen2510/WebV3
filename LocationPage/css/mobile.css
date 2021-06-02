@@ -405,6 +405,10 @@ h5 {
   .header__content-description {
     padding: 2rem 0;
   }
+  
+  .location-region{
+    margin-top: 17rem;
+  }
 
   .location-region::before {
     top: 4.6rem;
@@ -471,6 +475,10 @@ h5 {
   }
   .open-all {
     display: block;
+  }
+
+  .header__content-slogan {
+    letter-spacing: 0 !important;
   }
 
 }
