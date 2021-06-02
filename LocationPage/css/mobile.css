@@ -347,7 +347,7 @@ h5 {
   }
 
   .container {
-    padding: 0 3% !important;
+    padding: 0 16px !important;
     min-width: 100% !important;
     margin: 0 !important;
   }
@@ -426,7 +426,7 @@ h5 {
   .location-details__item-hide{
     top: 2.4rem;
     /* padding: 4.3rem 0 4rem 2.4rem; */
-    width: 94% !important;
+    width: 92% !important;
     min-height: 331px;
     margin-bottom: 40px;
     background: #000;
@@ -479,6 +479,12 @@ h5 {
 
   .header__content-slogan {
     letter-spacing: 0 !important;
+  }
+
+  .my-footer {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 48px 16px !important;
   }
 
 }
