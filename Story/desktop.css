@@ -176,10 +176,6 @@ h5 {
   margin-bottom: 64px;
 }
 
-.section-four .col-two {
-  padding-top: 10em;
-}
-
 .section-four .col-two .item {
   float: right;
 }
@@ -187,13 +183,21 @@ h5 {
 
 .section-four .item {
   max-width: 480px;
-  margin-bottom: 227px;
+  margin-bottom: 127px;
 }
 
 .section-four .item h5 {
   margin-top: 32px;
 }
 
+.mt-200{
+  margin-top: 200px;
+}
+
 .on-mobile{
+  display: none;
+}
+
+.section-four.section4-mobile {
   display: none;
 }

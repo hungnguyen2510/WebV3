@@ -176,10 +176,6 @@ h5 {
   margin-bottom: 64px;
 }
 
-.section-four .col-two {
-  padding-top: 10em;
-}
-
 .section-four .col-two .item {
   float: right;
 }
@@ -187,13 +183,24 @@ h5 {
 
 .section-four .item {
   max-width: 480px;
-  margin-bottom: 227px;
+  margin-bottom: 127px;
 }
 
 .section-four .item h5 {
   margin-top: 32px;
 }
 
+.mt-200{
+  margin-top: 200px;
+}
+
+.on-mobile{
+  display: none;
+}
+
+.section-four.section4-mobile {
+  display: none;
+}
 .on-mobile{
   display: none;
 }
@@ -347,6 +354,19 @@ h5 {
     max-width: 343px;
     height: 176px;
   }
+
+  .section-four.section4-mobile {
+    display: block;
+  }
+
+  .mt-200{
+    margin-top: 0;
+  }
+  
+  .section-four .item {
+    margin-bottom: 64px;
+}
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
