@@ -1,0 +1,38 @@
+.question-answer__left {
+    font-family: "Lab Grotesque VN Bold";   
+}
+.question-answer__right{
+    font-family: "Lab Grotesque VN Bold";   
+}
+.bold-700{
+    font-family: "Lab Grotesque VN Bold"; 
+}
+/* .bold{
+    font-weight: 700 !important;
+}
+.ml-4{
+    font-weight: 400 ;
+} */
+
+.item-size-giay .item h4{
+    font-weight: 300 ;
+}
+.item-size-giay .item h4 .bold{
+    font-weight: 900 !important;
+}
+
+#csg .col-csg-mobile > h5{
+    font-weight: 400;
+}
+
+#pttt h5{
+    font-weight: 400;
+}
+
+#csdt h5{
+    font-weight: 400;
+}
+
+#lh h5{
+    font-weight: 400;
+}
