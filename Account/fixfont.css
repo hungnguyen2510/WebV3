@@ -1,0 +1,42 @@
+.w-50{
+    font-weight: 700;
+    font-family: "Lab Grotesque VN Bold";
+}
+.item .bold{
+    font-family: "Lab Grotesque VN Bold";
+}
+
+#tttk input{
+    font-weight: 700;
+    font-family: "Lab Grotesque VN Bold";
+    font-size: 17px;
+}
+
+#tttk p{
+    font-size: 14px;
+}
+
+#tttk button{
+    font-weight:400;
+    font-size: 17px;
+}
+.card-custom th{
+    font-weight: 400;
+
+}
+.card-custom .table th h5, .card-custom .table td h5{
+    font-family: "Lab Grotesque VN Bold";
+}
+
+.btn-conf{
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.card-radius h4{
+    font-family: "Lab Grotesque VN Light";
+    font-weight: 300;
+}
+.toggle-div p{
+    font-size: 14px;
+}
