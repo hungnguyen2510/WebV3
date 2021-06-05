@@ -55,6 +55,7 @@ html {
 .nav-link {
   text-decoration: none;
   color: var(--text-color);
+  font-family: 'Lab Grotesque VN Light';
 }
 
 .nav-slider {
@@ -185,10 +186,6 @@ select#language {
     padding-right: 1em !important;
   }
 
-  .top_nav .logo {
-    margin-left: 15vw;
-  }
-
   .button-conf {
     padding: 0 2.4rem 2px !important;
     height: 44px !important;
@@ -268,10 +265,15 @@ select#language {
   }
 
   .top_nav .logo {
-    margin-left: 27.83px;
+    margin-left: 68px;
+  }
+
+  .top_nav .logo img{
+    width: 36px;
+    height: 27px;
   }
 
   .top_nav .user .navtop-icon:nth-child(2) > img {
-    margin-left: 0;
+    margin-left: 27.83px;
   }
 }

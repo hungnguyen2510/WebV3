@@ -8,7 +8,7 @@ $(document).ready(function () {
   var rangeSlider = document.getElementById("slider-range");
   var moneyFormat = wNumb({
     decimals: 0,
-    thousand: ",",
+    thousand: "",
     prefix: "",
   });
   noUiSlider.create(rangeSlider, {

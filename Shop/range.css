@@ -196,14 +196,14 @@
   position: absolute;
   font-size: 17px;
   color: grey;
-  left: 2%;
+  left: 4%;
   display: none;
 }
 
 #slider-range-temp2.temp-value {
   position: absolute;
   font-size: 17px;
-  left: 95%;
+  left: 92%;
   color: grey;
   display: none;
 }

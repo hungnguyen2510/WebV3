@@ -1,0 +1,48 @@
+.description span {
+  font-weight: 900;
+}
+.description {
+  font-weight: 300;
+}
+
+.section .col-one .title {
+  font-family: "Lab Grotesque VN Light";
+}
+.section .col-one .title {
+  font-family: "Lab Grotesque VN Light";
+}
+
+.section-four > h4 {
+  font-family: "Lab Grotesque VN Black";
+  font-weight: 900 !important;
+}
+.d-flex > h3 {
+  font-weight: 300;
+  font-family: "Lab Grotesque VN Light";
+}
+
+.menu_top a h3,
+.menu_top .btn-menu {
+  font-family: "Lab Grotesque VN Bold";
+}
+
+.section .col-one .text h2 {
+  font-family: "Lab Grotesque VN Light";
+}
+
+.section-without-container .col-one .title {
+  font-family: "Lab Grotesque VN Light";
+}
+
+.modal-body h2 {
+  font-family: "Lab Grotesque VN Bold";
+}
+
+.modal-body h4 {
+  font-family: "Lab Grotesque VN Black";
+}
+
+.modal-body .col-two h5 {
+  font-family: "Lab Grotesque VN Bold";
+  /* text-align: initial; */
+}
