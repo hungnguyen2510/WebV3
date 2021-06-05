@@ -175,7 +175,7 @@ h5 {
 }
 
 .modal-body {
-  padding: 80px !important;
+  padding: 0 80px 0px 80px !important;
 }
 
 .modal-body h2 {

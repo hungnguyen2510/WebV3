@@ -44,13 +44,13 @@ p {
 }
 
 .my-container {
-  margin: 5% 15%;
+  margin:5% 120px;
   margin-right: 0 !important;
 }
 
 .my-container--mr {
-  margin-right: 15%;
-  margin-top: 5%;
+  margin-right: 120px;
+  margin-top: 180px;
   margin-bottom: 0;
 }
 
@@ -60,7 +60,7 @@ p {
 }
 
 hr {
-  border-top: 4px solid #111820 !important;
+  border-top: 2px solid #111820 !important;
 }
 
 .hr-2 {
@@ -95,7 +95,7 @@ hr {
 }
 
 .question-answer__img {
-  margin-left: 3rem !important;
+  margin-left: 10rem !important;
 }
 
 .question-answer__right {
@@ -110,6 +110,7 @@ hr {
   display: flex;
   justify-content: space-between;
   margin-bottom: 3em;
+  margin-top: 20px;
 }
 
 .btn-toggle,
@@ -161,7 +162,7 @@ hr {
 #btn-minus-5,
 #btn-minus-6 {
   display: none;
-  margin-right: 6rem;
+  margin-right: 3rem;
 }
 
 #btn-plus-1,
@@ -171,7 +172,7 @@ hr {
 #btn-plus-5,
 #btn-plus-6 {
   width: 32px;
-  margin-right: 6rem;
+  margin-right: 3rem;
 }
 
 .btn-conf {
