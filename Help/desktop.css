@@ -44,7 +44,7 @@ p {
 }
 
 .my-container {
-  margin:5% 120px;
+  margin: 5% 120px;
   margin-right: 0 !important;
 }
 
@@ -53,7 +53,6 @@ p {
   margin-top: 180px;
   margin-bottom: 0;
 }
-
 
 .number-quantity {
   color: #000;
@@ -76,8 +75,7 @@ hr {
   border-top: none !important;
 }
 
-.custom-table th
-{
+.custom-table th {
   padding-left: 0 !important;
 }
 
@@ -109,8 +107,12 @@ hr {
 .col-two .item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3em;
+  margin-bottom: 56px;
   margin-top: 20px;
+}
+
+.item-step .item {
+  justify-content: unset;
 }
 
 .btn-toggle,
@@ -126,7 +128,6 @@ hr {
 .btn-toggle:focus-visible {
   outline: none;
 }
-
 
 .toggle-div {
   display: none;
@@ -148,7 +149,7 @@ hr {
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .bold-700 {
@@ -309,7 +310,8 @@ input[type="radio"] {
 }
 
 .item-size-giay .card-custom {
-  padding: 20px 40px !important;
+  padding: 24px 61px !important;
+  margin-top: 42px;
 }
 
 .none-clip-path {
@@ -339,11 +341,11 @@ input[type="radio"] {
   border: none;
 }
 
-#lh input{
+#lh input {
   background-color: #ebeded;
 }
 
-.area-input{
+.area-input {
   padding-bottom: 120px;
 }
 
@@ -352,9 +354,13 @@ input[type="radio"] {
 }
 
 .text-of-content {
-  border-bottom: 1px solid #B7BFC5 !important;
+  border-bottom: 1px solid #b7bfc5 !important;
 }
 
 .davai-mobile {
   display: none;
+}
+
+.mt-80 {
+  margin-top: 80px;
 }
