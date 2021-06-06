@@ -30,7 +30,7 @@ h5 {
 
 .h2-special {
   position: absolute !important;
-  left: 4.0em;
+  left: 4em;
   width: 40%;
 }
 
@@ -107,7 +107,7 @@ h5 {
   color: #111820;
 }
 
-.btn-shop > h5{
+.btn-shop > h5 {
   font-weight: 400;
 }
 
@@ -144,11 +144,11 @@ h5 {
   bottom: 0;
 }
 
-.section .content h4{
+.section .content h4 {
   font-weight: 900;
 }
 
-.section .content h5{
+.section .content h5 {
   font-weight: 400;
 }
 
@@ -180,7 +180,6 @@ h5 {
   float: right;
 }
 
-
 .section-four .item {
   max-width: 480px;
   margin-bottom: 127px;
@@ -190,21 +189,79 @@ h5 {
   margin-top: 32px;
 }
 
-.mt-200{
+.mt-200 {
   margin-top: 200px;
 }
 
-.on-mobile{
+.on-mobile {
   display: none;
 }
 
 .section-four.section4-mobile {
   display: none;
 }
-.on-mobile{
+.on-mobile {
   display: none;
 }
 
+.section-without-container {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.section-without-container .container {
+  padding: 120px 140px;
+  position: relative;
+  min-width: 100%;
+  color: white;
+}
+
+.section-without-container .col-one {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding: 0;
+}
+
+.section-without-container .col-one .title {
+  width: 33%;
+}
+
+.section-without-container .col-one .image {
+  flex: 0.6;
+  max-width: 480px;
+}
+
+.section-without-container .col-two {
+  position: relative;
+  /* max-width: 25%; */
+}
+.section-without-container .content {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  /* right: 0; */
+  margin-left: 64px;
+}
+
+.section-without-container .col-two .content .btn-shop {
+  padding: 10px 35px 11px;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: none;
+  border: none;
+  color: #111820;
+}
+
+.section-without-container .hero h3 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-left: 18%;
+  left: 0;
+  position: absolute;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -234,15 +291,15 @@ h5 {
     line-height: 22px !important;
   }
 
-  .section-four .item{
+  .section-four .item {
     margin-bottom: 141px;
   }
 
-  .section-four .col-two .item{
+  .section-four .col-two .item {
     float: unset;
   }
 
-  .h2-special{
+  .h2-special {
     left: auto;
     top: -1.8em;
     font-size: 36px !important;
@@ -252,7 +309,7 @@ h5 {
     margin-bottom: 0.8em;
     font-weight: 300;
   }
-  .section .col-one .title{
+  .section .col-one .title {
     margin-top: 0;
   }
 
@@ -309,7 +366,7 @@ h5 {
     padding: 0 15px;
   }
 
-  .section-four .col-two{
+  .section-four .col-two {
     padding-top: 0;
   }
 
@@ -340,17 +397,17 @@ h5 {
     margin-top: 3rem;
   }
 
-  .my-container{
+  .my-container {
     margin: 0;
   }
-  .on-pc{
+  .on-pc {
     display: none;
   }
 
-  .on-mobile{
+  .on-mobile {
     display: block;
   }
-  .banner img{
+  .banner img {
     max-width: 343px;
     height: 176px;
   }
@@ -359,14 +416,75 @@ h5 {
     display: block;
   }
 
-  .mt-200{
+  .mt-200 {
     margin-top: 0;
   }
-  
+
   .section-four .item {
     margin-bottom: 64px;
-}
-  
+  }
+
+  .section-without-container {
+    margin: 0;
+  }
+
+  .h2-special {
+    left: auto;
+    top: -1.8em;
+  }
+
+  .section-without-container .container {
+    padding: 120px 64px;
+    margin: 0;
+  }
+
+  .section-without-container .col-one .image{
+    text-align: center;
+  }
+
+  .section-without-container .col-one {
+    display: block;
+  }
+
+  .section-without-container .col-one .image img {
+    width: 250px;
+    /* margin-left: 22px; */
+  }
+
+  .section-without-container .col-one .content {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .section-without-container .col-one h3 {
+    margin-left: 5%;
+    left: 0;
+    top: 1.2em;
+    position: absolute;
+  }
+
+  .section-without-container .col-two {
+    max-width: 100%;
+  }
+  .section-without-container .content {
+    position: unset;
+    margin-top: 2em;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .section-without-container .col-one .title {
+    font-size: 36px !important;
+    line-height: 40px !important;
+    justify-content: unset;
+    margin-left: -30px;
+    width: 100%;
+    margin-bottom: 0.8em;
+  }
+
+  .section {
+    margin: 0;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

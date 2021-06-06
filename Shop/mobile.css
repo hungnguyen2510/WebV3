@@ -572,13 +572,15 @@ h5 {
     bottom: -5.5em !important;
   }
 
-  .section-without-container {
-    margin: 0;
-  }
+  
 
   .h2-special {
     left: auto;
     top: -1.8em;
+  }
+
+  .section-without-container {
+    margin: 0;
   }
 
   .section-without-container .container {
