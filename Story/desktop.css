@@ -30,8 +30,8 @@ h5 {
 
 .h2-special {
   position: absolute !important;
-  left: 4.0em;
-  width: 40%;
+  left: 2.9em;
+  width: unset !important;
 }
 
 .header {
@@ -107,7 +107,7 @@ h5 {
   color: #111820;
 }
 
-.btn-shop > h5{
+.btn-shop > h5 {
   font-weight: 400;
 }
 
@@ -144,11 +144,11 @@ h5 {
   bottom: 0;
 }
 
-.section .content h4{
+.section .content h4 {
   font-weight: 900;
 }
 
-.section .content h5{
+.section .content h5 {
   font-weight: 400;
 }
 
@@ -180,7 +180,6 @@ h5 {
   float: right;
 }
 
-
 .section-four .item {
   max-width: 480px;
   margin-bottom: 127px;
@@ -190,14 +189,98 @@ h5 {
   margin-top: 32px;
 }
 
-.mt-200{
+.mt-200 {
   margin-top: 200px;
 }
 
-.on-mobile{
+.on-mobile {
   display: none;
 }
 
 .section-four.section4-mobile {
   display: none;
+}
+
+.section-without-container {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.section-without-container .container {
+  padding: 120px 140px;
+  position: relative;
+  min-width: 100%;
+  color: white;
+}
+
+.section-without-container .col-one {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  padding: 0;
+}
+
+.section-without-container .col-one .title {
+  width: 33%;
+}
+
+.section-without-container .col-one .image {
+  flex: 0.6;
+  max-width: 480px;
+}
+
+.section-without-container .col-two {
+  position: relative;
+  /* max-width: 25%; */
+}
+.section-without-container .content {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  /* right: 0; */
+  margin-left: 64px;
+}
+
+.section-without-container .col-two .content .btn-shop {
+  padding: 10px 35px 11px;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: none;
+  border: none;
+  color: #111820;
+}
+
+.section-without-container .hero h3 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-left: 18%;
+  left: 0;
+  position: absolute;
+}
+
+@media only screen and (max-width: 1368px) {
+  .h2-special {
+    left: -3%;
+    top: 5%;
+  }
+
+  .section-without-container .col-one .image img {
+    width: 370px;
+  }
+
+  .section-without-container .col-one .title {
+    font-size: 61px !important;
+    line-height: 65px !important;
+  }
+
+  .section-without-container .content {
+    width: 100%;
+    margin-left: 50px;
+  }
+
+  .section-without-container .col-two .content .btn-shop {
+    padding: 5px 35px 5px;
+  }
 }

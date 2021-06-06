@@ -317,7 +317,7 @@ h5 {
 }
 
 .section-two .col-two .content .btn-shop {
-  padding: 10px 40px 11px;
+  padding: 10px 35px 11px;
   border-radius: 24px;
   background-color: #111820;
   box-shadow: none;
@@ -472,6 +472,26 @@ h5 {
   left: 6px;
 }
 
-.size{
+.size {
   margin-left: -13px;
+}
+
+@media only screen and (max-width: 1368px) {
+  .h2-special {
+    left: 0;
+  }
+
+  .section-without-container .col-one .image img {
+    width: 320px;
+  }
+
+  .section-without-container .col-one .title {
+    font-size: 61px !important;
+    line-height: 65px !important;
+  }
+
+  .section-without-container .content {
+    width: 100%;
+    margin-left: 40px;
+  }
 }
