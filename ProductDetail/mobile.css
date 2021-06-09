@@ -1008,7 +1008,7 @@ input[type="checkbox"]:checked + *::before {
   }
 
   .section-without-container .container {
-    padding: 120px 64px;
+    padding: 64px;
     margin: 0;
   }
 
@@ -1042,7 +1042,7 @@ input[type="checkbox"]:checked + *::before {
   }
   .section-without-container .content {
     position: unset;
-    margin-top: 2em;
+    margin-top: 2.4em;
     margin-left: 0;
     width: 100%;
   }
@@ -1053,7 +1053,7 @@ input[type="checkbox"]:checked + *::before {
     justify-content: unset;
     margin-left: -30px;
     width: 100%;
-    margin-bottom: 0.8em;
+    margin-bottom: 0;
   }
 
   .section {

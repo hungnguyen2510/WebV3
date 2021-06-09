@@ -223,10 +223,6 @@ h5 {
   padding: 0;
 }
 
-.section-without-container .col-one .title {
-  width: 33%;
-}
-
 .section-without-container .col-one .image {
   flex: 0.6;
   max-width: 480px;
@@ -306,7 +302,7 @@ h5 {
     line-height: 40px !important;
     justify-content: unset;
     width: 70%;
-    margin-bottom: 0.8em;
+    /* margin-bottom: 0.8em; */
     font-weight: 300;
   }
   .section .col-one .title {
@@ -428,13 +424,8 @@ h5 {
     margin: 0;
   }
 
-  .h2-special {
-    left: auto;
-    top: -1.8em;
-  }
-
   .section-without-container .container {
-    padding: 120px 64px;
+    padding: 120px 64px 64px 64px;
     margin: 0;
   }
 
@@ -478,8 +469,7 @@ h5 {
     line-height: 40px !important;
     justify-content: unset;
     margin-left: -30px;
-    width: 100%;
-    margin-bottom: 0.8em;
+    margin-bottom: 0em;
   }
 
   .section {

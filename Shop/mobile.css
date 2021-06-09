@@ -565,18 +565,16 @@ h5 {
     display: block;
     margin-left: 0;
     left: 15%;
-    bottom: -3.5em !important;
+    bottom: -4.5em !important;
   }
 
   .bottom-75 {
     bottom: -5.5em !important;
   }
 
-  
-
   .h2-special {
-    left: auto;
-    top: -1.8em;
+    left: 0;
+    top: -1.7em;
   }
 
   .section-without-container {
@@ -584,7 +582,8 @@ h5 {
   }
 
   .section-without-container .container {
-    padding: 120px 64px;
+    padding: 120px 64px 64px 64px;
+    margin: 0;
   }
 
   .section-without-container .col-one {
@@ -613,7 +612,7 @@ h5 {
   }
   .section-without-container .content {
     position: unset;
-    margin-top: 2em;
+    margin-top: 24px;
   }
 
   .section-without-container .col-one .title {
@@ -622,7 +621,7 @@ h5 {
     justify-content: unset;
     margin-left: -30px;
     width: 100%;
-    margin-bottom: 0.8em;
+    margin-bottom: 0em;
   }
 
   .section {
@@ -650,7 +649,7 @@ h5 {
   }
 
   .section-without-container .content button {
-    margin-top: 1.5em;
+    margin-top: 24px;
   }
 
   .my-content-modal {
