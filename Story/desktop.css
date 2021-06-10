@@ -245,12 +245,12 @@ h5 {
 }
 
 .section-without-container .content > h4 {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px; 
 }
 
 .section-without-container .col-two .content .btn-shop {
-  padding: 10px 35px 11px;
+  padding: 10px 40px 11px 40px;
   border-radius: 24px;
   background-color: #fff;
   box-shadow: none;
@@ -292,6 +292,14 @@ h5 {
 
   .section-without-container .content{
     margin-left: 40px;
+  }
+
+  .section-without-container .content {
+    width: 100%;
+  }
+
+  .section-without-container .content > h4{
+    margin: 30px 0;
   }
 
   .h2-special{

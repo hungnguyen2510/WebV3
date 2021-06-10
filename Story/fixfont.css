@@ -24,4 +24,9 @@
 
 .section-without-container .col-one .title {
   font-family: "Lab Grotesque VN Thin";
+  font-weight: 300;
+}
+
+.section-without-container .content > h4{
+  font-weight: 900;
 }

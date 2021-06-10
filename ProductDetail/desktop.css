@@ -777,12 +777,16 @@ input[type="checkbox"]:checked + *::before {
 }
 
 .section-without-container .col-two .content .btn-shop {
-  padding: 10px 35px 11px;
+  padding: 10px 40px 11px 40px;
   border-radius: 24px;
-  background-color: #fff;
+  background: none;
   box-shadow: none;
-  border: none;
-  color: #111820;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.section-without-container .col-two .content .btn-shop > h5{
+  margin: 0;
 }
 
 .section-without-container .hero h3 {
@@ -816,9 +820,6 @@ input[type="checkbox"]:checked + *::before {
 
 
 @media only screen and (max-width: 1800px) {
-  .section-without-container .col-two .content .btn-shop {
-    padding: 5px 35px 5px;
-  }
 }
 
 @media only screen and (min-width: 1440px) and (max-width: 1800px) {
@@ -848,6 +849,10 @@ input[type="checkbox"]:checked + *::before {
 
   .h2-special{
     width: 45%;
+  }
+
+  .section-without-container .col-two .content .btn-shop{
+    padding: 10px 30px 11px 30px;
   }
 }
 

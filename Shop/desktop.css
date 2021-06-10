@@ -317,13 +317,16 @@ h5 {
 }
 
 .section-two .col-two .content .btn-shop {
-  padding: 10px 35px 11px;
-  border-radius: 24px;
   background-color: #111820;
+  color: #fff;
+}
+
+.section-without-container .col-two .content .btn-shop {
+  padding: 10px 40px 11px 40px;
+  border-radius: 24px;
   box-shadow: none;
   border: none;
-  color: #fff;
-  margin-top: 104px;
+  margin-top: 94px;
 }
 
 .btn-shop > h5 {
@@ -342,8 +345,6 @@ h5 {
 }
 
 .section-without-container .col-one {
-  /* display: flex; */
-  /* justify-content: flex-end; */
   position: relative;
   padding: 0;
 }
@@ -355,13 +356,11 @@ h5 {
 
 .section-without-container .col-two {
   position: relative;
-  /* max-width: 25%; */
 }
 .section-without-container .content {
   position: absolute;
   bottom: 0;
-  width: 80%;
-  /* right: 0; */
+  width: 90%;
   margin-left: 64px;
 }
 
@@ -486,9 +485,6 @@ h5 {
 }
 
 @media only screen and (max-width: 1800px) {
-  .section-without-container .col-two .content .btn-shop {
-    padding: 5px 35px 5px;
-  }
 }
 
 @media only screen and (min-width: 1440px) and (max-width: 1800px) {
@@ -509,18 +505,22 @@ h5 {
   .section-without-container .content {
     margin-left: 40px;
   }
-  .h2-special{
+  .h2-special {
     width: 44.5%;
   }
 
-  .section-without-container .col-two .content .btn-shop{
+  .section-without-container .content {
+    width: 100%;
+  }
+
+  .section-without-container .col-two .content .btn-shop {
     margin-top: 40px;
   }
 }
 
-@media only screen and (max-width: 1200px){
-  .h2-special{
-    width: 58%;
+@media only screen and (max-width: 1200px) {
+  .h2-special {
+    width: 57%;
   }
 
   .section-without-container .col-one .image img {
