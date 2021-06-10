@@ -249,7 +249,7 @@ h5 {
 }
 
 .section .col-one {
-  padding: 139px 119px 139px 115px;
+  padding: 140px 120px 140px 130px;
 }
 
 .section .col-two {
@@ -323,6 +323,7 @@ h5 {
   box-shadow: none;
   border: none;
   color: #fff;
+  margin-top: 104px;
 }
 
 .btn-shop > h5 {
@@ -337,6 +338,7 @@ h5 {
   padding: 120px 140px;
   position: relative;
   min-width: 100%;
+  margin: 0;
 }
 
 .section-without-container .col-one {
@@ -344,10 +346,6 @@ h5 {
   /* justify-content: flex-end; */
   position: relative;
   padding: 0;
-}
-
-.section-without-container .col-one .title {
-  width: 33%;
 }
 
 .section-without-container .col-one .image {
@@ -436,7 +434,7 @@ h5 {
   position: absolute !important;
   left: 0;
   top: 40px;
-  width: unset !important;
+  width: 32.5%;
   transition: all 0.2s;
 }
 
@@ -484,7 +482,7 @@ h5 {
   width: 100%;
   height: auto;
   transition: all 0.2s;
-  width: 680px;
+  width: 640px;
 }
 
 @media only screen and (max-width: 1800px) {
@@ -501,7 +499,7 @@ h5 {
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
   .section-without-container .col-one .image img {
-    width: 400px;
+    width: 480px;
   }
 
   .section-without-container .container {
@@ -510,5 +508,22 @@ h5 {
 
   .section-without-container .content {
     margin-left: 40px;
+  }
+  .h2-special{
+    width: 44.5%;
+  }
+
+  .section-without-container .col-two .content .btn-shop{
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .h2-special{
+    width: 58%;
+  }
+
+  .section-without-container .col-one .image img {
+    width: 400px;
   }
 }

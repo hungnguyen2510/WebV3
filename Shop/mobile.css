@@ -437,7 +437,7 @@ h5 {
 .h2-special {
   position: absolute !important;
   left: 2.9em;
-  width: unset !important;
+  width: 33%;
 }
 
 .text > .description,
@@ -558,7 +558,7 @@ h5 {
 
   .section .col-one img {
     max-width: 253px;
-    height: 361px;
+    height: 288px;
   }
 
   .section .col-one .text {
@@ -620,7 +620,7 @@ h5 {
     line-height: 40px !important;
     justify-content: unset;
     margin-left: -30px;
-    width: 100%;
+    width: 81%;
     margin-bottom: 0em;
   }
 

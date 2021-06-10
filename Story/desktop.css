@@ -32,7 +32,7 @@ h5 {
   position: absolute !important;
   left: 0;
   top: 40px;
-  width: unset !important;
+  width: 33%;
   transition: all 0.2s;
 }
 
@@ -221,10 +221,6 @@ h5 {
   padding: 0;
 }
 
-.section-without-container .col-one .title {
-  width: 33%;
-}
-
 .section-without-container .col-one .image {
   flex: 0.6;
   float: right;
@@ -234,7 +230,7 @@ h5 {
   width: 100%;
   height: auto;
   transition: all 0.2s;
-  width: 680px;
+  width: 640px;
 }
 
 .section-without-container .col-two {
@@ -245,8 +241,12 @@ h5 {
   position: absolute;
   bottom: 0;
   width: 80%;
-  /* right: 0; */
   margin-left: 64px;
+}
+
+.section-without-container .content > h4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .section-without-container .col-two .content .btn-shop {
@@ -281,8 +281,9 @@ h5 {
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  
   .section-without-container .col-one .image img {
-    width: 400px;
+    width: 480px;
   }
 
   .section-without-container .container {
@@ -291,5 +292,19 @@ h5 {
 
   .section-without-container .content{
     margin-left: 40px;
+  }
+
+  .h2-special{
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .h2-special{
+    width: 60%;
+  }
+
+  .section-without-container .col-one .image img {
+    width: 400px;
   }
 }

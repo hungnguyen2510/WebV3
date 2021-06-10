@@ -32,6 +32,7 @@
 
 .section-without-container .col-one .title {
   font-family: "Lab Grotesque VN Light";
+  font-weight: 300;
 }
 
 .modal-body h2 {
