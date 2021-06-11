@@ -571,3 +571,18 @@ h5 {
 .main__about-icon{
   max-height: 35px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .main__product-img img{
+    width: 400px;
+    height: 400px;
+  }
+
+  .col-right .main__product-item{
+    margin-right: 0 !important;
+  }
+
+  .main__about-content{
+    width: 80%;
+  }
+}
