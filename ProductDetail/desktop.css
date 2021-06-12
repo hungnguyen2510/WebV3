@@ -771,7 +771,7 @@ input[type="checkbox"]:checked + *::before {
 .section-without-container .content {
   position: absolute;
   bottom: 0;
-  width: 70%;
+  width: 82%;
   /* right: 0; */
   margin-left: 64px;
 }

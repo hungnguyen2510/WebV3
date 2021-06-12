@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   font-family: Lab Grotesque VN;
@@ -109,6 +111,7 @@ h5 {
 
 .btn-shop > h5 {
   font-weight: 400;
+  margin: 0;
 }
 
 .section .container {
@@ -241,7 +244,7 @@ h5 {
 }
 
 .section-without-container .col-two .content .btn-shop {
-  padding: 10px 35px 11px;
+  padding: 11px 24px 11px 24px;
   border-radius: 24px;
   background-color: #fff;
   box-shadow: none;
@@ -261,6 +264,10 @@ h5 {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .section-without-container .content > h4{
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
   h1 {
     /* color: red !important; */
     font-size: 56px !important;
@@ -426,7 +433,7 @@ h5 {
 
   .section-without-container .container {
     padding: 120px 64px 64px 64px;
-    margin: 0;
+    margin: 80px 0 80px 0;
   }
 
   .section-without-container .col-one .image{
@@ -459,7 +466,7 @@ h5 {
   }
   .section-without-container .content {
     position: unset;
-    margin-top: 2em;
+    margin-top: 22px;
     margin-left: 0;
     width: 100%;
   }

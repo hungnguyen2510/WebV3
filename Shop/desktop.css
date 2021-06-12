@@ -360,7 +360,7 @@ h5 {
 .section-without-container .content {
   position: absolute;
   bottom: 0;
-  width: 90%;
+  width: 82%;
   margin-left: 64px;
 }
 
@@ -506,7 +506,7 @@ h5 {
     margin-left: 40px;
   }
   .h2-special {
-    width: 44.5%;
+    width: 43.5%;
   }
 
   .section-without-container .content {
@@ -515,6 +515,10 @@ h5 {
 
   .section-without-container .col-two .content .btn-shop {
     margin-top: 40px;
+  }
+
+  .bottom-45{
+    bottom: -6.5em !important;
   }
 }
 

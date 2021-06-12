@@ -1,3 +1,7 @@
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
 * {
   margin: 0;
   font-family: Lab Grotesque VN;
